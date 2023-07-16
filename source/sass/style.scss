@@ -1,28 +1,24 @@
 // Vendor
-// ---------------------------------
 
-@import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
+@import "vendor/normalize.scss";
+@import "vendor/swiper.scss";
 
 // Global
-// ---------------------------------
 
-@import "variables";
-@import "mixins";
-@import "global/fonts";
-@import "global/reboot";
-@import "global/utils";
-@import "global/container";
+@import "global/variables.scss";
+@import "global/mixins.scss";
+@import "global/fonts.scss";
+@import "global/utils.scss";
+@import "global/container.scss";
+@import "global/reboot.scss";
 
 // Blocks
-// ---------------------------------
 
-@import "blocks/btn";
-@import "blocks/modal";
-@import "blocks/custom-input";
-@import "blocks/custom-toggle";
-@import "blocks/custom-select";
+@import "blocks/btn.scss";
+@import "blocks/modal.scss";
+@import "blocks/custom-input.scss";
+@import "blocks/custom-toggle.scss";
+@import "blocks/custom-select.scss";
 
 // ---------------------------------
 
