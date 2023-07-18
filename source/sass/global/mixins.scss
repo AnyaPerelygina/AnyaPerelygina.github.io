@@ -38,14 +38,27 @@
 
 @mixin gradient-text {
   background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background-size: contain;
 }
 
 @mixin gradient-button {
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+  background-size: contain;
 }
 
 @mixin gradient-screen {
   background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-size: contain;
+}
+
+@mixin gradient-screen-tablet {
+  background: conic-gradient(from 150.87deg at 20.76% 35.65%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-size: contain;
+}
+
+@mixin gradient-screen-mobile {
+  background: conic-gradient(from 150.87deg at 35% 30.5%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background-size: contain;
 }
 
 // Desktop first
@@ -58,6 +71,12 @@
 
 @mixin vp-1439 {
   @media (max-width: ($vp-1440 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-1365 {
+  @media (min-width: ($vp-1366 - 1px)) {
     @content;
   }
 }
@@ -75,13 +94,19 @@
 }
 
 @mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
+  @media (min-width: ($vp-768 - 1px)) and (max-width: ($vp-1366 - 2px)) {
     @content;
   }
 }
 
 @mixin vp-374 {
   @media (max-width: ($vp-375 - 1px)) {
+    @content;
+  }
+}
+
+@mixin vp-319 {
+  @media (max-width: ($vp-768 - 2px)) {
     @content;
   }
 }

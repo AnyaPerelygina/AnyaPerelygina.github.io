@@ -8,17 +8,19 @@
 @import "global/variables.scss";
 @import "global/mixins.scss";
 @import "global/fonts.scss";
+@import "global/base.scss";
 @import "global/utils.scss";
 @import "global/container.scss";
 @import "global/reboot.scss";
 
 // Blocks
 
-@import "blocks/btn.scss";
-@import "blocks/modal.scss";
+@import "blocks/button.scss";
 @import "blocks/custom-input.scss";
 @import "blocks/custom-toggle.scss";
 @import "blocks/custom-select.scss";
+@import "blocks/header.scss";
+@import "blocks/hero.scss";
 
 // ---------------------------------
 
