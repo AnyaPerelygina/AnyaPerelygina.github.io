@@ -1,0 +1,32 @@
+.social__link {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $color-default-white;
+    border-radius: 50%;
+
+    &:hover {
+        fill: $color-default-white;
+        background-color: $egyptian-blue;
+    }
+
+    &:active {
+        fill: $color-default-white;
+        background-color: $sapphire;
+    }
+
+    &:disabled {
+        opacity: 0.3;
+    }
+}
+
+.social__icon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
