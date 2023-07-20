@@ -1,0 +1,180 @@
+.play {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+
+  @include vp-1365 {
+    width: 100%;
+  }
+
+  @include vp-767 {
+    width: 266px;
+    height: 167px;
+  }
+
+  @include vp-319 {
+    width: 320px;
+    height: 167px;
+  }
+}
+
+.play__wrapper {
+  position: relative;
+  content: "";
+  width: 98px;
+  height: 98px;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0;
+  z-index: 3;
+  border-radius: 50%;
+
+  @include vp-767 {
+    left: -123px;
+    margin: 0;
+  }
+
+  @include vp-319 {
+    left: 0;
+    margin: 0 auto;
+  }
+}
+
+.play__button {
+  position: relative;
+  content: "";
+  top: 78px;
+  left: 120px;
+  margin: 0 auto;
+  width: 72px;
+  height: 72px;
+  background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);;
+  border: none;
+  border-radius: 50%;
+  z-index: 30;
+
+  @include vp-767 {
+    width: 52px;
+    height: 52px;
+    top: 56px;
+    left: -23px;
+  }
+
+  @include vp-319 {
+    width: 52px;
+    height: 52px;
+    top: 56px;
+    left: -23px;
+  }
+
+  &:hover {
+    background: $color-default-white;
+  }
+
+  &:focus {
+    background: $color-default-white;
+  }
+
+  &:active {
+    background: $color-default-white;
+  }
+
+  &:disabled {
+    background: $color-default-white;
+  }
+}
+
+.play__button::after {
+  position: absolute;
+  content: "";
+  top: -14px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: 0 auto;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  background: linear-gradient(97.05deg, #ed023333 17.6%, #003eb733 95.31%) border-box;
+  mask:
+    linear-gradient(#fff 0 0) padding-box,
+    linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+        mask-composite: exclude;
+  transform: translateX(-14%);
+
+  @include vp-767 {
+    width: 73px;
+    height: 73px;
+    top: -10px;
+  }
+
+  @include vp-319 {
+    width: 73px;
+    height: 73px;
+    top: -10px;
+  }
+
+  &:hover {
+    background: $sapphire;
+  }
+
+  &:focus {
+    background: $sapphire;
+  }
+
+  &:active {
+    background: $sapphire;
+  }
+
+  &:disabled {
+    background: $sapphire;
+    opacity: 1;
+  }
+}
+
+.play__icon {
+  position: relative;
+  top: 0;
+  left: 4px;
+  fill: $color-default-white;
+
+  @include vp-767 {
+    width: 12px;
+    height: 12px;
+    top: 0;
+    left: -2px;
+    margin: 6px 2px 0 9px;
+  }
+
+  @include vp-319 {
+    width: 12px;
+    height: 12px;
+    left: -1px;
+    margin: 6px 2px 0 9px;
+  }
+
+  &:hover {
+    fill: $sapphire;
+  }
+
+  &:focus {
+    fill: $sapphire;
+  }
+
+  &:active {
+    fill: $sapphire;
+  }
+
+  &:disabled {
+    fill: $sapphire;
+    opacity: 1;
+  }
+}

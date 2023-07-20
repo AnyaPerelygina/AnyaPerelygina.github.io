@@ -1,0 +1,169 @@
+.about {
+  display: grid;
+  place-content: center;
+}
+
+.about__wrapper {
+  @include vp-1365 {
+    display: grid;
+    padding: 120px 104px 8px 162px;
+    grid-template-columns: auto 660px;
+    column-gap: 80px;
+    justify-content: center;
+  }
+
+  @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 65px 0 17px;
+  }
+
+  @include vp-319 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 72px;
+  }
+}
+
+.about__wrapper img {
+  height: 100%;
+  width: 660px;
+  height: 401px;
+
+  @include vp-767 {
+    width: 678px;
+    height: 345px;
+  }
+
+  @include vp-319 {
+    width: 320px;
+    height: 313px;
+    margin-bottom: 40px;
+  }
+}
+
+.about__gym {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  text-align: start;
+
+  @include vp-1365 {
+    max-width: 359px;
+    margin-bottom: 39px;
+    align-items: start;
+  }
+
+  @include vp-767 {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+
+  @include vp-319 {
+    margin: 63px 15px 33px;
+  }
+}
+
+.about__title {
+  font-family: $alumni-sans-font;
+  font-size: normal;
+  font-weight: 600;
+  letter-spacing: 1.5px;
+
+  @include vp-1365 {
+    font-size: 48px;
+    line-height: 58px;
+    margin: 38px 0 8px;
+  }
+
+  @include vp-767 {
+    font-size: 42px;
+    line-height: 51px;
+    margin-bottom: -1px;
+  }
+
+  @include vp-319 {
+    font-size: 32px;
+    line-height: 39px;
+    margin: 0;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+  }
+}
+
+.about__text {
+  font-family: $base-font;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+
+  @include vp-1365 {
+    margin: 0;
+    margin-bottom: 22px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 33px;
+  }
+
+  @include vp-319 {
+    margin-bottom: 24px;
+  }
+}
+
+.about__description {
+  font-family: $base-font;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300px;
+
+  @include vp-1365 {
+    margin-bottom: -7px;
+  }
+
+  @include vp-767 {
+    max-width: 512px;
+    margin: 0 0 44px 9px;
+  }
+
+  @include vp-319 {
+    max-width: 261px;
+    margin: 0;
+  }
+}
+
+.about__description--hidden {
+  @include vp-767 {
+    display: none;
+  }
+
+  @include vp-319 {
+    display: none;
+  }
+}
+
+.about__media__videoplayer {
+  position: relative;
+  content: "";
+
+  @include vp-1365 {
+    top: -112px;
+    left: -63px;
+  }
+
+  @include vp-767 {
+    top: -112px;
+    left: 50%;
+  }
+
+  @include vp-767 {
+    top: -83px;
+    left: 205px;
+  }
+}
