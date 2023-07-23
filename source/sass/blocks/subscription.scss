@@ -1,0 +1,420 @@
+.subscription__container {
+  width: 100%;
+  background-color: $ghost-white;
+
+  @include vp-1365 {
+    padding: 120px 82px;
+  }
+
+  @include vp-1199 {
+    padding: 120px 40px;
+  }
+
+  @include vp-767 {
+    padding: 100px 100px 62px;
+  }
+
+  @include vp-319 {
+    padding: 60px 15px 30px;
+  }
+
+  &::after {
+    position: absolute;
+    content: "";
+    right: 0;
+    background-repeat: no-repeat;
+    z-index: 0;
+
+    @include vp-1365 {
+      background-image: url("../img/dumbbells.png");
+      width: 287px;
+      height: 412px;
+      top: 1921px;
+    }
+
+    @include vp-1199 {
+      background-image: url("../img/dumbbells.png");
+      width: 287px;
+      height: 412px;
+      top: 1921px;
+    }
+
+    @include vp-767 {
+      background-image: url("../img/dumbbells-tablet.png");
+      width: 347px;
+      height: 372px;
+      top: 2868px;
+    }
+
+    @include vp-319 {
+      display: none;
+    }
+  }
+
+  h2 {
+    font-family: $alumni-sans-font;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 1.7px;
+    text-align: center;
+    margin: 0;
+
+    @include vp-1365 {
+      font-size: 54px;
+      line-height: 65px;
+      margin-bottom: 18px;
+    }
+
+    @include vp-767-full {
+      font-size: 42px;
+      line-height: 50px;
+      margin-bottom: 20px;
+    }
+
+    @include vp-319 {
+      font-size: 30px;
+      line-height: 39px;
+      margin-bottom: 22px;
+    }
+  }
+
+  .tabs__controls {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #78787833;
+    margin: auto;
+    max-width: 341px;
+
+    @include vp-1365 {
+      gap: 0;
+    }
+
+    @include vp-767-full {
+      max-width: 332px;
+    }
+
+    @include vp-319 {
+      gap: 46px;
+    }
+
+    .tabs__control {
+      font-family: $base-font;
+      font-style: normal;
+      font-weight: 400;
+      border-bottom: 2px solid $color-transparent;
+      color: $sapphire;
+      padding-bottom: 10px;
+      background-color: transparent;
+      border: 0;
+      cursor: pointer;
+
+      &.is-active {
+        border-bottom: 2px solid #d10a42;
+        margin-bottom: -2px;
+      }
+
+      &:hover,
+        focus {
+        opacity: 1;
+        border-bottom: 2px solid #d10a42;
+        margin-bottom: -2px;
+      }
+
+      &:disabled {
+        opacity: 0.3;
+      }
+
+      @include vp-1365 {
+        font-size: 20px;
+        line-height: 30px;
+        padding: 0 0 9px;
+        margin: 0 0 -2px;
+      }
+
+      @include vp-767-full {
+        font-size: 18px;
+        line-height: 27px;
+        padding: 0 0 12px;
+        margin: 0 0 -2px;
+      }
+
+      @include vp-319 {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 0 0 12px;
+        margin: 0;
+      }
+    }
+  }
+
+  .tabs__content {
+    @include vp-1365 {
+      margin-top: 38px;
+    }
+
+    @include vp-767-full {
+      margin-top: 43px;
+    }
+
+    @include vp-319 {
+      margin-top: 34px;
+    }
+
+    .tabs__element {
+      padding: 0;
+      background-color: $color-transparent;
+
+      ul {
+        display: flex;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        @include vp-1365 {
+          gap: 39px;
+        }
+
+        @include vp-1199 {
+          gap: 20px
+        }
+
+        @include vp-767 {
+          gap: 40px;
+        }
+
+        @include vp-319 {
+          flex-direction: column;
+          justify-content: center;
+          gap: 36px;
+        }
+
+        li {
+          display: flex;
+          flex-direction: column;
+          justify-content: start;
+          text-align: center;
+          background-color: $color-default-white;
+          border: 7px solid $color-default-white;
+
+          @include vp-1365 {
+            width: 360px;
+            height: 448px;
+            padding: 51px 69px 46px;
+          }
+
+          @include vp-1199 {
+            width: 360px;
+            height: 448px;
+            justify-content: space-between;
+            padding: 51px 69px 46px;
+          }
+
+          @include vp-767 {
+            min-width: 442px;
+            height: 448px;
+            padding: 56px 33px 46px;
+          }
+
+          @include vp-319 {
+            min-width: 290px;
+            height: 384px;
+            padding: 44px 33px 46px;
+          }
+
+          &:hover,
+          &:focus {
+            border: 7px solid;
+            border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+
+            a {
+              color: $color-default-white;
+              background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+              border: none;
+            }
+          }
+
+          h3 {
+            font-family: $base-font;
+            font-style: normal;
+            font-weight: 700;
+            margin: 0;
+
+            @include vp-1365 {
+              font-size: 26px;
+              line-height: 40px;
+              margin-bottom: 4px;
+            }
+
+            @include vp-767-full {
+              font-size: 26px;
+              line-height: 29px;
+              margin-bottom: 10px;
+            }
+
+            @include vp-319 {
+              font-size: 22px;
+              line-height: 24px;
+              margin-bottom: 10px;
+            }
+          }
+
+          p {
+            @include vp-1365{
+              margin: 0 0 64px;
+            }
+
+            @include vp-767-full {
+              margin: 0 0 65px;
+            }
+
+            @include vp-319 {
+              margin: 0 0 54px;
+            }
+          }
+
+          span {
+            font-family: $base-font;
+            font-style: normal;
+            font-weight: 700;
+            color: $egyptian-blue;
+            display: grid;
+            grid-template-columns: 0 auto auto;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            z-index: 1;
+
+            @include vp-1365 {
+              font-size: 60px;
+              line-height: 90px;
+              margin-bottom: 35px;
+              margin-left: -12px;
+              gap: 12px;
+            }
+
+            @include vp-767-full {
+              font-size: 60px;
+              line-height: 90px;
+              margin-bottom: 29px;
+              margin-left: -12px;
+              gap: 12px;
+            }
+
+            @include vp-319 {
+              font-size: 48px;
+              line-height: 72px;
+              margin-bottom: 29px;
+              margin-left: -12px;
+              gap: 10px;
+            }
+
+            svg {
+              @include vp-1365 {
+                width: 30px;
+                height: 42px;
+              }
+
+              @include vp-767-full {
+                width: 30px;
+                height: 42px;
+              }
+
+              @include vp-319 {
+                width: 24px;
+                height: 33px;
+              }
+            }
+
+            &::before {
+              position: relative;
+              content: attr(data-parent);
+              top: 0;
+              left: 0;
+              transform: translateX(-50%);
+              font-size: 100px;
+              color: #e8e8e8;
+              opacity: 0.48;
+              z-index: -1;
+
+              @include vp-1365 {
+                top: -24px;
+                left: -8px;
+              }
+
+              @include vp-767-full {
+                top: -22px;
+                left: -9px;
+                font-size: 100px;
+              }
+
+              @include vp-319 {
+                top: -20px;
+                left: -6px;
+                font-size: 80px;
+              }
+            }
+          }
+
+          a {
+            font-size: 12px;
+            line-height: 14px;
+            font-weight: 700;
+            letter-spacing: 0.6px;
+            color: $sapphire;
+            text-transform: uppercase;
+            border: 2px solid $sapphire;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: none;
+
+            &:hover,
+            &:focus {
+                color: $color-default-white;
+                background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+                border: none;
+            }
+
+            &:active {
+                color: #ffffffb3;
+                background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+                border: none;
+            }
+
+            &:disabled {
+                color: $sapphire;
+                border-color: $sapphire;
+                opacity: 0.3;
+                background: none;
+            }
+
+            @include vp-1365 {
+              width: 208px;
+              height: 66px;
+              padding: 27px 41px;
+            }
+
+            @include vp-767-full {
+              width: 208px;
+              height: 66px;
+              padding: 27px 30px;
+              margin: 5px auto;
+            }
+
+            @include vp-319 {
+              width: 208px;
+              height: 66px;
+              padding: 27px 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -10,7 +10,7 @@
         margin-right: 168px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         margin: 0;
         padding-top: 18px;
     }
@@ -24,12 +24,12 @@
 }
 
 .hero img {
-    @include vp-767 {
+    @include vp-767-full {
         position: relative;
         top: -41px;
     }
 }
-  
+
 .hero__list {
     position: relative;
 
@@ -38,7 +38,7 @@
         right: 16px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         top: -18px;
         left: 3px;
     }
@@ -48,7 +48,7 @@
         left: -180px;
     }
 }
-  
+
 .hero__item {
     font-size: 14px;
     line-height: 21px;
@@ -62,7 +62,7 @@
         padding: 69px 65px 0 3px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         padding: 51px 0 203px;
     }
 
@@ -70,7 +70,7 @@
         padding: 6px 0 0;
     }
 }
-  
+
 .hero__location {
     font-family: $alumni-sans-font;
     font-style: normal;
@@ -78,14 +78,14 @@
     color: $color-default-white;
     text-transform: uppercase;
     letter-spacing: 2.3px;
-    
+
     @include vp-1365 {
         font-size: 42px;
         line-height: 58px;
         margin-right: 50px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         font-size: 28px;
         line-height: 41px;
         margin-right: 35px;
@@ -97,7 +97,7 @@
         margin-right: 4px;
     }
 }
-  
+
 .hero__title {
     font-family: $alumni-sans-font;
     font-style: normal;
@@ -116,7 +116,7 @@
         padding-top: 10px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         font-size: 78px;
         line-height: 86px;
         letter-spacing: 0;
@@ -171,7 +171,7 @@
         padding: 27px 48px;
     }
 
-    @include vp-767 {
+    @include vp-767-full {
         width: 187px;
         height: 57px;
         position: absolute;

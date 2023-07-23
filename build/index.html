@@ -24,10 +24,10 @@
           <div class="header__wrapper">
             <a class="header__logo" href="index.html" alt="">
               <picture>
-                <source media="(min-width: 1366px)" srcset="img/svg/logotype.svg" width="122" height="44">
+                <source media="(min-width: 1200px)" srcset="img/svg/logotype.svg" width="122" height="44">
                 <source media="(min-width: 768px)" srcset="img/svg/logotype.svg" width="82" height="17">
                 <source media="(min-width: 320px)" srcset="img/svg/logotype.svg" width="66" height="24">
-                <img src="img/svg/logotype.svg" width="122" height="44" alt="">
+                <img src="img/svg/logotype.svg" width="122" height="44" alt="Логотип фитнес центра Sypergym.">
               </picture>
             </a>
             <a class="header__tel" href="tel:88005555555">8-800-555-55-55</a>
@@ -44,7 +44,7 @@
               <button class="hero__button">Купить абонемент</button>
             </div>
             <picture>
-              <source type="img/webp" media="(min-width:1366px)" width="500" height="556" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
+              <source type="img/webp" media="(min-width:1200px)" width="500" height="556" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
               <source type="img/webp" media="(min-width:768px)" width="324" height="390" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
               <source media="(min-width:1366px)" width="500" height="556" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x">
               <img class="hero__image" width="324" height="390" src="img/hero-tablet.jpg" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x" alt="">
@@ -63,12 +63,12 @@
               </div>
               <div class="about__media">
                 <picture>
-                  <source type="img/webp" media="(min-width:1366px)" width="660" height="401" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+                  <source type="img/webp" media="(min-width:1200px)" width="660" height="401" srcset="img/gym.webp 1x, img/gym@2x.webp 2x">
+                  <source media="(min-width: 1200px)" srcset="img/gym.jpg, img/gym@2x.jpg 2x">
                   <source type="img/webp" media="(min-width:768px)" width="678" height="345" srcset="img/gym-tablet.webp 1x, img/gym-tablet@2x.webp 2x">
                   <source media="(min-width: 768px)" srcset="img/gym-tablet.jpg, img/gym-tablet@2x.jpg 2x">
                   <source type="img/webp" media="(min-width:320px)" width="320" height="313" srcset="img/gym-mobile.webp 1x, img/gym-mobile@2x.webp 2x">
-                  <source media="(min-width: 320px)" srcset="img/gym-mobile.jpg, img/gym-mobile@2x.jpg 2x">
-                  <img width="660" height="401" src="img/gym.jpg" srcset="img/gym.jpg 1x, img/gym@2x.jpg 2x" alt="">
+                  <img width="320" height="313" src="img/gym-mobile.jpg" srcset="img/gym-mobile.jpg 1x, img/gym-mobile@2x.jpg 2x" alt="Фотография тренажерного зала.">
                 </picture>
                 <div class="about__media__videoplayer">
                   <div class="play">
@@ -83,17 +83,132 @@
                   </div>
                   <div class="placeholder">
                     <picture>
-                      <source type="img/webp" media="(min-width:1366px)" width="364" height="228" srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x">
+                      <source type="img/webp" media="(min-width:1200px)" width="364" height="228" srcset="img/gym-video.webp 1x, img/gym-video@2x.webp 2x">
+                      <source media="(min-width: 1200px)" srcset="img/gym-video.jpg, img/gym-video@2x.jpg 2x">
                       <source type="img/webp" media="(min-width:768px)" width="266" height="167" srcset="img/gym-video-tablet.webp 1x, img/gym-video-tablet@2x.webp 2x">
                       <source media="(min-width: 768px)" srcset="img/gym-video-tablet.jpg, img/gym-video-tablet@2x.jpg 2x">
                       <source type="img/webp" media="(min-width:320px)" width="320" height="167" srcset="img/gym-video-mobile.webp 1x, img/gym-video-mobile@2x.webp 2x">
-                      <source media="(min-width: 320px)" srcset="img/gym-video-mobile.jpg, img/gym-video-mobile@2x.jpg 2x">
-                      <img width="364" height="228" src="img/gym-video.jpg" srcset="img/gym-video.jpg 1x, img/gym-video@2x.jpg 2x" alt="">
+                      <img width="320" height="167" src="img/gym-video-mobile.jpg" srcset="img/gym-video-mobile.jpg 1x, img/gym-video-mobile@2x.jpg 2x" alt="Обложка видео о тренажерном зале.">
                     </picture>
                     <iframe width="364" height="228" src="https://www.youtube.com/embed/9TZXsZItgdw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
               </div>
             </div>
+          </section>
+          <section class="subscription">
+            <div class="subscription__container container for-load" id="subscription">
+              <h2>Абонементы</h2>
+              <div class="tabs no-transition-global" data-tabs="parent" data-delay="300">
+                <div class="tabs__controls" data-tabs="controls">
+                  <button class="tabs__control is-active" data-tabs="control">1 месяц</button>
+                  <button class="tabs__control" data-tabs="control">6 месяцев</button>
+                  <button class="tabs__control" data-tabs="control">12 месяцев</button>
+                </div>
+                <div class="tabs__content" data-tabs="content">
+                  <div class="tabs__element" data-tabs="element">
+                    <ul>
+                      <li>
+                        <h3>С тренером</h3>
+                        <p>12 занятий</p>
+                        <span data-parent="5000">5000
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Дневной</h3>
+                        <p>с 8:00 до 17:00</p>
+                        <span data-parent="1700">1700
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a class="is-active" href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Полный день</h3>
+                        <p>с 8:00 до 22:00</p>
+                        <span data-parent="2700">2700
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tabs__element" data-tabs="element">
+                    <ul>
+                      <li>
+                        <h3>С тренером</h3>
+                        <p>72 занятия</p>
+                        <span data-parent="27000">27000
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Дневной</h3>
+                        <p>с 8:00 до 17:00</p>
+                        <span data-parent="9100">9100
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a class="is-active" href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Полный день</h3>
+                        <p>с 8:00 до 22:00</p>
+                        <span data-parent="15500">15500
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="tabs__element" data-tabs="element">
+                    <ul>
+                      <li>
+                        <h3>С тренером</h3>
+                        <p>144 занятия</p>
+                        <span data-parent="48000">48000
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Дневной</h3>
+                        <p>с 8:00 до 17:00</p>
+                        <span data-parent="17300">17300
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a class="is-active" href="#">Купить абонемент</a>
+                      </li>
+                      <li>
+                        <h3>Полный день</h3>
+                        <p>с 8:00 до 22:00</p>
+                        <span data-parent="27500">27500
+                          <svg width="14" height="20" aria-hidden="true" focusable="false">
+                            <use href="img/sprite.svg#icon-ruble"></use>
+                          </svg>
+                        </span>
+                        <a href="#">Купить абонемент</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
           </section>
         </main>
         <footer class="footer">
@@ -101,7 +216,7 @@
             <div class="footer__wrapper">
               <a class="footer__logo" href="index.html" alt="">
                 <picture>
-                  <source media="(min-width: 1366px)" srcset="img/svg/logotype.svg" width="88" height="32">
+                  <source media="(min-width: 1200px)" srcset="img/svg/logotype.svg" width="88" height="32">
                   <source media="(min-width: 768px)" srcset="img/svg/logotype.svg" width="82" height="18">
                   <source media="(min-width: 320px)" srcset="img/svg/logotype.svg" width="68" height="15">
                   <img src="img/svg/logotype.svg" width="88" height="32" alt="">
