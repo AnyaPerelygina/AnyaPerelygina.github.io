@@ -45,7 +45,9 @@
             </div>
             <picture>
               <source type="img/webp" media="(min-width:1200px)" width="500" height="556" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
+              <source media="(min-width: 1200px)" srcset="img/hero.jpg, img/hero@2x.jpg 2x">
               <source type="img/webp" media="(min-width:768px)" width="324" height="390" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
+              <source media="(min-width: 768px)" srcset="img/hero-tablet.jpg, img/hero-tablet@2x.jpg 2x">
               <source media="(min-width:1366px)" width="500" height="556" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x">
               <img class="hero__image" width="324" height="390" src="img/hero-tablet.jpg" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x" alt="">
             </picture>
@@ -209,6 +211,28 @@
                   </div>
                 </div>
               </div>
+          </section>
+          <section class="supergames">
+            <div class="supergames__container">
+              <h2 class="supergames__title">Super<br>games</h2>
+              <div class="supergames__when">
+                <div class="supergames__date">
+                  <span>Дата</span>
+                  <big>7</big>
+                  <small>Марта<br> 2019</small>
+                </div>
+                <div class="supergames__time">
+                  <span>Время</span>
+                  <big>12:00</big>
+                </div>
+              </div>
+              <p class="supergames__text">Ежегодные соревнования по CrossFit</p>
+              <a class="supergames__button" href="#">Заполнить заявку</a>
+            </div>
+            <picture>
+              <source type="image/webp" media="(max-width: 1365px)" srcset="img/super-games.webp, img/super-games@2x.webp 2x" width="660" height="500">
+              <img src="img/super-games.jpg" srcset="img/super-games@2x.jpg 2x" width="660" height="500" loading="lazy" alt="">
+            </picture>
           </section>
         </main>
         <footer class="footer">
