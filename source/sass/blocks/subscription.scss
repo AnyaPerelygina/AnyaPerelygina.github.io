@@ -96,9 +96,9 @@
       max-width: 332px;
     }
 
-    @include vp-319 {
-      gap: 46px;
-    }
+    // @include vp-319 {
+    //   gap: 46px;
+    // }
 
     .tabs__control {
       font-family: $base-font;
