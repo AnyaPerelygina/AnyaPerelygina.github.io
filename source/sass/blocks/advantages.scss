@@ -207,6 +207,7 @@
       margin: 0 44px 0 46px;
       max-width: 240px;
       max-height: 307px;
+      flex-direction: column;
     }
 
     @include vp-767-full {
