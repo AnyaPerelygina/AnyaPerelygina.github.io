@@ -1,0 +1,57 @@
+.free-lesson {
+  min-height: 336px;
+  padding: 56px 170px 0  103px;
+  font-style: normal;
+  color: $color-default-white;
+
+  @include vp-1199 {
+    height: 337px;
+    padding: 54px 163px 30px 133px;
+  }
+
+  @include vp-767 {
+    min-height: 324px;
+    padding: 60px 160px 54.5px 134px;
+  }
+
+  @include vp-319 {
+    padding: 76px 15px 41px;
+  }
+
+  h3 {
+    font-family: $alumni-sans-font;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 156%;
+    letter-spacing: 1.9px;
+    text-align: start;
+    margin: 0 0 21px;
+
+    @include vp-1199{
+      font-size: 42px;
+      letter-spacing: 1.26px;
+      margin-bottom: 27px;
+    }
+
+    @media (min-width: $vp-1024) {
+      max-width: 462px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    @include vp-767 {
+      font-size: 42px;
+      line-height: 51px;
+      letter-spacing: 1.3px;
+      margin-bottom: 37px;
+    }
+
+    @include vp-319 {
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 39%;
+      letter-spacing: 1px;
+      margin-bottom: 50px;
+    }
+  }
+}

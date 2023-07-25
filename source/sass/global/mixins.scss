@@ -87,6 +87,12 @@
   }
 }
 
+@mixin vp-1199-full {
+  @media (min-width: ($vp-1200)) {
+    @content;
+  }
+}
+
 @mixin vp-1199 {
   @media (min-width: $vp-1200) and (max-width: ($vp-1366 - 1px)) {
     @content;

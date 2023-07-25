@@ -306,7 +306,7 @@
                   <span>Год</span>
                   <big>4999</big>
                   <p>Безлимитный абонемент в тренажерный зал</p>
-                  <a>Подробнее</a>
+                  <a href="#">Подробнее</a>
                 </div>
                 <picture>
                   <source type="img/webp" media="(min-width: 1200px)" srcset="img/promotion.webp, img/promotion@2x.webp 2x" width="280" height="462">
@@ -321,13 +321,61 @@
                 <div class="promotion__second">
                   <span>Месяц бесплатно</span>
                   <p>Приведи друга, получи абонемент в подарок</p>
-                  <a>Подробнее</a>
+                  <a href="#">Подробнее</a>
                 </div>
                 <div class="promotion__third">
                   <span>Скидка 20%</span>
                   <p>Корпоративный фитнес  с командой</p>
-                  <a>Подробнее</a>
+                  <a href="#">Подробнее</a>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="feedback">
+            <div class=" feedback__container feedback__container--form">
+              <h2 class="visually-hidden">Бесплатное занятие и контакты Фитнес центра</h2>
+              <div class="feedback__free-lesson free-lesson" data-form-validate data-callback="base">
+                <h3>Бесплатное занятие</h3>
+                <form class="free-lesson__form form" action="https://echo.htmlacademy.ru/" method="post" novalidate>
+                  <div class="form__name" data-validate-type="text" data-limitation="name"
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Некорректные данные" data-required>
+                    <label class="visually-hidden" for="user-name">Имя:</label>
+                    <input class="form__input form__input--name" placeholder="Имя" id="user-name" type="text"
+                      name="user-name" required>
+                  </div>
+                  <div class="form__phone" data-validate-type="phone" data-on-input-validate
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Некорректные данные" data-required data-phone-length="11">
+                    <label class="visually-hidden" for="phone">Телефон:</label>
+                    <input class="form__input form__input--phone" placeholder="Телефон" id="phone" type="tel"
+                      name="user-phone" aria-invalid="true" required>
+                  </div>
+                  <button class="form__button" type="submit">Отправить</button>
+                </form>
+              </div>
+            </div>
+            <div class="feedback__container feedback__container--contacts">
+              <div class="feedback__contacts contacts">
+                <h3>Контакты</h3>
+                <ul class="contacts__list">
+                  <li class="contacts__item contacts__item--address">
+                    <p class="contacts__text">Адрес:</p>
+                    <span class="contacts__info">г. Омск, ул. 60 лет Октября, 7</span>
+                  </li>
+                  <li class="contacts__item contacts__item--phone">
+                    <p class="contacts__text">Телефон:</p>
+                    <a class="contacts__info" href="tel:+78005555555"> 8-800-555-55-55</a>
+                  </li>
+                  <li class="contacts__item contacts__item--schedule">
+                    <p class="contacts__text">График работы:</p>
+                    <a class="contacts__info" href="tel:+78005555555">Пн-Вс: с 8:00 до 22:00</a>
+                  </li>
+                  <li class="contacts__item contacts__item--email">
+                    <p class="contacts__text">Email:</p>
+                    <a class="contacts__info" href="mailto:omsk@supergym.ru"> omsk@supergym.ru</a>
+                  </li>
+                </ul>
               </div>
             </div>
           </section>
