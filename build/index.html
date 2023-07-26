@@ -683,41 +683,52 @@
             </div>
           </section>
           <section class="reviews">
-            <div class="reviews__container">
-              <div class="reviews__swiper swiper">
-                <h2>Отзывы</h2>
-                <button class="reviews__button reviews__button--prev swiper-button-prev" type="button" aria-label="Назад.">
-                  <svg aria-hidden="true" focusable="false" width="16" height="32">
-                    <use href="img/sprite.svg#icon-slider"></use>
-                  </svg>
-                </button>
-                <div class="reviews__wrapper swiper-wrapper">
-                  <blockquote class="reviews__slider swiper-slide">
-                    <img src="img/avatar.jpg" width="80" height="80" alt="Фото Анны Орловой.">
-                    <div class="reviews__info">
-                      <span>Анна Орлова</span>
-                      <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                        тренажеры
-                        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                    </div>
-                  </blockquote>
-
-                  <!-- <blockquote class="reviews__slider swiper-slide">
-                    <img src="img/avatar.jpg" width="80" height="80" alt="Фото Анжелы Риттер.">
-                    <div class="reviews__info">
-                      <span>Анжела Риттер</span>
-                      <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
-                        тренажеры
-                        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
-                    </div>
-                  </blockquote> -->
+            <div class="container">
+                <div class="reviews__wrapper">
+                  <h2>Отзывы</h2>
+                  <button class="reviews__button reviews__button--prev" type="button" aria-label="Назад.">
+                    <svg width="18" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Стрелка назад.">
+                      <use href="img/sprite.svg#icon-slider"></use>
+                    </svg>
+                  </button>
+                  <div class="reviews__swiper swiper">
+                    <ul class="reviews__list swiper-wrapper">
+                      <li class="reviews__item swiper-slide">
+                          <div class="reviews__avatar">
+                            <picture>
+                              <source type="img/webp" media="(min-width: 1200px)" srcset="img/avatar.webp, img/avatar@2x.webp 2x" width="80" height="80">
+                              <source media="(min-width: 1200px)" srcset="img/avatar.webp, img/avatar@2x.webp 2x" width="80" height="80">
+                              <source type="img/webp" media="(min-width: 768px)" srcset="img/avatar-tablet.webp, img/avatar-tablet@2x.webp 2x" width="80" height="80">
+                              <source media="(min-width: 768px)" srcset="img/avatar-tablet.webp, img/vatar-tablet@2x.webp 2x" width="80" height="80">
+                              <source type="img/webp" media="(min-width: 320px)" srcset="img/avatar-mobile.jpg, img/avatar-mobile@2x.jpg 2x" width="68" height="68">
+                              <img src="img/avatar-mobile.jpg" srcset="img/avatar-mobile@2x.jpg 2x" width="68" height="68" alt="Аватaр пользователя.">
+                            </picture>
+                          </div>
+                          <p class="reviews__author">Анна Орлова</p>
+                          <p class="reviews__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                      </li>
+                      <li class="reviews__item swiper-slide">
+                        <div class="reviews__avatar">
+                          <picture>
+                            <source type="img/webp" media="(min-width: 1200px)" srcset="img/avatar.webp, img/avatar@2x.webp 2x" width="80" height="80">
+                            <source media="(min-width: 1200px)" srcset="img/avatar.webp, img/avatar@2x.webp 2x" width="80" height="80">
+                            <source type="img/webp" media="(min-width: 768px)" srcset="img/avatar-tablet.webp, img/avatar-tablet@2x.webp 2x" width="80" height="80">
+                            <source media="(min-width: 768px)" srcset="img/avatar-tablet.webp, img/vatar-tablet@2x.webp 2x" width="80" height="80">
+                            <source type="img/webp" media="(min-width: 320px)" srcset="img/avatar-mobile.jpg, img/avatar-mobile@2x.jpg 2x" width="68" height="68">
+                            <img src="img/avatar-mobile.jpg" srcset="img/avatar-mobile@2x.jpg 2x" width="68" height="68" alt="Аватaр пользователя.">
+                          </picture>
+                        </div>
+                          <p class="reviews__author">Анна Орлова</p>
+                          <p class="reviews__text">&laquo;Хожу в&nbsp;Supergym уже больше года. Нравится, что в&nbsp;клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в&nbsp;вечернее время нет очередей&raquo;</p>
+                      </li>
+                    </ul>
+                  </div>
+                  <button class="reviews__button reviews__button--next" type="button" aria-label="Вперед.">
+                    <svg width="18" height="34" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Стрелка вперед.">
+                      <use href="img/sprite.svg#icon-slider"></use>
+                    </svg>
+                  </button>
                 </div>
-                <button class="reviews__button reviews__button--next swiper-button-next" type="button" aria-label="Вперед.">
-                  <svg aria-hidden="true" focusable="false" width="16" height="32">
-                    <use href="img/sprite.svg#icon-slider"></use>
-                  </svg>
-                </button>
-              </div>
             </div>
           </section>
           <section class="feedback">
