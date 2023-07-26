@@ -29,12 +29,24 @@ const initCoachSlider = () => {
 };
 
 // eslint-disable-next-line no-undef
-const reviewsSlider = new Swiper('.reviews__slider', {
-  loop: false,
-  navigation: {
-    prevEl: '.reviews__button--prev',
-    nextEl: '.reviews__button--next',
-  },
-});
+const sliderReviews = document.querySelector('.reviews__swiper');
+const buttonNext = document.querySelector('.reviews__button--next');
+const buttonPrev = document.querySelector('.reviews__button--prev');
 
-export {initCoachSlider, reviewsSlider};
+const initSliderReviews = () => {
+  if (sliderReviews) {
+    // eslint-disable-next-line
+    new Swiper(sliderReviews, {
+
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
+      },
+
+      slidesPerView: 1,
+      spaceBetween: 30,
+    });
+  }
+};
+
+export {initCoachSlider, initSliderReviews};
