@@ -45,11 +45,9 @@
             </div>
             <picture>
               <source type="img/webp" media="(min-width:1200px)" width="500" height="556" srcset="img/hero.webp 1x, img/hero@2x.webp 2x">
-              <source media="(min-width: 1200px)" srcset="img/hero.jpg, img/hero@2x.jpg 2x">
               <source type="img/webp" media="(min-width:768px)" width="324" height="390" srcset="img/hero-tablet.webp 1x, img/hero-tablet@2x.webp 2x">
               <source media="(min-width: 768px)" srcset="img/hero-tablet.jpg, img/hero-tablet@2x.jpg 2x">
-              <source media="(min-width:1366px)" width="500" height="556" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x">
-              <img class="hero__image" width="324" height="390" src="img/hero-tablet.jpg" srcset="img/hero-tablet.jpg 1x, img/hero-tablet@2x.jpg 2x" alt="">
+              <img class="hero.jpg" width="500" height="556" src="img/hero.jpg" srcset="img/hero.jpg 1x, img/hero@2x.jpg 2x" alt="">
             </picture>
           </div>
         </div>
@@ -234,6 +232,89 @@
               <img src="img/super-games.jpg" srcset="img/super-games@2x.jpg 2x" width="660" height="500" loading="lazy" alt="">
             </picture>
           </section>
+          <section class="coach">
+            <h2>Тренеры</h2>
+            <!-- <div class="coach__container">
+              <button class="coach__button coach__button--next swiper-button-next" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="32">
+                  <use href="img/sprite.svg#icon-slider"></use>
+                </svg>
+              </button>
+              <div class="coach__sliders swiper">
+                <ul class="swiper-slide">
+                  <li class="swiper-slide">
+                      <picture>
+                        <source type="img/webp" media="(max-width: 1365px)" srcset="img/coach-3.webp, img/coach-3@2x.webp 2x" width="260" height="294">
+                        <img src="img/coach-3.jpg" srcset="img/coach-3@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Анна Павлова.">
+                      </picture>
+                      <h3>Анна Павлова</h3>
+                      <div class="coach__description">
+                        <h4>Анна Павлова</h4>
+                        <span>Crossfit</span>
+                        <ul>
+                          <li>Certified Level 4 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 8 лет</li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="swiper-slide">
+                      <picture>
+                        <source type="img/webp" media="(max-width: 1365px)" srcset="img/coach-1.webp, img/coach-1@2x.webp 2x" width="260" height="294">
+                        <img src="img/coach-1.jpg" srcset="img/coach-1@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Алексей Лавров.">
+                      </picture>
+                      <h3>Алексей Лавров</h3>
+                      <div class="coach__description">
+                        <h4>Алексей Лавров</h4>
+                        <span>Crossfit</span>
+                        <ul>
+                          <li>Certified Level 1 Trainer</li>
+                          <li>Участник чемпионата России по CrossFit</li>
+                          <li>Опыт — 3 лет</li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="swiper-slide">
+                      <picture>
+                        <source type="img/webp" media="(max-width: 1365px)" srcset="img/coach-2.webp, img/coach-2@2x.webp 2x" width="260" height="294">
+                        <img src="img/coach-2.jpg" srcset="img/coach-2@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Александр Пашков.">
+                      </picture>
+                      <h3>Александр Пашков</h3>
+                      <div class="coach__description">
+                        <h4>Александр Пашков</h4>
+                        <span>Crossfit</span>
+                        <ul>
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 7 лет</li>
+                        </ul>
+                      </div>
+                  </li>
+                  <li class="swiper-slide">
+                      <picture>
+                        <source type="img/webp" media="(max-width: 1365px)" srcset="img/coach-4.webp, img/coach-4@2x.webp 2x" width="260" height="294">
+                        <img src="img/coach-4.jpg" srcset="img/coach-4@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Тренер Мария Кетова.">
+                      </picture>
+                      <h3>Мария Кетова</h3>
+                      <div class="coach__description">
+                        <h4>Мария Кетова</h4>
+                        <span>Crossfit</span>
+                        <ul>
+                          <li>Certified Level 3 Trainer</li>
+                          <li>Победитель чемпионата России по CrossFit</li>
+                          <li>Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                  </li>
+                </ul>
+              </div>
+              <button class="coach__button coach__button--next swiper-button-next" type="button">
+                <svg aria-hidden="true" focusable="false" width="16" height="32">
+                  <use href="img/sprite.svg#icon-slider"></use>
+                </svg>
+              </button>
+            </div> -->
+          </section>
           <section class="advantages">
             <h2 class="advantages__title">Наши преимущества</h2>
             <ul class="advantages__list">
@@ -328,6 +409,314 @@
                   <p>Корпоративный фитнес  с командой</p>
                   <a href="#">Подробнее</a>
                 </div>
+              </div>
+            </div>
+          </section>
+          <section class="faq">
+            <h2>Вопросы и ответы</h2>
+            <div class="faq__container container tabs no-transition-global" data-tabs="parent" data-delay="300" data-height="max">
+              <div class="faq__controls tabs__controls" data-tabs="controls">
+                <button class="faq__control tabs__control" type="button" data-tabs="control">
+                  Центр
+                </button>
+                <button class="faq__control tabs__control" type="button" data-tabs="control">
+                  Абонемент
+                </button>
+                <button class="faq__control  tabs__control" type="button" data-tabs="control">
+                  Услуги
+                </button>
+                <button class="faq__control tabs__control" type="button" data-tabs="control">
+                  Правила
+                </button>
+              </div>
+              <div class="faq__content tabs__content" data-tabs="content">
+                <ul class="tabs__element accordion" data-tabs="element" data-accordion="parent">
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Как стать членом фитнес-центра?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content">
+                      <p>
+                        При первом посещении и покупке абонемента, необходимо
+                        заполнить анкету и подписать договор. При покупке
+                        абонемента онлайн, анкета также заполняется онлайн и
+                        договор придет вам на почту.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Где можно посмотреть расписание?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При первом посещении и покупке абонемента, необходимо
+                        заполнить анкету и подписать договор. При покупке
+                        абонемента онлайн, анкета также заполняется онлайн и
+                        договор придет вам на почту.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Есть кулеры в центре? Предоставляются полотенца?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При первом посещении и покупке абонемента, необходимо
+                        заполнить анкету и подписать договор. При покупке
+                        абонемента онлайн, анкета также заполняется онлайн и
+                        договор придет вам на почту.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Сколько тренеров работает в клубе и какова их квалификация?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При первом посещении и покупке абонемента, необходимо
+                        заполнить анкету и подписать договор. При покупке
+                        абонемента онлайн, анкета также заполняется онлайн и
+                        договор придет вам на почту.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="tabs__element accordion" data-accordion="parent" data-single data-close-inner
+                  data-tabs="element">
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Занятия с тренером входят в абонемент?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При посещении тренажерного зала вам необходимо оплачить
+                        занятия с тренером отдельно. В зале всегда присутствует
+                        дежурный тренер, которому можно задать вопрос, получить
+                        небольшую консультацию по тренажеру или технике выполнения
+                        упражнения.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Можно ли заморозить абонемент?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При посещении тренажерного зала вам необходимо оплачить
+                        занятия с тренером отдельно. В зале всегда присутствует
+                        дежурный тренер, которому можно задать вопрос, получить
+                        небольшую консультацию по тренажеру или технике выполнения
+                        упражнения.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Есть ли лимит по посещениям тренажерного зала и групповых
+                      занятий?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При посещении тренажерного зала вам необходимо оплачить
+                        занятия с тренером отдельно. В зале всегда присутствует
+                        дежурный тренер, которому можно задать вопрос, получить
+                        небольшую консультацию по тренажеру или технике выполнения
+                        упражнения.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Что такое семейный доступ и доступ для друзей?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        При посещении тренажерного зала вам необходимо оплачить
+                        занятия с тренером отдельно. В зале всегда присутствует
+                        дежурный тренер, которому можно задать вопрос, получить
+                        небольшую консультацию по тренажеру или технике выполнения
+                        упражнения.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="tabs__element accordion" data-accordion="parent" data-single data-close-inner
+                  data-tabs="element">
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Предлагает ли клуб услуги по консультированию по вопросам
+                      питания?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Да. Вы можете обратиться как к своему тренеру, так и к
+                        нашему нутрициологу. Специалист уточнит ваши данные, цели
+                        и предложит программу питания.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Проводятся ли в клубе какие-либо мероприятия или соревнования?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Да. Вы можете обратиться как к своему тренеру, так и к
+                        нашему нутрициологу. Специалист уточнит ваши данные, цели
+                        и предложит программу питания.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Можно ли приобрести в центре спортивное питание?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Да. Вы можете обратиться как к своему тренеру, так и к
+                        нашему нутрициологу. Специалист уточнит ваши данные, цели
+                        и предложит программу питания.
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Есть ли в центре детская комната?</h3>
+                    <button class="accordion__butto accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Да. Вы можете обратиться как к своему тренеру, так и к
+                        нашему нутрициологу. Специалист уточнит ваши данные, цели
+                        и предложит программу питания.
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <ul class="tabs__element accordion" data-accordion="parent" data-single data-close-inner
+                  data-tabs="element">
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Есть в фитнес-центре дресс-код?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Для тренировок необходимо иметь предназначенную для этого
+                        закрытую спортивную обувь и одежду. Верхняя и нижняя части
+                        тела должны быть закрыты (используйте футболки, майки,
+                        спортивные брюки, шорты, кроссовки). В целях безопасности,
+                        запрещается тренироваться босиком, в пляжных или домашних
+                        тапочках и т. п., исключения составляют специальные классы
+                        (например, йога, пилатес).
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Можно ли приводить с собой детей на тренировки?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Для тренировок необходимо иметь предназначенную для этого
+                        закрытую спортивную обувь и одежду. Верхняя и нижняя части
+                        тела должны быть закрыты (используйте футболки, майки,
+                        спортивные брюки, шорты, кроссовки). В целях безопасности,
+                        запрещается тренироваться босиком, в пляжных или домашних
+                        тапочках и т. п., исключения составляют специальные классы
+                        (например, йога, пилатес).
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Какие дополнительные правила посещения центра?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                    </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Для тренировок необходимо иметь предназначенную для этого
+                        закрытую спортивную обувь и одежду. Верхняя и нижняя части
+                        тела должны быть закрыты (используйте футболки, майки,
+                        спортивные брюки, шорты, кроссовки). В целях безопасности,
+                        запрещается тренироваться босиком, в пляжных или домашних
+                        тапочках и т. п., исключения составляют специальные классы
+                        (например, йога, пилатес).
+                      </p>
+                    </div>
+                  </li>
+                  <li class="accordion__element" data-accordion="element">
+                    <h3>Нужна ли медицинская справка для посещения залов и бассейна?</h3>
+                    <button class="accordion__button accordion__button--open" type="button" data-accordion="button">
+                      <span class="accordion__button-icon"></span>
+                      </button>
+                    <div class="accordion__content" data-accordion="content" style>
+                      <p>
+                        Для тренировок необходимо иметь предназначенную для этого
+                        закрытую спортивную обувь и одежду. Верхняя и нижняя части
+                        тела должны быть закрыты (используйте футболки, майки,
+                        спортивные брюки, шорты, кроссовки). В целях безопасности,
+                        запрещается тренироваться босиком, в пляжных или домашних
+                        тапочках и т. п., исключения составляют специальные классы
+                        (например, йога, пилатес).
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+          <section class="reviews">
+            <div class="reviews__container">
+              <div class="reviews__swiper swiper">
+                <h2>Отзывы</h2>
+                <button class="reviews__button reviews__button--prev swiper-button-prev" type="button" aria-label="Назад.">
+                  <svg aria-hidden="true" focusable="false" width="16" height="32">
+                    <use href="img/sprite.svg#icon-slider"></use>
+                  </svg>
+                </button>
+                <div class="reviews__wrapper swiper-wrapper">
+                  <blockquote class="reviews__slider swiper-slide">
+                    <img src="img/avatar.jpg" width="80" height="80" alt="Фото Анны Орловой.">
+                    <div class="reviews__info">
+                      <span>Анна Орлова</span>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                        тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                    </div>
+                  </blockquote>
+
+                  <!-- <blockquote class="reviews__slider swiper-slide">
+                    <img src="img/avatar.jpg" width="80" height="80" alt="Фото Анжелы Риттер.">
+                    <div class="reviews__info">
+                      <span>Анжела Риттер</span>
+                      <p>«Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто,
+                        тренажеры
+                        обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»</p>
+                    </div>
+                  </blockquote> -->
+                </div>
+                <button class="reviews__button reviews__button--next swiper-button-next" type="button" aria-label="Вперед.">
+                  <svg aria-hidden="true" focusable="false" width="16" height="32">
+                    <use href="img/sprite.svg#icon-slider"></use>
+                  </svg>
+                </button>
               </div>
             </div>
           </section>

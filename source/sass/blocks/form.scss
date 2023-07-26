@@ -140,6 +140,7 @@
   background-color: $sapphire;
   color: $color-default-white;
   text-transform: uppercase;
+  cursor: pointer;
 
   @include vp-1199 {
     margin-bottom: 15px;

@@ -24,6 +24,7 @@
 }
 
 .hero img {
+  max-height: 556px;
     @include vp-767-full {
         position: relative;
         top: -41px;
