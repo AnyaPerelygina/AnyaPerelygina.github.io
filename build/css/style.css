@@ -4248,10 +4248,6 @@ button,
   margin: 0;
 }
 
-.tabs__element p:not(:last-child) {
-  margin: 0 0 20px 0;
-}
-
 .tabs--unset .tabs__content {
   height: 100px;
 }
@@ -5133,7 +5129,7 @@ button,
     line-height: 39px;
     letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
   }
 
   .coaches__item {
@@ -5141,8 +5137,12 @@ button,
     height: 100%;
   }
 
+  .coaches__item img {
+    min-height: 274px;
+  }
+
   .coaches__information {
-    padding: 44px 0 20px;
+    padding: 36px 0 20px;
   }
 
   .coaches__information p {
@@ -6217,6 +6217,10 @@ button,
     margin: 0 0 31px;
   }
 
+  .coaches__list {
+    margin-bottom: -25px;
+  }
+
   .coaches__swiper {
     margin: 0 54px;
   }
@@ -6231,7 +6235,21 @@ button,
     aspect-ratio: 230/274;
   }
 
+  .coaches__item h3 {
+    bottom: 48px;
+  }
+
   .coaches__information {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     padding: 55px 9px;
   }
 
@@ -6587,7 +6605,7 @@ button,
   }
 
   .coaches__button {
-    top: 56%;
+    top: 54%;
   }
 
   .coaches__button--next {
@@ -6793,7 +6811,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    padding: 98px 68px 65px;
+    padding: 138px 68px 65px;
     -webkit-box-align: stretch;
     -ms-flex-align: stretch;
     align-items: stretch;

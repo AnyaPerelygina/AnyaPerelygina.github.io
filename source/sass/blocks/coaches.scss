@@ -58,7 +58,7 @@
       line-height: 39px;
       letter-spacing: 1px;
       text-align: center;
-      margin-bottom: 44px;
+      margin-bottom: 41px;
     }
   }
 }
@@ -67,6 +67,10 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @include vp-767 {
+    margin-bottom: -25px;
+  }
 }
 
 .coaches__swiper {
@@ -110,6 +114,10 @@
     @include vp-767 {
       aspect-ratio: 230/274;
     }
+
+    @include vp-319 {
+      min-height: 274px;
+    }
   }
 
   h3 {
@@ -129,6 +137,10 @@
     @include vp-1199 {
       left: 51.5%;
       max-width: 100%;
+    }
+
+    @include vp-767 {
+      bottom: 48px;
     }
   }
 }
@@ -152,11 +164,14 @@
   transition: transform 0.5s ease 0s;
 
   @include vp-767 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     padding: 55px 9px;
   }
 
   @include vp-319 {
-    padding: 44px 0 20px;
+    padding: 36px 0 20px;
   }
 
   h4 {
@@ -250,7 +265,7 @@
   }
 
   @include vp-767-full {
-    top: 56%;
+    top: 54%;
   }
 
   @include vp-319 {
