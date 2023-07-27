@@ -39,6 +39,7 @@
 
 .about__wrapper img {
   height: 100%;
+  background-color: $link-water;
 
   @include vp-1365 {
     width: 660px;
