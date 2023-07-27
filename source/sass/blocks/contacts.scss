@@ -17,7 +17,7 @@
   }
 
   @include vp-319 {
-    padding: 65px 15px 62px;
+    padding: 65px 15px 59px;
     border: none;
   }
 
@@ -140,8 +140,8 @@
     @include vp-767 {
       font-size: 20px;
       line-height: 20px;
-      display: block;
-      margin-bottom: 13px;
+      margin-bottom: 7px;
+      letter-spacing: 0;
     }
 
     @include vp-319 {
@@ -169,6 +169,24 @@
     @include vp-319 {
       font-size: 18px;
       line-height: 28px;
+    }
+  }
+
+  a {
+    font-family: $base-font;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 31px;
+    letter-spacing: 1px;
+    color: $sapphire;
+
+    @include vp-1199-full {
+      font-size: 14px;
+      letter-spacing: 0;
+    }
+
+    @include vp-767 {
+      letter-spacing: 0;
     }
   }
 }
@@ -207,6 +225,12 @@
     order: 2;
     margin-left: 0;
   }
+
+  a {
+    @include vp-319 {
+      letter-spacing: 0.1px;
+    }
+  }
 }
 
 .contacts__item--schedule {
@@ -214,6 +238,7 @@
 
   @include vp-1199 {
     width: 43.4%;
+    margin-top: -4px;
   }
 
   @include vp-319 {
@@ -227,6 +252,7 @@
 
   @include vp-1199 {
     width: 37.4%;
+    margin-top: -4px;
   }
 
   @include vp-767 {
@@ -236,5 +262,11 @@
   @include vp-319 {
     width: 100%;
     order: 2;
+  }
+
+  p {
+    @include vp-319 {
+      margin-top: -2px;
+    }
   }
 }

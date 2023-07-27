@@ -32,7 +32,7 @@
       line-height: 51px;
       letter-spacing: 1.3px;
       margin-top: 25px;
-      margin-bottom: 39px;
+      margin-bottom: 36px;
       text-align: center;
     }
 
@@ -77,14 +77,14 @@
     flex-direction: row;
     justify-content: space-between;
     min-width: 678px;
-    margin-bottom: 40px;
+    margin-bottom: -3px;
   }
 
   @include vp-319 {
     flex-direction: row;
     min-width: 290px;
     justify-content: space-between;
-    margin-bottom: 28px;
+    margin-bottom: -5px;
   }
 }
 
@@ -169,6 +169,10 @@
     align-items: start;
     justify-content: start;
     background: $ghost-white;
+
+    @include vp-1365 {
+      margin-top: -38px;
+    }
 
     @include vp-319 {
       justify-content: space-between;

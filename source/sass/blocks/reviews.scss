@@ -1,19 +1,19 @@
 .reviews__wrapper {
   position: relative;
   margin: 0 auto;
-  padding: 120px 0 120px 0;
+  padding: 120px 0;
   max-width: 672px;
 
   @include vp-1365 {
-    padding: 117px 0 100px 0;
+    padding: 117px 0 123px;
   }
 
   @include vp-767-full {
-    padding: 86px 0 103px;
+    padding: 86px 0 99px;
   }
 
   @include vp-319 {
-    padding: 62px 0 72px;
+    padding: 62px 0 70px;
     max-width: 226px;
   }
 
@@ -29,14 +29,14 @@
 
     @include vp-767-full {
       font-size: 42px;
-      margin: 0 0 34px;
+      margin: 0 0 31px;
     }
 
     @include vp-319 {
       font-size: 32px;
       line-height: 39px;
       letter-spacing: 1.5px;
-      margin: 0 0 42.5px;
+      margin: 0 0 41px;
     }
   }
 }
@@ -76,14 +76,15 @@
 
   @include vp-1365 {
     max-width: 560px;
-    padding: 62px 65px 55px 65px;
+    padding: 62px 61px 55px;
   }
 
   @include vp-767-full {
     grid-template-columns: auto 1fr;
     grid-template-rows: 23px auto;
     gap: 14px 28px;
-    padding: 57px 54px 54px 49px;
+    max-width: 566px;
+    padding: 56px 61px 54px 49px;
   }
 
   @include vp-319 {
@@ -187,7 +188,7 @@
   }
 
   @include vp-767-full {
-    top: 56%;
+    top: 52%;
   }
 
   @include vp-319 {
@@ -204,7 +205,7 @@
     right: -17px;
 
     &:active svg {
-      color: #fff;
+      color: $color-default-white;
     }
 
     @include vp-1199-full {
@@ -220,7 +221,7 @@
     transform: rotate(180deg);
 
     &:active svg {
-      color: #fff;
+      color: $color-default-white;
     }
 
     @include vp-1365 {
