@@ -4340,10 +4340,6 @@ button,
     padding-bottom: 207px;
   }
 
-  .coaches__button--next {
-    right: -72px;
-  }
-
   .reviews__text {
     line-height: 23px;
   }
@@ -4537,6 +4533,10 @@ button,
 
   .coaches__button {
     top: 74%;
+  }
+
+  .coaches__button--next {
+    right: -72px;
   }
 
   .coaches__button--prev {
@@ -6261,10 +6261,6 @@ button,
     line-height: 20px;
   }
 
-  .coaches__button--next {
-    right: -19px;
-  }
-
   .contacts {
     min-height: 351px;
     padding: 60px 160px 49px 134px;
@@ -6656,6 +6652,10 @@ button,
 
   .coaches__button {
     top: 56%;
+  }
+
+  .coaches__button--next {
+    right: -19px;
   }
 
   .coaches__button--prev {
