@@ -1,12 +1,12 @@
 .about {
   display: grid;
-  place-content: center;
+  // place-content: center;
 }
 
 .about__wrapper {
   @include vp-1365 {
     display: grid;
-    padding: 120px 104px 8px 162px;
+    padding: 120px 104px 125px 162px;
     grid-template-columns: auto 660px;
     column-gap: 80px;
     justify-content: center;
@@ -34,33 +34,36 @@
     justify-content: center;
     align-items: center;
     padding-bottom: 72px;
+    margin: 0;
+    min-width: 320px;
+    max-width: 767px;
   }
 
-  img {
-    height: 100%;
-    background-color: $link-water;
+  // img {
+  //   height: 100%;
+  //   background-color: $link-water;
 
-    @include vp-1365 {
-      width: 660px;
-      height: 401px;
-    }
+  //   @include vp-1365 {
+  //     width: 660px;
+  //     height: 401px;
+  //   }
 
-    @include vp-1199 {
-      width: 660px;
-      height: 401px;
-    }
+  //   @include vp-1199 {
+  //     width: 660px;
+  //     height: 401px;
+  //   }
 
-    @include vp-767 {
-      width: 678px;
-      height: 345px;
-    }
+  //   @include vp-767 {
+  //     width: 678px;
+  //     height: 345px;
+  //   }
 
-    @include vp-319 {
-      width: 320px;
-      height: 313px;
-      margin-bottom: 40px;
-    }
-  }
+  //   @include vp-319 {
+  //     width: 320px;
+  //     height: 313px;
+  //     margin-bottom: 40px;
+  //   }
+  // }
 }
 
 .about__gym {
@@ -88,7 +91,7 @@
   }
 
   @include vp-319 {
-    margin: 63px 15px 33px;
+    padding: 63px 20px 33px 6px;
   }
 
   h2 {
@@ -157,17 +160,13 @@
   line-height: 24px;
   font-weight: 300px;
 
-  @include vp-1365 {
-    margin-bottom: -7px;
-  }
-
-  @include vp-1199 {
+  @include vp-1199-full {
     margin-bottom: -7px;
   }
 
   @include vp-767 {
     max-width: 512px;
-    margin: 0 0 44px 9px;
+    margin: 0 0 44px 5px;
   }
 
   @include vp-319 {
@@ -182,28 +181,280 @@
   }
 }
 
-.about__media__videoplayer {
+.about__media {
+  width: 100%;
+  min-width: 320px;
+  max-width: 660px;
+  min-height: 511px;
   position: relative;
-  content: "";
+
+  @include vp-1199-full {
+    padding: 0 0 110px 0;
+    max-width: 100%;
+    min-height: 0;
+  }
+
+  @include vp-767 {
+    padding: 0;
+    width: 100vw;
+    max-width: 100vw;
+  }
+}
+
+.about__photo {
+  width: 100%;
+  background-color: $dark-grey;
+
+  @include vp-1199-full {
+    margin: 0 auto;
+    width: 660px;
+    height: 401px;
+    aspect-ratio: auto;
+  }
+
+  @include vp-767 {
+    margin: 0 auto;
+    max-width: 678px;
+    height: auto;
+    min-height: 313px;
+  }
+
+  @include vp-319 {
+    margin-bottom: 40px;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include vp-767-full {
+      max-height: 460px;
+    }
+
+    @include vp-319 {
+      max-width: 678px;
+      max-height: 345px;
+    }
+  }
+}
+
+.about__video {
+  position: absolute;
+  top: 288px;
+  left: -80px;
+  width: 364px;
+  height: 228px;
+  background-color: $egyptian-blue;
 
   @include vp-1365 {
-    top: -112px;
-    left: -63px;
+    top: 285px;
+    left: 18.5%;
+    transform: translateX(-50%);
   }
 
   @include vp-1199 {
-    top: -112px;
-    left: -50px;
+    top: 285px;
+    left: 22%;
+    transform: translateX(-50%);
   }
 
   @include vp-767 {
-    top: -112px;
-    left: 50%;
+    position: relative;
+    top: -84px;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 167px;
     width: 266px;
+    transform: translateX(0);
+    margin: 0 auto;
   }
 
-  @include vp-767 {
-    top: -83px;
-    left: 205px;
+  @include vp-319 {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 167px;
+    width: 320px;
+    transform: translateX(0);
+    margin: 0 auto;
   }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.about__videoplayer {
+  width: 100%;
+  height: 100%;
+
+  @include vp-767-full {
+    aspect-ratio: 320/167;
+  }
+}
+
+.about__play-button {
+  padding: 0;
+  position: absolute;
+  content: "";
+  width: 72px;
+  height: 72px;
+  top: 50%;
+  left: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  background: transparent;
+  border: none;
+  z-index: 3;
+  cursor: pointer;
+
+  @include vp-767 {
+    width: 52px;
+    height: 52px;
+  }
+
+  @include vp-319 {
+    width: 52px;
+    height: 52px;
+  }
+
+  svg {
+    width: 17px;
+    height: 17px;
+
+    @include vp-767 {
+      width: 12px;
+      height: 12px;
+    }
+
+    @include vp-319 {
+      width: 12px;
+      height: 12px;
+    }
+  }
+
+  &::before {
+    display: block;
+    background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+    position: absolute;
+    width: 72px;
+    height: 72px;
+    content: "";
+    top: 0;
+    left: 0;
+    z-index: 1;
+    border-radius: 50%;
+
+    @include vp-767 {
+      width: 52px;
+      height: 52px;
+    }
+
+    @include vp-319 {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    transform: translate(-14%, -14%);
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    inset: 0;
+    background: linear-gradient(97.05deg, #ed023333 17.6%, #003eb733 95.31%) border-box;
+    mask:
+      linear-gradient(#fff 0 0) padding-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+          mask-composite: exclude;
+    border: 2px solid transparent;
+
+    @include vp-767 {
+      width: 73px;
+      height: 73px;
+    }
+
+    @include vp-319 {
+      width: 73px;
+      height: 73px;
+    }
+  }
+
+  &:hover::before,
+  &:focus::before,
+  &:active::before  {
+    background: $color-default-white;
+  }
+
+  &:hover::after,
+  &:focus::after,
+  &:active::after {
+    opacity: 1;
+    border: solid 2px $sapphire;
+  }
+
+  &:active::before {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 58px;
+    height: 58px;
+    @include hover;
+    background-color: $color-default-white;
+
+    @include vp-1199-full {
+      width: 48.5px;
+      height: 48.5px;
+    }
+
+    @include vp-767 {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include vp-319 {
+      width: 40px;
+      height: 40px;
+    }
+  }
+
+  &:hover svg,
+  &:focus svg,
+  &:active svg {
+    @include hover;
+    color: $sapphire;
+  }
+}
+
+.about__play-button.is-disabled {
+  opacity: 0.4;
+  pointer-events: none;
+  cursor: default;
+
+  &::before {
+    background: $color-default-white;
+  }
+
+  & svg {
+    color: $sapphire
+  }
+}
+
+.about__play-button svg {
+  position: absolute;
+  color: $color-default-white;
+  top: 50%;
+  left: 50%;
+  transform: translate(-35%, -50%);
+  z-index: 4;
 }

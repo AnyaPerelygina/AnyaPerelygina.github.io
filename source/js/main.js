@@ -4,7 +4,7 @@ import {Form} from './modules/form-validate/form';
 import {initCoachesSlider, initSliderReviews} from './modules/slider.js';
 import {initTabs} from './modules/tabs/init-tabs.js';
 import {initAccordions} from './modules/init-accordion';
-import './modules/play-video.js';
+import {initVideoPlayer} from './modules/init-video-player.js';
 
 // ---------------------------------
 
@@ -18,6 +18,7 @@ window.addEventListener('DOMContentLoaded', () => {
   initCoachesSlider();
   initSliderReviews();
   initAccordions();
+  initVideoPlayer();
 
   const form = new Form();
   window.form = form;
