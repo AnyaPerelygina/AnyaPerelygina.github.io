@@ -1253,11 +1253,6 @@ button.swiper-pagination-bullet {
 
 .accordion__element {
   margin-bottom: 34px;
-  padding: 10px;
-}
-
-.accordion__element.is-active > .accordion__button {
-  opacity: 0.5;
 }
 
 .accordion__button {
@@ -1727,18 +1722,19 @@ button,
 }
 
 .accordion__element h3 {
-  width: 94%;
-  margin-top: 6px;
-  margin-bottom: 18px;
+  font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
-  font-weight: 500;
+  font-weight: 600;
   line-height: 120%;
   letter-spacing: 0.1px;
   text-align: start;
+  width: 94%;
+  margin-top: 6px;
+  margin-bottom: 13px;
 }
 
 .accordion__element:last-child {
-  padding-top: 27px;
+  padding-top: 22px;
 }
 
 .accordion__element.is-active {
@@ -1750,7 +1746,7 @@ button,
   width: 42px;
   height: 42px;
   margin: 0;
-  right: -9.5px;
+  right: 0.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1839,12 +1835,12 @@ button,
 }
 
 .accordion__content p {
-  width: 78%;
-  margin: 0;
   font-size: 18px;
   font-weight: 300;
   line-height: 140%;
   text-align: start;
+  width: 78%;
+  margin: 0;
 }
 
 .advantages {
@@ -2694,7 +2690,7 @@ button,
   font-weight: 500;
   background-color: #F8F9FC;
   color: #102654;
-  padding: 119px 103px 115px 102px;
+  padding: 119px 92px 115px 102px;
 }
 
 .faq h2 {
@@ -2721,14 +2717,14 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -webkit-column-gap: 20px;
-  -moz-column-gap: 20px;
-  column-gap: 20px;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #F8F9FC;
   max-height: 770px;
+  -webkit-column-gap: 37px;
+  -moz-column-gap: 37px;
+  column-gap: 37px;
 }
 
 .faq__controls {
@@ -2810,6 +2806,12 @@ button,
   -ms-flex-align: start;
   align-items: start;
   width: 74.3%;
+}
+
+.faq__content {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .faq__content ul {
@@ -4100,23 +4102,16 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 100%;
-  margin-bottom: 40px;
 }
 
 .tabs__control {
   cursor: pointer;
-  min-width: auto;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
 }
 
 .tabs__content {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
-  margin-bottom: 40px;
   -webkit-transition: height 0.3s;
   transition: height 0.3s;
 }
@@ -4184,6 +4179,14 @@ button,
   }
 */
 
+@media (min-width: 374px) {
+  .faq__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
 @media (min-width: 1024px) {
   .contacts h3 {
     max-width: 462px;
@@ -4211,6 +4214,10 @@ button,
 }
 
 @media (min-width: 1200px) {
+  .accordion__element {
+    margin-bottom: 16px;
+  }
+
   .reviews__text {
     line-height: 23px;
   }
@@ -4266,6 +4273,14 @@ button,
   .about__media__videoplayer {
     top: -112px;
     left: -63px;
+  }
+
+  .accordion__element h3 br {
+    display: none;
+  }
+
+  .accordion__content p br {
+    display: none;
   }
 
   .advantages {
@@ -4689,13 +4704,6 @@ button,
   }
 }
 
-@media screen and (max-width: 1023px) {
-  .tabs__control {
-    margin: 0 10px;
-    padding: 15px;
-  }
-}
-
 @media (max-width: 767px) {
   .about__wrapper {
     display: -webkit-box;
@@ -4739,6 +4747,56 @@ button,
   .about__description {
     max-width: 261px;
     margin: 0;
+  }
+
+  .accordion {
+    min-width: 290px;
+    min-height: 480px;
+    padding: 0;
+  }
+
+  .accordion__element h3 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    width: 88.5%;
+    min-height: 84px;
+    margin-bottom: -7px;
+  }
+
+  .accordion__element {
+    padding-top: 14px;
+  }
+
+  .accordion__element:last-child {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+  }
+
+  .accordion__element.is-active {
+    margin-bottom: 20px;
+  }
+
+  .accordion__button {
+    width: 32px;
+    height: 32px;
+    margin-top: 8%;
+  }
+
+  .accordion__button::before {
+    width: 12px;
+  }
+
+  .accordion__button::after {
+    width: 12px;
+  }
+
+  .accordion__content p {
+    font-size: 16px;
+    line-height: 23px;
+    min-width: 290px;
+    min-height: 90px;
   }
 
   .advantages {
@@ -4948,6 +5006,50 @@ button,
   .contacts__info {
     font-size: 18px;
     line-height: 28px;
+  }
+
+  .faq {
+    padding: 70px 15px 38px;
+  }
+
+  .faq h2 {
+    font-size: 32px;
+    line-height: 40px;
+    letter-spacing: 1px;
+    text-align: center;
+    margin: 0 0 28px;
+  }
+
+  .faq__controls {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    min-width: 290px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  .faq__control {
+    font-size: 16px;
+    line-height: 16px;
+    width: 141px;
+    height: 44px;
+    padding: 15px;
+    margin: 0;
+  }
+
+  .faq__content {
+    min-height: 514px;
+  }
+
+  .faq__content ul {
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-bottom: 0;
   }
 
   .feedback {
@@ -5560,15 +5662,6 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
-
-  .tabs__control {
-    margin: 10px 2% 0;
-    padding: 10px;
-  }
-
-  .tabs__element {
-    padding: 15px;
-  }
 }
 
 @media (max-width: 767px) and (hover: hover) {
@@ -5867,6 +5960,11 @@ button,
     left: 205px;
   }
 
+  .accordion__element {
+    padding-top: 20px;
+    margin-bottom: 8px;
+  }
+
   .accordion__button {
     top: 0;
     right: 0;
@@ -5939,6 +6037,14 @@ button,
   .contacts__info {
     font-size: 18px;
     line-height: 20px;
+  }
+
+  .faq h2 {
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: 0.96px;
+    margin-top: 25px;
+    margin-bottom: 31px;
   }
 
   .feedback {
@@ -6133,6 +6239,14 @@ button,
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
+  .accordion__element h3 br {
+    display: none;
+  }
+
+  .accordion__content p br {
+    display: none;
+  }
+
   .advantages {
     padding: 90px 40px 95px;
   }

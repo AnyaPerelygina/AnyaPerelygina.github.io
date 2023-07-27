@@ -5,6 +5,12 @@
   color: $sapphire;
   font-family: $base-font;
   font-style: normal;
+
+  @include vp-319 {
+    min-width: 290px;
+    min-height: 480px;
+    padding: 0;
+  }
 }
 
 .accordion__element {
@@ -16,61 +22,87 @@
   border-top: 1px solid #1c337433;
 
   h3 {
-    width: 94%;
-    margin-top: 6px;
-    margin-bottom: 18px;
+    font-family: $base-font;
     font-size: 24px;
-    font-weight: 500;
+    font-weight: 600;
     line-height: 120%;
     letter-spacing: 0.1px;
     text-align: start;
+    width: 94%;
+    margin-top: 6px;
+    margin-bottom: 13px;
 
-    // @include vp-767 {
-    //   width: 82%;
-    //   margin-bottom: 12px;
-    //   font-size: 18px;
-    //   letter-spacing: 0;
-    // }
+    @include vp-1365 {
+      br {
+        display: none;
+      }
+    }
+
+    @include vp-767-full {
+      br {
+        display: none;
+      }
+    }
+
+    @include vp-319 {
+      font-size: 18px;
+      line-height: 22px;
+      letter-spacing: 0px;
+      width: 88.5%;
+      min-height: 84px;
+      margin-bottom: -7px;
+    }
   }
 
-  // @include vp-1199-full {
-  //   margin-bottom: 16px;
-  // }
+  @include vp-1199-full {
+    margin-bottom: 16px;
+  }
 
-  // @include vp-767 {
-  //   padding-top: 20px;
-  //   margin-bottom: 8px;
-  // }
+  @include vp-767 {
+    padding-top: 20px;
+    margin-bottom: 8px;
+  }
+
+  @include vp-319 {
+    padding-top: 14px;
+  }
 }
 
 .accordion__element:last-child {
-  padding-top: 27px;
+  padding-top: 22px;
 
-  // @include vp-767 {
-  //   padding-top: 20px;
-  //   margin-bottom: 8px;
-  // }
+  @include vp-319 {
+    padding-top: 14px;
+    padding-bottom: 4px;
+    border-bottom: 1px solid #1c337433;
+  }
 }
 
 .accordion__element.is-active {
   height: 100%;
   margin-bottom: 25px;
 
-  // @include vp-767 {
-  //   margin-bottom: 20px;
-  // }
+  @include vp-319 {
+    margin-bottom: 20px;
+  }
 }
 
 .accordion__button {
   width: 42px;
   height: 42px;
   margin: 0;
-  right: -9.5px;
+  right: 0.5px;
   display: flex;
   position: relative;
   background: transparent;
   border-radius: 50%;
   border: 1px solid $sapphire;
+
+  @include vp-319 {
+    width: 32px;
+    height: 32px;
+    margin-top: 8%;
+  }
 
   &::before {
     content: "";
@@ -81,6 +113,10 @@
     height: 1px;
     display: block;
     width: 18px;
+
+    @include vp-319 {
+      width: 12px;
+    }
   }
 
   &::after {
@@ -93,6 +129,10 @@
     height: 1px;
     display: block;
     width: 18px;
+
+    @include vp-319 {
+      width: 12px;
+    }
   }
 
   @include vp-1199 {
@@ -167,111 +207,32 @@
   }
 }
 
-// .accordion__button {
-//   position: absolute;
-//   content: "";
-//   top: 26px;
-//   right: 0;
-//   width: 42px;
-//   height: 42px;
-//   border-radius: 50%;
-//   background-color: $ghost-white;
-//   border: 1px solid $sapphire;
-
-
-
-//   // @include vp-767 {
-//   //   top: 37px;
-//   //   width: 32px;
-//   //   height: 32px;
-//   // }
-// }
-
-// .accordion__btn-transform {
-//   position: relative;
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-//   transition: all 0.75s ease-in-out;
-//   background-color: $ghost-white;
-// }
-
-// .accordion__btn-transform::before {
-//   position: absolute;
-//   content: "+";
-//   display: flex;
-//   justify-content: center;
-//   align-items: center;
-//   width: 18px;
-//   height: 18px;
-//   font-size: 32px;
-//   font-weight: 300;
-//   color: $resolution-blue;
-//   background-color: $ghost-white;
-
-//   // @include vp-767 {
-//   //   width: 12px;
-//   //   height: 12px;
-//   // }
-// }
-
-// .accordion__button:hover,
-// .accordion__button:focus {
-//   background-color: $resolution-blue;
-// }
-
-// .accordion__button:hover > .accordion__btn-transform::before,
-// .accordion__button:focus > .accordion__btn-transform::before {
-//   color: $color-default-white;
-//   background-color: $resolution-blue;
-// }
-
-// .is-active > .accordion__button {
-//   color: $color-default-white;
-//   background-color: $resolution-blue;
-// }
-
-// .is-active > .accordion__button > .accordion__btn-transform::before {
-//   content: "-";
-//   color: $color-default-white;
-//   background-color: $resolution-blue;
-// }
-
-// @include vp-1199-full {
-//   .accordion__element:last-child > .accordion__button {
-//     top: 33px;
-//   }
-// }
-
-// @include vp-767 {
-//   .accordion__element:last-child > .accordion__button {
-//     top: 30%;
-//   }
-// }
-
-// .accordion__content {
-//   width: 89.3%;
-
-//   @include vp-767 {
-//     width: 100%;
-//   }
-// }
-
 .accordion__content {
   p {
-    width: 78%;
-    margin: 0;
     font-size: 18px;
     font-weight: 300;
     line-height: 140%;
     text-align: start;
+    width: 78%;
+    margin: 0;
 
-    // @include vp-767 {
-    //   font-size: 16px;
-    // }
+    @include vp-1365 {
+      br {
+        display: none;
+      }
+    }
 
-    // @include vp-767 {
-    //   width: 100%;
-    // }
+    @include vp-767-full {
+      br {
+        display: none;
+      }
+    }
+
+    @include vp-319 {
+      font-size: 16px;
+      line-height: 23px;
+      min-width: 290px;
+      min-height: 90px;
+    }
   }
 }
