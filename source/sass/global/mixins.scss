@@ -118,7 +118,7 @@
 }
 
 @mixin vp-374 {
-  @media (min-width: ($vp-375 - 1px)) {
+  @media (min-width: ($vp-375 - 1px)) and (max-width: ($vp-768 - 1px)) {
     @content;
   }
 }

@@ -6,6 +6,10 @@
   color: $sapphire;
   padding: 119px 92px 115px 102px;
 
+  @include vp-767 {
+    padding: 73px 45px 99px;
+  }
+
   @include vp-319 {
     padding: 70px 15px 38px;
   }
@@ -26,9 +30,10 @@
     @include vp-767 {
       font-size: 42px;
       line-height: 51px;
-      letter-spacing: 0.96px;
+      letter-spacing: 1.3px;
       margin-top: 25px;
-      margin-bottom: 31px;
+      margin-bottom: 39px;
+      text-align: center;
     }
 
     @include vp-319 {
@@ -50,6 +55,10 @@
   max-height: 770px;
   column-gap: 37px;
 
+  @include vp-767 {
+    width: 678px;
+  }
+
   @include vp-374 {
     justify-content: center;
   }
@@ -63,6 +72,13 @@
   row-gap: 10px;
   max-width: 260px;
   max-height: 246px;
+
+  @include vp-767 {
+    flex-direction: row;
+    justify-content: space-between;
+    min-width: 678px;
+    margin-bottom: 40px;
+  }
 
   @include vp-319 {
     flex-direction: row;
@@ -81,12 +97,21 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 17.5px 18px 17.5px 18px;
+  padding: 16.5px 18px;
   margin: 0;
   background-color: transparent;
   background-image: none;
   border: 1px solid #10265433;
   cursor: pointer;
+
+  @include vp-1365 {
+    width: 260px;
+  }
+
+  @include vp-767-full {
+    width: 162px;
+    padding: 18px 58px;
+  }
 
   @include vp-319 {
     font-size: 16px;
@@ -107,7 +132,8 @@
   &:active {
     color: $color-default-white;
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
-    border: none
+    border: none;
+    padding: 19px 59px;
   }
 
   &:disabled {
@@ -119,12 +145,9 @@
   &.is-active {
     background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
     border: none;
+    padding: 19px 59px;
+    color: $color-default-white;
   }
-}
-
-.faq__control.is-active {
-  background-image: $torch-red;
-  color: $color-default-white;
 }
 
 .faq__content {

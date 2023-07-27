@@ -1721,6 +1721,16 @@ button,
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 }
 
+.accordion__element:last-child {
+  padding: 29px 0 17px;
+  border-bottom: 1px solid rgba(28, 51, 116, 0.2);
+}
+
+.accordion__element.is-active {
+  height: 100%;
+  margin-bottom: 25px;
+}
+
 .accordion__element h3 {
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-size: 24px;
@@ -1731,15 +1741,6 @@ button,
   width: 94%;
   margin-top: 6px;
   margin-bottom: 13px;
-}
-
-.accordion__element:last-child {
-  padding-top: 22px;
-}
-
-.accordion__element.is-active {
-  height: 100%;
-  margin-bottom: 25px;
 }
 
 .accordion__button {
@@ -2761,7 +2762,7 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 17.5px 18px 17.5px 18px;
+  padding: 16.5px 18px;
   margin: 0;
   background-color: transparent;
   background-image: none;
@@ -2780,6 +2781,7 @@ button,
   color: #ffffff;
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   border: none;
+  padding: 19px 59px;
 }
 
 .faq__control:disabled {
@@ -2791,10 +2793,7 @@ button,
 .faq__control.is-active {
   background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
   border: none;
-}
-
-.faq__control.is-active {
-  background-image: #ED0233;
+  padding: 19px 59px;
   color: #ffffff;
 }
 
@@ -4099,9 +4098,6 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
 }
 
 .tabs__control {
@@ -4178,14 +4174,6 @@ button,
     }
   }
 */
-
-@media (min-width: 374px) {
-  .faq__container {
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-  }
-}
 
 @media (min-width: 1024px) {
   .contacts h3 {
@@ -4273,6 +4261,10 @@ button,
   .about__media__videoplayer {
     top: -112px;
     left: -63px;
+  }
+
+  .accordion__element h3 {
+    letter-spacing: 0;
   }
 
   .accordion__element h3 br {
@@ -4403,6 +4395,10 @@ button,
     -ms-grid-column-span: 2;
     grid-column: span 2;
     max-width: 227px;
+  }
+
+  .faq__control {
+    width: 260px;
   }
 
   .footer {
@@ -4755,15 +4751,6 @@ button,
     padding: 0;
   }
 
-  .accordion__element h3 {
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0px;
-    width: 88.5%;
-    min-height: 84px;
-    margin-bottom: -7px;
-  }
-
   .accordion__element {
     padding-top: 14px;
   }
@@ -4771,11 +4758,19 @@ button,
   .accordion__element:last-child {
     padding-top: 14px;
     padding-bottom: 4px;
-    border-bottom: 1px solid rgba(28, 51, 116, 0.2);
   }
 
   .accordion__element.is-active {
     margin-bottom: 20px;
+  }
+
+  .accordion__element h3 {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0px;
+    width: 88.5%;
+    min-height: 84px;
+    margin-bottom: -7px;
   }
 
   .accordion__button {
@@ -5726,10 +5721,6 @@ button,
     left: -50px;
   }
 
-  .accordion__button {
-    right: 0;
-  }
-
   .contacts {
     height: 336px;
     padding: 63px 133px 39px 133px;
@@ -5960,24 +5951,23 @@ button,
     left: 205px;
   }
 
+  .accordion {
+    min-width: 678px;
+  }
+
   .accordion__element {
-    padding-top: 20px;
-    margin-bottom: 8px;
+    padding-top: 22px;
+    margin-bottom: 20px;
   }
 
-  .accordion__button {
-    top: 0;
-    right: 0;
-    padding: 16px;
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
+  .accordion__element:last-child {
+    padding-top: 31px;
+    padding-bottom: 14px;
   }
 
-  .accordion__button::before,
-  .accordion__button::after {
-    left: 29%;
-    width: 13px;
+  .accordion__element:last-child h3 {
+    padding: 0 161px 0 0;
+    margin-top: -4px;
   }
 
   .accordion__button span:first-child {
@@ -6039,12 +6029,33 @@ button,
     line-height: 20px;
   }
 
+  .faq {
+    padding: 73px 45px 99px;
+  }
+
   .faq h2 {
     font-size: 42px;
     line-height: 51px;
-    letter-spacing: 0.96px;
+    letter-spacing: 1.3px;
     margin-top: 25px;
-    margin-bottom: 31px;
+    margin-bottom: 39px;
+    text-align: center;
+  }
+
+  .faq__container {
+    width: 678px;
+  }
+
+  .faq__controls {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    min-width: 678px;
+    margin-bottom: 40px;
   }
 
   .feedback {
@@ -6239,8 +6250,29 @@ button,
 }
 
 @media (min-width: 768px) and (max-width: 1365px) {
+  .accordion__element h3 {
+    font-weight: 500;
+    line-height: 24px;
+    width: 93.8%;
+    margin-top: 9px;
+    margin-bottom: 16px;
+  }
+
   .accordion__element h3 br {
     display: none;
+  }
+
+  .accordion__button {
+    width: 42px;
+    height: 42px;
+  }
+
+  .accordion__button::before {
+    width: 18px;
+  }
+
+  .accordion__button::after {
+    width: 18px;
   }
 
   .accordion__content p br {
@@ -6330,6 +6362,11 @@ button,
   .advantages__description h3 {
     font-size: 20px;
     line-height: 30px;
+  }
+
+  .faq__control {
+    width: 162px;
+    padding: 18px 58px;
   }
 
   .footer {
@@ -6604,6 +6641,14 @@ button,
     line-height: 12px;
     padding: 14px 49px;
     border: 2px solid #ffffff;
+  }
+}
+
+@media (min-width: 374px) and (max-width: 767px) {
+  .faq__container {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 }
 
