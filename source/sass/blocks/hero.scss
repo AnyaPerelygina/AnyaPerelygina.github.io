@@ -52,14 +52,14 @@
         top: 193px;
         left: -180px;
     }
-}
 
-.hero__item {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: $color-default-white;
-    text-align: right;
+    li {
+      font-size: 14px;
+      line-height: 21px;
+      font-weight: 400;
+      color: $color-default-white;
+      text-align: right;
+  }
 }
 
 .hero__wrapper {
@@ -74,9 +74,9 @@
     @include vp-319 {
         padding: 6px 0 0;
     }
-}
 
-.hero__location {
+
+  span {
     font-family: $alumni-sans-font;
     font-style: normal;
     font-weight: 600;
@@ -101,9 +101,9 @@
         line-height: 34px;
         margin-right: 4px;
     }
-}
+  }
 
-.hero__title {
+  h1 {
     font-family: $alumni-sans-font;
     font-style: normal;
     font-weight: 800;
@@ -138,6 +138,7 @@
         margin: 0 0 23px 30px;
         padding-top: 10px;
     }
+  }
 }
 
 .hero__button {

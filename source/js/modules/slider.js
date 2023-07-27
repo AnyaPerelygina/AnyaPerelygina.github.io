@@ -1,7 +1,6 @@
 import Swiper from '../vendor/swiper'
 const buttonNext = document.querySelector('.coaches__button--next');
 const buttonPrev = document.querySelector('.coaches__button--prev');
-// eslint-disable-next-line no-undef
 
 const sliderCoaches = document.querySelector('.coaches__swiper');
 
@@ -35,7 +34,6 @@ const initCoachesSlider = () => {
   }
 };
 
-// eslint-disable-next-line no-undef
 const sliderReviews = document.querySelector('.reviews__swiper');
 const reviewsButtonNext = document.querySelector('.reviews__button--next');
 const reviewsButtonPrev = document.querySelector('.reviews__button--prev');

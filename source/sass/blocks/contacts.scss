@@ -122,6 +122,57 @@
   }
 }
 
+.contacts__item {
+  p {
+    font-family: $base-font;
+    font-size: 16px;
+    font-weight: 700;
+    color: $sapphire;
+    margin: 0;
+    padding: 0;
+
+    @include vp-1199 {
+      font-size: 20px;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    @include vp-767 {
+      font-size: 20px;
+      line-height: 20px;
+      display: block;
+      margin-bottom: 13px;
+    }
+
+    @include vp-319 {
+      font-size: 20px;
+      line-height: 30px;
+      margin-bottom: 3px;
+    }
+  }
+
+  span {
+    font-family: $base-font;
+    font-size: 14px;
+    font-weight: 400;
+    color: $sapphire;
+
+    @include vp-1199 {
+      font-size: 18px;
+    }
+
+    @include vp-767 {
+      font-size: 18px;
+      line-height: 20px;
+    }
+
+    @include vp-319 {
+      font-size: 18px;
+      line-height: 28px;
+    }
+  }
+}
+
 .contacts__item--address {
   width: 37%;
 
@@ -185,54 +236,5 @@
   @include vp-319 {
     width: 100%;
     order: 2;
-  }
-}
-
-.contacts__text {
-  font-family: $base-font;
-  font-size: 16px;
-  font-weight: 700;
-  color: $sapphire;
-  margin: 0;
-  padding: 0;
-
-  @include vp-1199 {
-    font-size: 20px;
-    display: block;
-    margin-bottom: 10px;
-  }
-
-  @include vp-767 {
-    font-size: 20px;
-    line-height: 20px;
-    display: block;
-    margin-bottom: 13px;
-  }
-
-  @include vp-319 {
-    font-size: 20px;
-    line-height: 30px;
-    margin-bottom: 3px;
-  }
-}
-
-.contacts__info {
-  font-family: $base-font;
-  font-size: 14px;
-  font-weight: 400;
-  color: $sapphire;
-
-  @include vp-1199 {
-    font-size: 18px;
-  }
-
-  @include vp-767 {
-    font-size: 18px;
-    line-height: 20px;
-  }
-
-  @include vp-319 {
-    font-size: 18px;
-    line-height: 28px;
   }
 }
