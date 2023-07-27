@@ -1,41 +1,46 @@
 import Swiper from '../vendor/swiper'
 
 // eslint-disable-next-line no-undef
-const initCoachSlider = () => {
-  new Swiper('.coach__sliders', {
-    loop: true,
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
+
+const sliderCoaches = document.querySelector('.coaches__swiper');
+const buttonNext = document.querySelector('.coaches__button--next');
+const buttonPrev = document.querySelector('.coaches__button--prev');
+
+const initCoachesSlider = () => {
+  if (sliderCoaches) {
+    new Swiper(sliderCoaches, {
+
+      navigation: {
+        nextEl: buttonNext,
+        prevEl: buttonPrev,
       },
-      768: {
-        slidesPerView: 2,
-        spaceBetween: 30,
+
+      loop: true,
+      breakpoints: {
+        1200: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 30,
+        },
+
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+        },
       },
-      1200: {
-        slidesPerView: 3,
-        slidesPerView: 4,
-        spaceBetween: 40,
-      },
-      1366: {
-        slidesPerView: 4,
-      },
-    },
-    navigation: {
-      nextEl: '.coach__button--next',
-      prevEl: '.coach__button--prev',
-    },
-  })
+    });
+  }
 };
 
 // eslint-disable-next-line no-undef
 const sliderReviews = document.querySelector('.reviews__swiper');
-const buttonNext = document.querySelector('.reviews__button--next');
-const buttonPrev = document.querySelector('.reviews__button--prev');
 
 const initSliderReviews = () => {
   if (sliderReviews) {
-    // eslint-disable-next-line
     new Swiper(sliderReviews, {
 
       navigation: {
@@ -49,4 +54,20 @@ const initSliderReviews = () => {
   }
 };
 
-export {initCoachSlider, initSliderReviews};
+const slides = document.querySelectorAll('.swiper-slide');
+
+const getSlidesTabs = () => {
+  const slidesObserver = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.setAttribute('tabindex', '0');
+      } else {
+        entry.target.removeAttribute('tabindex', '0');
+      }
+    });
+  });
+
+  slides.forEach((slide) => slidesObserver.observe(slide));
+};
+
+export {initCoachesSlider, initSliderReviews, getSlidesTabs};

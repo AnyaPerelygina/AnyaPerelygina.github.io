@@ -29,6 +29,10 @@
         position: relative;
         top: -41px;
     }
+
+  @media (max-width: 767px){
+    display: none;
+  }
 }
 
 .hero__list {
@@ -185,11 +189,5 @@
         height: 59px;
         padding: 27px 76px;
         margin: -1px 0 78px -1px;
-    }
-}
-
-.hero__image {
-    @media (max-width: 767px){
-        display: none;
     }
 }
