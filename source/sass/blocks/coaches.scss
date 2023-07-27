@@ -1,5 +1,15 @@
 .coaches {
-  padding-bottom: 207px;
+  @include vp-1199-full {
+    padding-bottom: 207px;
+  }
+
+  @include vp-767 {
+    padding: 34px 47px 115px;
+  }
+
+  @include vp-319 {
+    padding: 0px 47px 67px;
+  }
 }
 
 .coaches__wrapper {
@@ -14,7 +24,12 @@
   }
 
   @include vp-767 {
+    max-height: 363px;
     // padding: 33px 0 70px;
+  }
+
+  @include vp-319 {
+    max-height: 100%;
   }
 
   h2 {
@@ -34,11 +49,19 @@
     }
 
     @include vp-767 {
-      margin: 0 0 42px;
-      font-size: 32px;
-      line-height: 38.4px;
+      font-size: 42px;
+      line-height: 51px;
       letter-spacing: 1px;
       text-align: center;
+      margin: 0 0 31px;
+    }
+
+    @include vp-319 {
+      font-size: 32px;
+      line-height: 39px;
+      letter-spacing: 1px;
+      text-align: center;
+      margin-bottom: 44px;
     }
   }
 }
@@ -55,6 +78,10 @@
   }
 
   @include vp-767 {
+    margin: 0 54px;
+  }
+
+  @include vp-319 {
     margin: 0 30px;
   }
 }
@@ -64,25 +91,37 @@
   color: $color-default-white;
   background-color: $sapphire;
   overflow: hidden;
-  width: 260;
-  height: 294;
 
   @include vp-1199 {
-    min-width: 268px;
-    min-height: 294px;
+    // min-width: 268px;
+    // min-height: 294px;
     aspect-ratio: 268/294;
   }
 
   @include vp-767 {
-    min-width: 226px;
-    min-height: 274px;
+    max-width: 268px;
+    max-height: 294px;
     aspect-ratio: 230/274;
   }
 
+  @include vp-319 {
+    max-width: 226px;
+    max-height: 274px;
+  }
+
   img {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
+
+    @include vp-767 {
+      width: 268px;
+      height: 294px;
+      aspect-ratio: 230/274;
+    }
+
+    @include vp-319 {
+      width: 226px;
+      height: 274px;
+    }
   }
 
   h3 {
@@ -125,7 +164,11 @@
   transition: transform 0.5s ease 0s;
 
   @include vp-767 {
-    padding: 60px 9px;
+    padding: 55px 9px;
+  }
+
+  @include vp-319 {
+    padding: 44px 0 20px;
   }
 
   h4 {
@@ -155,7 +198,11 @@
     }
 
     @include vp-767 {
-      margin: 0 3px 33px;
+      margin: 0 3px 35px;
+    }
+
+    @include vp-319 {
+      margin: 0 auto 33px;
     }
   }
 
@@ -166,10 +213,18 @@
     margin: 0 auto;
     padding: 0;
     max-width: 132px;
+
+    @include vp-767 {
+      line-height: 20px;
+    }
+
+    @include vp-319 {
+      line-height: 21px;
+    }
   }
 
   li {
-    margin: 0 0 13px 0;
+    margin: 0 0 13px;
     display: list-item;
     list-style: disc;
   }
@@ -211,7 +266,7 @@
   }
 
   @include vp-319 {
-    top: 54%;
+    top: 57%;
     width: 31px;
     height: 31px;
 
@@ -229,6 +284,10 @@
 
     @include vp-1199-full {
       right: -72px;
+    }
+
+    @include vp-767 {
+      right: -19px;
     }
 
     @include vp-319 {

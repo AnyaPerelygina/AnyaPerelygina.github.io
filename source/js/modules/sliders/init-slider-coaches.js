@@ -1,12 +1,10 @@
-import Swiper from '../vendor/swiper'
+const sliderCoaches = document.querySelector('.coaches__swiper');
 const buttonNext = document.querySelector('.coaches__button--next');
 const buttonPrev = document.querySelector('.coaches__button--prev');
-// eslint-disable-next-line no-undef
-
-const sliderCoaches = document.querySelector('.coaches__swiper');
 
 const initCoachesSlider = () => {
   if (sliderCoaches) {
+    // eslint-disable-next-line
     new Swiper(sliderCoaches, {
 
       navigation: {
@@ -15,6 +13,7 @@ const initCoachesSlider = () => {
       },
 
       loop: true,
+
       breakpoints: {
         1200: {
           slidesPerView: 4,
@@ -35,22 +34,4 @@ const initCoachesSlider = () => {
   }
 };
 
-// eslint-disable-next-line no-undef
-const sliderReviews = document.querySelector('.reviews__swiper');
-
-const initSliderReviews = () => {
-  if (sliderReviews) {
-    new Swiper(sliderReviews, {
-
-      navigation: {
-        nextEl: buttonNext,
-        prevEl: buttonPrev,
-      },
-
-      slidesPerView: 1,
-      spaceBetween: 30,
-    });
-  }
-};
-
-export {initCoachesSlider, initSliderReviews};
+export {initCoachesSlider};
