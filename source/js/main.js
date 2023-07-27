@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
-import {initCoachesSlider, initReviewsSlider} from './modules/slider.js';
+import {initCoachesSlider, initSliderReviews} from './modules/slider.js';
 import {initTabs} from './modules/tabs/init-tabs.js';
 import {initAccordions} from './modules/init-accordion';
 import './modules/play-video.js';
@@ -16,7 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
   iosVhFix();
   initTabs();
   initCoachesSlider();
-  initReviewsSlider();
+  initSliderReviews();
   initAccordions();
 
   const form = new Form();

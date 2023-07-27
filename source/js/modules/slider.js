@@ -37,14 +37,16 @@ const initCoachesSlider = () => {
 
 // eslint-disable-next-line no-undef
 const sliderReviews = document.querySelector('.reviews__swiper');
+const reviewsButtonNext = document.querySelector('.reviews__button--next');
+const reviewsButtonPrev = document.querySelector('.reviews__button--prev');
 
 const initSliderReviews = () => {
   if (sliderReviews) {
     new Swiper(sliderReviews, {
 
       navigation: {
-        nextEl: buttonNext,
-        prevEl: buttonPrev,
+        nextEl: reviewsButtonNext,
+        prevEl: reviewsButtonPrev,
       },
 
       slidesPerView: 1,
