@@ -17,13 +17,12 @@ window.addEventListener('DOMContentLoaded', () => {
   initTabs();
   initCoachesSlider();
   initSliderReviews();
-  initAccordions();
   initVideoPlayer();
 
   const form = new Form();
   window.form = form;
   form.init();
-});
+
 
   // Modules
   // ---------------------------------
@@ -33,6 +32,7 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initAccordions();
+  });
 });
 
 // ---------------------------------

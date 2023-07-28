@@ -1865,7 +1865,7 @@ button,
 }
 
 .accordion__element:last-child {
-  padding: 29px 0 17px;
+  margin: -24px 0 10px;
   border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 }
 
@@ -2984,7 +2984,7 @@ button,
   font-weight: 500;
   background-color: #F8F9FC;
   color: #102654;
-  padding: 119px 92px 115px 102px;
+  padding: 119px 92px 60px 102px;
 }
 
 .faq h2 {
@@ -4368,10 +4368,6 @@ button,
     height: 48.5px;
   }
 
-  .accordion__element {
-    margin-bottom: 16px;
-  }
-
   .coaches {
     padding-bottom: 207px;
   }
@@ -4441,6 +4437,16 @@ button,
     -webkit-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
+  }
+
+  .accordion__element {
+    padding-bottom: 10px;
+    margin-bottom: 33px;
+  }
+
+  .accordion__element:last-child {
+    padding-bottom: 20px;
+    margin: 0 0 30px;
   }
 
   .accordion__element h3 {
@@ -4688,7 +4694,7 @@ button,
   }
 
   .reviews__wrapper {
-    padding: 117px 0 123px;
+    padding: 117px 0 119px;
   }
 
   .reviews__item {
@@ -4963,7 +4969,8 @@ button,
   }
 
   .accordion__element {
-    padding-top: 14px;
+    padding: 14px 0 9px;
+    margin: 0;
   }
 
   .accordion__element:last-child {
@@ -4972,7 +4979,8 @@ button,
   }
 
   .accordion__element.is-active {
-    margin-bottom: 20px;
+    margin-bottom: 7px;
+    padding-top: 14px;
   }
 
   .accordion__element h3 {
@@ -4987,7 +4995,7 @@ button,
   .accordion__button {
     width: 32px;
     height: 32px;
-    margin-top: 8%;
+    margin-top: 3%;
   }
 
   .accordion__button::before {
@@ -4996,6 +5004,10 @@ button,
 
   .accordion__button::after {
     width: 12px;
+  }
+
+  .accordion__element.is-active .accordion__button {
+    margin-top: 7%;
   }
 
   .accordion__content p {
@@ -5340,6 +5352,7 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    max-height: 386px;
   }
 
   .feedback__container--contacts {
@@ -5944,6 +5957,10 @@ button,
     transform: translateX(-50%);
   }
 
+  .accordion__element {
+    margin-bottom: 16px;
+  }
+
   .coaches__wrapper h2 {
     margin: 0 0 31px;
     font-size: 42px;
@@ -6222,7 +6239,7 @@ button,
 
   .accordion__element {
     padding-top: 22px;
-    margin-bottom: 20px;
+    margin-bottom: 31px;
   }
 
   .accordion__element:last-child {
@@ -6233,6 +6250,11 @@ button,
   .accordion__element:last-child h3 {
     padding: 0 161px 0 0;
     margin-top: -4px;
+  }
+
+  .accordion__element.is-active {
+    margin-bottom: 27px;
+    padding-top: 22px;
   }
 
   .accordion__button span:first-child {
@@ -6353,7 +6375,7 @@ button,
   }
 
   .faq {
-    padding: 73px 45px 99px;
+    padding: 73px 45px 91px;
   }
 
   .faq h2 {
