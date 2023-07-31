@@ -1,9 +1,9 @@
 .contacts {
   padding: 55px 100px 0 123px;
   min-height: 336px;
-  color: $sapphire;
+  color: $color-sapphire;
   font-style: normal;
-  border-top: 1px solid $light-slate-grey;
+  border-top: 1px solid $color-light-slate-grey;
   text-align: start;
 
   @include vp-1199 {
@@ -22,7 +22,7 @@
   }
 
   h3 {
-    font-family: $alumni-sans-font;
+    font-family: $ff-alumni-sans-font;
     font-weight: 600;
     font-size: 54px;
     line-height: normal;
@@ -102,7 +102,7 @@
   left: 50%;
   height: 102px;
   width: 1px;
-  background-color: $light-slate-grey;
+  background-color: $color-light-slate-grey;
   z-index: 1;
 
   @include vp-1199 {
@@ -124,10 +124,10 @@
 
 .contacts__item {
   p {
-    font-family: $base-font;
+    font-family: $ff-base-font;
     font-size: 16px;
     font-weight: 700;
-    color: $sapphire;
+    color: $color-sapphire;
     margin: 0;
     padding: 0;
 
@@ -152,10 +152,10 @@
   }
 
   span {
-    font-family: $base-font;
+    font-family: $ff-base-font;
     font-size: 14px;
     font-weight: 400;
-    color: $sapphire;
+    color: $color-sapphire;
 
     @include vp-1199 {
       font-size: 18px;
@@ -173,12 +173,12 @@
   }
 
   a {
-    font-family: $base-font;
+    font-family: $ff-base-font;
     font-weight: 400;
     font-size: 18px;
     line-height: 31px;
     letter-spacing: 1px;
-    color: $sapphire;
+    color: $color-sapphire;
 
     @include vp-1199-full {
       font-size: 14px;

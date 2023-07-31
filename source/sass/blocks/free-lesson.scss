@@ -19,7 +19,7 @@
   }
 
   h3 {
-    font-family: $alumni-sans-font;
+    font-family: $ff-alumni-sans-font;
     font-size: 54px;
     font-weight: 700;
     line-height: 156%;
@@ -27,7 +27,7 @@
     text-align: start;
     margin: 0 0 21px;
 
-    @include vp-1199{
+    @include vp-1199 {
       font-size: 42px;
       letter-spacing: 1.26px;
       margin-bottom: 27px;

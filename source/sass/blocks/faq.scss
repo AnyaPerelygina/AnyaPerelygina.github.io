@@ -1,9 +1,9 @@
 .faq {
-  font-family: $base-font;
+  font-family: $ff-base-font;
   font-style: normal;
   font-weight: 500;
-  background-color: $ghost-white;
-  color: $sapphire;
+  background-color: $color-ghost-white;
+  color: $color-sapphire;
   padding: 119px 92px 60px 102px;
 
   @include vp-767 {
@@ -15,13 +15,13 @@
   }
 
   h2 {
-    font-family: $alumni-sans-font;
+    font-family: $ff-alumni-sans-font;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
     line-height: 65px;
     letter-spacing: 1.6px;
-    color: $sapphire;
+    color: $color-sapphire;
     text-align: left;
     width: 100%;
     margin: 0;
@@ -51,7 +51,7 @@
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
-  background-color: $ghost-white;
+  background-color: $color-ghost-white;
   max-height: 770px;
   column-gap: 37px;
 
@@ -92,7 +92,7 @@
   font-size: 18px;
   line-height: 18px;
   font-weight: 500;
-  color: $sapphire;
+  color: $color-sapphire;
   width: 100%;
   display: flex;
   align-items: center;
@@ -101,7 +101,7 @@
   margin: 0;
   background-color: transparent;
   background-image: none;
-  border: 1px solid #10265433;
+  border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
 
   @include vp-1365 {
@@ -124,26 +124,26 @@
 
   &:hover,
   &:focus {
-    border: 1px solid $sapphire;
+    border: 1px solid $color-sapphire;
     background-color: transparent;
     outline: none;
   }
 
   &:active {
     color: $color-default-white;
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: none;
     padding: 19px 59px;
   }
 
   &:disabled {
-    border: 1px solid #10265433;
-    color: $link-water;
+    border: 1px solid rgba(16, 38, 84, 0.2);
+    color: $color-link-water;
     background-color: transparent;
   }
 
   &.is-active {
-    background: linear-gradient(97.05deg, #ED0233 17.6%, #003EB7 95.31%);
+    background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: none;
     padding: 19px 59px;
     color: $color-default-white;
@@ -154,13 +154,6 @@
   display: flex;
   align-items: start;
   width: 74.3%;
-
-  @include vp-319 {
-    min-height: 514px;
-  }
-}
-
-.faq__content {
   justify-content: space-between;
 
   ul {
@@ -168,13 +161,14 @@
     flex-direction: column;
     align-items: start;
     justify-content: start;
-    background: $ghost-white;
+    background: $color-ghost-white;
 
     @include vp-1365 {
       margin-top: -38px;
     }
 
     @include vp-319 {
+      min-height: 514px;
       justify-content: space-between;
       margin-bottom: 0;
     }

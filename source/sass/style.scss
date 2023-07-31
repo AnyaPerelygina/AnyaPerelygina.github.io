@@ -7,13 +7,12 @@
 
 // Global
 
+@import "global/fonts.scss";
 @import "global/variables.scss";
 @import "global/mixins.scss";
-@import "global/fonts.scss";
-@import "global/base.scss";
 @import "global/utils.scss";
-@import "global/container.scss";
 @import "global/reboot.scss";
+@import "global/container.scss";
 @import "global/data-tabs.scss";
 
 // Blocks
@@ -34,8 +33,6 @@
 @import "blocks/footer.scss";
 @import "blocks/header.scss";
 @import "blocks/hero.scss";
-@import "blocks/placeholder.scss";
-@import "blocks/play.scss";
 @import "blocks/promotion.scss";
 @import "blocks/reviews.scss";
 @import "blocks/social.scss";

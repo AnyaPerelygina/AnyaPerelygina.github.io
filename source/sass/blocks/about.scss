@@ -1,6 +1,5 @@
 .about {
   display: grid;
-  // place-content: center;
 }
 
 .about__wrapper {
@@ -38,32 +37,6 @@
     min-width: 320px;
     max-width: 767px;
   }
-
-  // img {
-  //   height: 100%;
-  //   background-color: $link-water;
-
-  //   @include vp-1365 {
-  //     width: 660px;
-  //     height: 401px;
-  //   }
-
-  //   @include vp-1199 {
-  //     width: 660px;
-  //     height: 401px;
-  //   }
-
-  //   @include vp-767 {
-  //     width: 678px;
-  //     height: 345px;
-  //   }
-
-  //   @include vp-319 {
-  //     width: 320px;
-  //     height: 313px;
-  //     margin-bottom: 40px;
-  //   }
-  // }
 }
 
 .about__gym {
@@ -95,7 +68,7 @@
   }
 
   h2 {
-    font-family: $alumni-sans-font;
+    font-family: $ff-alumni-sans-font;
     font-size: normal;
     font-weight: 600;
     letter-spacing: 1.5px;
@@ -128,7 +101,7 @@
   }
 
   span {
-    font-family: $base-font;
+    font-family: $ff-base-font;
     font-style: normal;
     font-size: 18px;
     line-height: 27px;
@@ -152,32 +125,36 @@
       margin-bottom: 24px;
     }
   }
-}
 
-.about__description {
-  font-family: $base-font;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 300px;
+  p {
+    font-family: $ff-base-font;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 300;
 
-  @include vp-1199-full {
-    margin-bottom: -7px;
-  }
+    @include vp-1199-full {
+      margin-bottom: -7px;
+    }
 
-  @include vp-767 {
-    max-width: 512px;
-    margin: 0 0 44px 5px;
-  }
+    @include vp-767 {
+      max-width: 512px;
+      margin: 0 0 44px 5px;
+    }
 
-  @include vp-319 {
-    max-width: 261px;
-    margin: 0;
-  }
-}
+    @include vp-319 {
+      max-width: 261px;
+      margin: 0;
+    }
 
-.about__description--hidden {
-  @media (max-width: 1199px) {
-    display: none;
+    &:last-child {
+      @include vp-767-full {
+        display: none;
+      }
+
+      @include vp-319 {
+        display: none;
+      }
+    }
   }
 }
 
@@ -203,7 +180,7 @@
 
 .about__photo {
   width: 100%;
-  background-color: $dark-grey;
+  background-color: $color-dark-grey;
 
   @include vp-1199-full {
     margin: 0 auto;
@@ -245,7 +222,7 @@
   left: -80px;
   width: 364px;
   height: 228px;
-  background-color: $egyptian-blue;
+  background-color: $color-egyptian-blue;
 
   @include vp-1365 {
     top: 285px;
@@ -328,6 +305,12 @@
   svg {
     width: 17px;
     height: 17px;
+    position: absolute;
+    color: $color-default-white;
+    top: 50%;
+    left: 50%;
+    transform: translate(-35%, -50%);
+    z-index: 4;
 
     @include vp-767 {
       width: 12px;
@@ -342,7 +325,7 @@
 
   &::before {
     display: block;
-    background: linear-gradient(44.89deg, #003D85 25.38%, #B80027 74.89%);
+    background: linear-gradient(44.89deg, #003d85 25.38%, #b80027 74.89%);
     position: absolute;
     width: 72px;
     height: 72px;
@@ -371,12 +354,12 @@
     height: 100px;
     border-radius: 50%;
     inset: 0;
-    background: linear-gradient(97.05deg, #ed023333 17.6%, #003eb733 95.31%) border-box;
+    background: linear-gradient(97.05deg, rgba(237, 2, 51, 0.2) 17.6%, rgba(0, 62, 183, 0.2) 95.31%) border-box;
     mask:
-      linear-gradient(#fff 0 0) padding-box,
-      linear-gradient(#fff 0 0);
-    -webkit-mask-composite: xor;
-          mask-composite: exclude;
+      linear-gradient($color-default-white 0 0) padding-box,
+      linear-gradient($color-default-white 0 0);
+    // -webkit-mask-composite: xor;
+    mask-composite: exclude;
     border: 2px solid transparent;
 
     @include vp-767 {
@@ -392,7 +375,7 @@
 
   &:hover::before,
   &:focus::before,
-  &:active::before  {
+  &:active::before {
     background: $color-default-white;
   }
 
@@ -400,7 +383,7 @@
   &:focus::after,
   &:active::after {
     opacity: 1;
-    border: solid 2px $sapphire;
+    border: solid 2px $color-sapphire;
   }
 
   &:active::before {
@@ -409,8 +392,9 @@
     transform: translate(-50%, -50%);
     width: 58px;
     height: 58px;
-    @include hover;
     background-color: $color-default-white;
+
+    @include hover;
 
     @include vp-1199-full {
       width: 48.5px;
@@ -432,7 +416,7 @@
   &:focus svg,
   &:active svg {
     @include hover;
-    color: $sapphire;
+    color: $color-sapphire;
   }
 }
 
@@ -445,16 +429,7 @@
     background: $color-default-white;
   }
 
-  & svg {
-    color: $sapphire
+  svg {
+    color: $color-sapphire;
   }
-}
-
-.about__play-button svg {
-  position: absolute;
-  color: $color-default-white;
-  top: 50%;
-  left: 50%;
-  transform: translate(-35%, -50%);
-  z-index: 4;
 }

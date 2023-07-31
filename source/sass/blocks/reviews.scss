@@ -18,7 +18,7 @@
   }
 
   h2 {
-    font-family: $alumni-sans-font;
+    font-family: $ff-alumni-sans-font;
     font-style: normal;
     font-weight: 600;
     font-size: 54px;
@@ -71,7 +71,7 @@
   max-width: 560px;
   height: auto;
   min-height: 242px;
-  background-color: $resolution-blue;
+  background-color: $color-resolution-blue;
   color: $color-default-white;
 
   @include vp-1365 {
@@ -170,11 +170,11 @@
   &:hover,
   &:focus {
     border-radius: 50%;
-    border: 1px solid $sapphire;
+    border: 1px solid $color-sapphire;
   }
 
   &:active {
-    background-color: $sapphire;
+    background-color: $color-sapphire;
     fill: $color-default-white;
   }
 

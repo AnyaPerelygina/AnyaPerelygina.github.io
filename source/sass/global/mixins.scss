@@ -37,27 +37,27 @@
 }
 
 @mixin gradient-text {
-  background: linear-gradient(127.61deg, #D10A42 0%, #0041CA 45.58%);
+  background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   background-size: contain;
 }
 
 @mixin gradient-button {
-  background: linear-gradient(97.05deg, #B80027 17.6%, #003D85 95.31%);
+  background: linear-gradient(97.05deg, #b80027 17.6%, #003d85 95.31%);
   background-size: contain;
 }
 
 @mixin gradient-screen {
-  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 16.03% 39.06%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   background-size: contain;
 }
 
 @mixin gradient-screen-tablet {
-  background: conic-gradient(from 150.87deg at 20.76% 35.65%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 20.76% 35.65%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   background-size: contain;
 }
 
 @mixin gradient-screen-mobile {
-  background: conic-gradient(from 150.87deg at 35% 30.5%, #B80027 -46.69deg, #003D85 32.24deg, #B80027 313.31deg, #003D85 392.24deg);
+  background: conic-gradient(from 150.87deg at 35% 30.5%, #b80027 -46.69deg, #003d85 32.24deg, #b80027 313.31deg, #003d85 392.24deg);
   background-size: contain;
 }
 
@@ -94,7 +94,7 @@
 }
 
 @mixin vp-1199 {
-  @media (min-width: $vp-1200) and (max-width: ($vp-1366 - 1px)) {
+  @media (min-width: $vp-1200) {
     @content;
   }
 }
@@ -106,7 +106,7 @@
 }
 
 @mixin vp-767 {
-  @media (min-width: ($vp-768)) and (max-width: ($vp-1200 - 1px)) {
+  @media (max-width: ($vp-768 - 1px)) {
     @content;
   }
 }

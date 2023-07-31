@@ -1,5 +1,5 @@
 .form {
-  font-family: $base-font;
+  font-family: $ff-base-font;
   font-size: 14px;
   line-height: 1;
   color: $color-default-white;
@@ -68,14 +68,14 @@
 }
 
 .form__input {
-  font-family: $base-font;
+  font-family: $ff-base-font;
   font-size: 16px;
   color: $color-default-white;
   width: 100%;
   background-color: transparent;
   margin-bottom: 3px;
   border: none;
-  border-bottom: 1px solid $light-slate-grey;
+  border-bottom: 1px solid $color-light-slate-grey;
 
   &:hover {
     border-bottom: 1px solid $color-default-white;
@@ -112,7 +112,7 @@
 }
 
 .form__input::placeholder {
-  font-family: $base-font;
+  font-family: $ff-base-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
@@ -130,14 +130,14 @@
   padding: 17px;
   margin-bottom: 27px;
   text-align: center;
-  font-family: $base-font;
+  font-family: $ff-base-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
   line-height: 1;
   letter-spacing: 0.7px;
   border: 3px solid $color-default-white;
-  background-color: $sapphire;
+  background-color: $color-sapphire;
   color: $color-default-white;
   text-transform: uppercase;
   cursor: pointer;
@@ -158,8 +158,8 @@
 
 [data-message-base="Поле обязательно к заполнению"],
 [data-message-extra="Проверьте корректность заполнения поля"] {
-  color: $torch-red;
-  font-family: $base-font;
+  color: $color-torch-red;
+  font-family: $ff-base-font;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;

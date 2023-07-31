@@ -19,7 +19,7 @@
 }
 
 .promotion__title {
-  font-family: $alumni-sans-font;
+  font-family: $ff-alumni-sans-font;
   font-weight: 600;
   font-style: normal;
   font-size: 54px;
@@ -82,7 +82,7 @@
 .promotion__first {
   display: flex;
   flex-direction: row;
-  background-color: $torch-red;
+  background-color: $color-torch-red;
   color: $color-default-white;
 
   @include vp-319 {
@@ -91,7 +91,7 @@
 
   img {
     object-fit: cover;
-    background-color: $torch-red;
+    background-color: $color-torch-red;
 
     @include vp-1365 {
       max-width: 280px;
@@ -137,7 +137,7 @@
     line-height: 44px;
   }
 
-  b {
+  strong {
     font-weight: 700;
     font-size: 70px;
     line-height: 110px;
@@ -206,7 +206,7 @@
   flex-direction: column;
   height: 211px;
   border: 7px solid;
-  border-image: linear-gradient(148.82deg, #D10A42 0.85%, #00359F 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   text-align: start;
   padding-left: 28px;
 
@@ -247,8 +247,8 @@
     line-height: 14px;
     letter-spacing: 0.5px;
     text-transform: uppercase;
-    color: $sapphire;
-    border-bottom: 1px solid $sapphire;
+    color: $color-sapphire;
+    border-bottom: 1px solid $color-sapphire;
     width: 68px;
 
     @include vp-319 {

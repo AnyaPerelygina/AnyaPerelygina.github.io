@@ -1,32 +1,33 @@
 .social__link {
-    width: 25px;
-    height: 25px;
-    position: relative;
-    display: block;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: $color-default-white;
-    border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative;
+  display: block;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: $color-default-white;
+  border-radius: 50%;
 
-    &:hover {
-        fill: $color-default-white;
-        background-color: $egyptian-blue;
-    }
+  &:hover,
+  &:focus {
+    fill: $color-default-white;
+    background-color: $color-egyptian-blue;
+  }
 
-    &:active {
-        fill: $color-default-white;
-        background-color: $sapphire;
-    }
+  &:active {
+    fill: $color-default-white;
+    background-color: $color-sapphire;
+  }
 
-    &:disabled {
-        opacity: 0.3;
-    }
+  &:disabled {
+    opacity: 0.3;
+  }
 }
 
 .social__icon {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
