@@ -6,11 +6,11 @@
   font-family: $ff-base-font;
   font-style: normal;
 
-  @include vp-767 {
+  @include vp-1199 {
     min-width: 678px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     min-width: 290px;
     min-height: 480px;
     padding: 0;
@@ -22,33 +22,26 @@
   display: flex;
   flex-wrap: wrap;
   padding-top: 26px;
-  margin: 0 0 20px 0;
+  padding-bottom: 10px;
+  margin: 0 0 33px 0;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 
-  @include vp-1365 {
-    padding-bottom: 10px;
-    margin-bottom: 33px;
-  }
-
   @include vp-1199 {
-    margin-bottom: 16px;
-  }
-
-  @include vp-767 {
     padding-top: 22px;
     margin-bottom: 31px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 14px 0 9px;
     margin: 0;
   }
 
   &:last-child {
-    margin: -24px 0 10px;
+    padding-bottom: 20px;
+    margin: 0 0 30px;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
-    @include vp-767 {
+    @include vp-1199 {
       padding-top: 31px;
       padding-bottom: 14px;
 
@@ -58,12 +51,7 @@
       }
     }
 
-    @include vp-1365 {
-      padding-bottom: 20px;
-      margin: 0 0 30px;
-    }
-
-    @include vp-319 {
+    @include vp-767 {
       padding-top: 14px;
       padding-bottom: 4px;
     }
@@ -73,12 +61,12 @@
     height: 100%;
     margin-bottom: 25px;
 
-    @include vp-767 {
+    @include vp-1199 {
       margin-bottom: 27px;
       padding-top: 22px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       margin-bottom: 7px;
       padding-top: 14px;
     }
@@ -89,33 +77,21 @@
     font-size: 24px;
     font-weight: 600;
     line-height: 120%;
-    letter-spacing: 0.1px;
+    letter-spacing: 0;
     text-align: start;
     width: 94%;
     margin-top: 6px;
     margin-bottom: 13px;
 
-    @include vp-1365 {
-      letter-spacing: 0;
-
-      br {
-        display: none;
-      }
-    }
-
-    @include vp-767-full {
+    @include vp-1199 {
       font-weight: 500;
       line-height: 24px;
       width: 93.8%;
       margin-top: 9px;
       margin-bottom: 16px;
-
-      br {
-        display: none;
-      }
     }
 
-    @include vp-319 {
+    @include vp-767 {
       font-size: 18px;
       line-height: 22px;
       letter-spacing: 0;
@@ -137,12 +113,7 @@
   border-radius: 50%;
   border: 1px solid $color-sapphire;
 
-  @include vp-767-full {
-    width: 42px;
-    height: 42px;
-  }
-
-  @include vp-319 {
+  @include vp-767 {
     width: 32px;
     height: 32px;
     margin-top: 3%;
@@ -154,15 +125,11 @@
     top: 50%;
     left: 30%;
     background-color: $color-sapphire;
-    height: 1px;
     display: block;
     width: 18px;
+    height: 1px;
 
-    @include vp-767-full {
-      width: 18px;
-    }
-
-    @include vp-319 {
+    @include vp-767 {
       width: 12px;
     }
   }
@@ -178,11 +145,11 @@
     display: block;
     width: 18px;
 
-    @include vp-767-full {
+    @include vp-1199 {
       width: 18px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       width: 12px;
     }
   }
@@ -206,7 +173,7 @@
   text-align: left;
   text-transform: none;
 
-  @include vp-767 {
+  @include vp-1199 {
     font-size: 18px;
     line-height: 21.5px;
   }
@@ -222,7 +189,7 @@
 .accordion__element.is-active .accordion__button {
   background: $color-sapphire;
 
-  @include vp-319 {
+  @include vp-767 {
     margin-top: 7%;
   }
 
@@ -236,6 +203,8 @@
 }
 
 .accordion__element.is--disabled .accordion__button {
+  background-color: transparent;
+
   &::before,
   &::after {
     opacity: 30%;
@@ -253,19 +222,7 @@
     width: 78%;
     margin: 0;
 
-    @include vp-1365 {
-      br {
-        display: none;
-      }
-    }
-
-    @include vp-767-full {
-      br {
-        display: none;
-      }
-    }
-
-    @include vp-319 {
+    @include vp-767 {
       font-size: 16px;
       line-height: 23px;
       min-width: 290px;

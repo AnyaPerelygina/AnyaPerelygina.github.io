@@ -6,43 +6,31 @@
   color: $color-sapphire;
   padding: 119px 92px 60px 102px;
 
-  @include vp-767 {
+  @include vp-1199 {
     padding: 73px 45px 91px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 70px 15px 38px;
   }
+}
 
-  h2 {
-    font-family: $ff-alumni-sans-font;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 54px;
-    line-height: 65px;
-    letter-spacing: 1.6px;
-    color: $color-sapphire;
-    text-align: left;
-    width: 100%;
-    margin: 0;
-    margin-bottom: 40px;
+.faq__title {
+  color: $color-sapphire;
+  text-align: left;
+  width: 100%;
+  margin: 0;
+  margin-bottom: 40px;
 
-    @include vp-767 {
-      font-size: 42px;
-      line-height: 51px;
-      letter-spacing: 1.3px;
-      margin-top: 25px;
-      margin-bottom: 36px;
-      text-align: center;
-    }
+  @include vp-1199 {
+    margin-top: 25px;
+    margin-bottom: 36px;
+    text-align: center;
+  }
 
-    @include vp-319 {
-      font-size: 32px;
-      line-height: 40px;
-      letter-spacing: 1px;
-      text-align: center;
-      margin: 0 0 28px;
-    }
+  @include vp-767 {
+    text-align: center;
+    margin: 0 0 28px;
   }
 }
 
@@ -55,11 +43,11 @@
   max-height: 770px;
   column-gap: 37px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 678px;
   }
 
-  @include vp-374 {
+  @include vp-767 {
     justify-content: center;
   }
 }
@@ -73,14 +61,14 @@
   max-width: 260px;
   max-height: 246px;
 
-  @include vp-767 {
+  @include vp-1199 {
     flex-direction: row;
     justify-content: space-between;
     min-width: 678px;
     margin-bottom: -3px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     flex-direction: row;
     min-width: 290px;
     justify-content: space-between;
@@ -94,6 +82,7 @@
   font-weight: 500;
   color: $color-sapphire;
   width: 100%;
+  max-width: 260px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -104,16 +93,12 @@
   border: 1px solid rgba(16, 38, 84, 0.2);
   cursor: pointer;
 
-  @include vp-1365 {
-    width: 260px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     width: 162px;
     padding: 18px 58px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     font-size: 16px;
     line-height: 16px;
     width: 141px;
@@ -162,12 +147,9 @@
     align-items: start;
     justify-content: start;
     background: $color-ghost-white;
+    margin-top: -38px;
 
-    @include vp-1365 {
-      margin-top: -38px;
-    }
-
-    @include vp-319 {
+    @include vp-767 {
       min-height: 514px;
       justify-content: space-between;
       margin-bottom: 0;

@@ -5,19 +5,15 @@
   line-height: 16px;
   font-weight: 400;
   background: $color-black-russian;
+  padding: 17px 103px 2px 102px;
+  min-height: 108px;
 
-
-  @include vp-1365 {
-    padding: 17px 103px 2px 102px;
-    min-height: 108px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     padding: 20px 43px 16px 46px;
     min-height: 114px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     font-size: 16px;
     line-height: 19px;
     min-height: 260px;
@@ -31,7 +27,7 @@
   flex-wrap: wrap;
   justify-content: space-between;
 
-  @include vp-319 {
+  @include vp-767 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -39,15 +35,13 @@
 }
 
 .footer__logo {
-  @include vp-1365 {
-    padding: 35px 0;
-  }
+  padding: 35px 0;
 
-  @include vp-767-full {
+  @include vp-1199 {
     padding: 29px 0;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     margin-right: 187px;
   }
 }
@@ -57,22 +51,20 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  list-style: none;
+  margin-top: 20px;
+  margin-bottom: 28px;
+  margin-left: 12px;
+  gap: 20px;
 
-  @include vp-1365 {
-    margin-top: 20px;
-    margin-bottom: 28px;
-    margin-left: 12px;
-    gap: 20px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     margin-top: 20px;
     margin-bottom: 19px;
     margin-left: 14px;
     gap: 10px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     display: grid;
     grid-template-rows: repeat(3, 1fr);
     grid-template-columns: repeat(2, 1fr);
@@ -93,7 +85,7 @@
     border: 1px solid $color-default-white;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     margin: 0 17px 0 0;
 
     &:first-child {
@@ -102,7 +94,6 @@
     }
   }
 }
-
 
 .footer__link {
   color: $color-default-white;
@@ -120,17 +111,14 @@
 .footer__social {
   display: flex;
   flex-direction: row;
+  gap: 10px;
+  padding: 0 1px 15px;
 
-  @include vp-1365 {
-    gap: 10px;
-    padding: 0 1px 15px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     gap: 11px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     margin-top: 3px;
     margin-right: 156px;
     gap: 11px;

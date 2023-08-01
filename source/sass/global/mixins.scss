@@ -1,9 +1,3 @@
-@mixin retina {
-  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    @content;
-  }
-}
-
 @mixin hover {
   @media (hover: hover) {
     &:hover:not(.focus-visible) {
@@ -35,6 +29,14 @@
     @content;
   }
 }
+
+@mixin list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+// Gradient
 
 @mixin gradient-text {
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
@@ -69,32 +71,8 @@
   }
 }
 
-@mixin vp-1439 {
-  @media (max-width: ($vp-1440 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1365 {
-  @media (min-width: ($vp-1366)) {
-    @content;
-  }
-}
-
-@mixin vp-1279 {
-  @media (max-width: ($vp-1280 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-1199-full {
-  @media (min-width: ($vp-1200)) {
-    @content;
-  }
-}
-
 @mixin vp-1199 {
-  @media (min-width: $vp-1200) {
+  @media (max-width: $vp-1200) {
     @content;
   }
 }
@@ -106,24 +84,6 @@
 }
 
 @mixin vp-767 {
-  @media (max-width: ($vp-768 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-767-full {
-  @media (min-width: ($vp-768)) and (max-width: ($vp-1366 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-374 {
-  @media (min-width: ($vp-375 - 1px)) and (max-width: ($vp-768 - 1px)) {
-    @content;
-  }
-}
-
-@mixin vp-319 {
   @media (max-width: ($vp-768 - 1px)) {
     @content;
   }

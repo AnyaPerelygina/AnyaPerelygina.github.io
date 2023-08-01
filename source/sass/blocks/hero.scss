@@ -4,18 +4,15 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: -13px;
+  margin-right: 168px;
 
-  @include vp-1365 {
-    margin-top: -13px;
-    margin-right: 168px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     margin: 0;
     padding-top: 18px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     display: grid;
     place-content: center;
     padding: 0;
@@ -26,33 +23,28 @@
 .hero img {
   max-height: 556px;
 
-  @include vp-767-full {
+  @include vp-1199 {
     position: relative;
     top: -41px;
   }
 
-  @media (max-width: 767px) {
+  @include vp-767 {
     display: none;
   }
 }
 
 .hero__list {
+  @include list;
   position: relative;
-  margin: 0;
-  padding: 0;
-  list-style: none;
+  top: 59px;
+  right: 16px;
 
-  @include vp-1365 {
-    top: 59px;
-    right: 16px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     top: -18px;
     left: 3px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     top: 193px;
     left: -180px;
   }
@@ -67,15 +59,13 @@
 }
 
 .hero__wrapper {
-  @include vp-1365 {
-    padding: 69px 65px 0 3px;
-  }
+  padding: 69px 65px 0 3px;
 
-  @include vp-767-full {
+  @include vp-1199 {
     padding: 51px 0 203px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 6px 0 0;
   }
 
@@ -83,24 +73,21 @@
   span {
     font-family: $ff-alumni-sans-font;
     font-style: normal;
+    font-size: 42px;
+    line-height: 58px;
     font-weight: 600;
     color: $color-default-white;
     text-transform: uppercase;
     letter-spacing: 2.3px;
+    margin-right: 50px;
 
-    @include vp-1365 {
-      font-size: 42px;
-      line-height: 58px;
-      margin-right: 50px;
-    }
-
-    @include vp-767-full {
+    @include vp-1199 {
       font-size: 28px;
       line-height: 41px;
       margin-right: 35px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       font-size: 23px;
       line-height: 34px;
       margin-right: 4px;
@@ -110,22 +97,17 @@
   h1 {
     font-family: $ff-alumni-sans-font;
     font-style: normal;
+    font-size: 92px;
+    line-height: 110px;
     font-weight: 800;
     letter-spacing: 4px;
     color: $color-default-white;
     text-align: right;
+    text-transform: uppercase;
+    margin: 0 0 51px;
+    padding: 10px 0 0;
 
-    @include vp-1365 {
-      font-size: 92px;
-      line-height: 110px;
-      text-transform: uppercase;
-
-      margin: 0;
-      margin-bottom: 51px;
-      padding-top: 10px;
-    }
-
-    @include vp-767-full {
+    @include vp-1199 {
       font-size: 78px;
       line-height: 86px;
       letter-spacing: 0;
@@ -134,13 +116,13 @@
       margin: 0 7px 0 8px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       font-size: 73px;
       line-height: 88px;
       text-transform: none;
       letter-spacing: 2.5px;
       margin: 0 0 23px 30px;
-      padding-top: 10px;
+      padding: 10px 0 0;
     }
   }
 }
@@ -158,6 +140,10 @@
   align-items: center;
   justify-content: center;
   background: none;
+  width: 234px;
+  height: 57px;
+  margin: 0 0 -2px 15px;
+  padding: 27px 48px;
 
   &:hover {
     color: $color-egyptian-blue;
@@ -174,14 +160,7 @@
     background: none;
   }
 
-  @include vp-1365 {
-    width: 234px;
-    height: 57px;
-    margin: 0 0 -2px 15px;
-    padding: 27px 48px;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     width: 187px;
     height: 57px;
     position: absolute;
@@ -189,7 +168,7 @@
     margin: 37px 0 0 29px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     width: 294px;
     height: 59px;
     padding: 27px 76px;

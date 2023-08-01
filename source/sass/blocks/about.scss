@@ -3,23 +3,18 @@
 }
 
 .about__wrapper {
-  @include vp-1365 {
-    display: grid;
-    padding: 120px 104px 125px 162px;
-    grid-template-columns: auto 660px;
-    column-gap: 80px;
-    justify-content: center;
-  }
+  display: grid;
+  padding: 120px 104px 125px 162px;
+  grid-template-columns: auto 660px;
+  column-gap: 80px;
+  justify-content: center;
 
-  @include vp-1199 {
-    display: grid;
-    grid-template-columns: auto 660px;
-    justify-content: center;
+  @include vp-1023 {
     padding: 120px 0;
     column-gap: 40px;
   }
 
-  @include vp-767 {
+  @include vp-1199 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -27,7 +22,7 @@
     padding: 65px 0 17px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -43,61 +38,19 @@
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  align-items: start;
   text-align: start;
-
-  @include vp-1365 {
-    max-width: 359px;
-    margin-bottom: 39px;
-    align-items: start;
-  }
+  max-width: 359px;
+  margin-bottom: 39px;
 
   @include vp-1199 {
-    max-width: 359px;
-    margin-bottom: 39px;
-    align-items: start;
-  }
-
-  @include vp-767 {
     justify-content: center;
     align-items: center;
     text-align: center;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 63px 20px 33px 6px;
-  }
-
-  h2 {
-    font-family: $ff-alumni-sans-font;
-    font-size: normal;
-    font-weight: 600;
-    letter-spacing: 1.5px;
-
-    @include vp-1365 {
-      font-size: 48px;
-      line-height: 58px;
-      margin: 38px 0 8px;
-    }
-
-    @include vp-1199 {
-      font-size: 48px;
-      line-height: 58px;
-      margin: 38px 0 8px;
-    }
-
-    @include vp-767 {
-      font-size: 42px;
-      line-height: 51px;
-      margin-bottom: -1px;
-    }
-
-    @include vp-319 {
-      font-size: 32px;
-      line-height: 39px;
-      margin: 0;
-      margin-bottom: 5px;
-      letter-spacing: 1px;
-    }
   }
 
   span {
@@ -106,22 +59,14 @@
     font-size: 18px;
     line-height: 27px;
     font-weight: 400;
+    margin: 0 0 22px;
 
-    @include vp-1365 {
-      margin: 0;
-      margin-bottom: 22px;
-    }
 
     @include vp-1199 {
-      margin: 0;
-      margin-bottom: 22px;
-    }
-
-    @include vp-767 {
       margin-bottom: 33px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       margin-bottom: 24px;
     }
   }
@@ -131,72 +76,68 @@
     font-size: 16px;
     line-height: 24px;
     font-weight: 300;
+    margin-bottom: -7px;
 
-    @include vp-1199-full {
-      margin-bottom: -7px;
-    }
-
-    @include vp-767 {
+    @include vp-1199 {
       max-width: 512px;
       margin: 0 0 44px 5px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       max-width: 261px;
       margin: 0;
     }
 
     &:last-child {
-      @include vp-767-full {
+      @include vp-1199 {
         display: none;
       }
 
-      @include vp-319 {
+      @include vp-767 {
         display: none;
       }
     }
+  }
+}
+
+.about__title {
+  margin: 38px 0 8px;
+
+  @include vp-1199 {
+    margin-bottom: -1px;
+  }
+
+  @include vp-767 {
+    margin: 0;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
   }
 }
 
 .about__media {
   width: 100%;
   min-width: 320px;
-  max-width: 660px;
+  max-width: 100%;
   min-height: 511px;
   position: relative;
-
-  @include vp-1199-full {
-    padding: 0 0 110px 0;
-    max-width: 100%;
-    min-height: 0;
-  }
-
-  @include vp-767 {
-    padding: 0;
-    width: 100vw;
-    max-width: 100vw;
-  }
+  padding: 0 0 110px 0;
 }
 
 .about__photo {
   width: 100%;
   background-color: $color-dark-grey;
+  margin: 0 auto;
+  min-width: 660px;
+  height: 401px;
+  aspect-ratio: auto;
 
-  @include vp-1199-full {
-    margin: 0 auto;
-    width: 660px;
-    height: 401px;
-    aspect-ratio: auto;
-  }
-
-  @include vp-767 {
-    margin: 0 auto;
+  @include vp-1199 {
     max-width: 678px;
     height: auto;
     min-height: 313px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     margin-bottom: 40px;
   }
 
@@ -205,11 +146,11 @@
     height: 100%;
     object-fit: cover;
 
-    @include vp-767-full {
+    @include vp-1199 {
       max-height: 460px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       max-width: 678px;
       max-height: 345px;
     }
@@ -218,25 +159,14 @@
 
 .about__video {
   position: absolute;
-  top: 288px;
-  left: -80px;
+  top: 285px;
+  left: 18.5%;
+  transform: translateX(-50%);
   width: 364px;
   height: 228px;
   background-color: $color-egyptian-blue;
 
-  @include vp-1365 {
-    top: 285px;
-    left: 18.5%;
-    transform: translateX(-50%);
-  }
-
   @include vp-1199 {
-    top: 285px;
-    left: 22%;
-    transform: translateX(-50%);
-  }
-
-  @include vp-767 {
     position: relative;
     top: -84px;
     right: 0;
@@ -248,7 +178,7 @@
     margin: 0 auto;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     position: relative;
     top: 0;
     right: 0;
@@ -271,7 +201,7 @@
   width: 100%;
   height: 100%;
 
-  @include vp-767-full {
+  @include vp-1199 {
     aspect-ratio: 320/167;
   }
 }
@@ -292,12 +222,7 @@
   z-index: 3;
   cursor: pointer;
 
-  @include vp-767 {
-    width: 52px;
-    height: 52px;
-  }
-
-  @include vp-319 {
+  @include vp-1199 {
     width: 52px;
     height: 52px;
   }
@@ -312,12 +237,7 @@
     transform: translate(-35%, -50%);
     z-index: 4;
 
-    @include vp-767 {
-      width: 12px;
-      height: 12px;
-    }
-
-    @include vp-319 {
+    @include vp-1199 {
       width: 12px;
       height: 12px;
     }
@@ -335,12 +255,7 @@
     z-index: 1;
     border-radius: 50%;
 
-    @include vp-767 {
-      width: 52px;
-      height: 52px;
-    }
-
-    @include vp-319 {
+    @include vp-1199 {
       width: 52px;
       height: 52px;
     }
@@ -362,12 +277,7 @@
     mask-composite: exclude;
     border: 2px solid transparent;
 
-    @include vp-767 {
-      width: 73px;
-      height: 73px;
-    }
-
-    @include vp-319 {
+    @include vp-1199 {
       width: 73px;
       height: 73px;
     }
@@ -390,23 +300,15 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 58px;
-    height: 58px;
+    // width: 58px;
+    // height: 58px;
+    width: 48.5px;
+    height: 48.5px;
     background-color: $color-default-white;
 
     @include hover;
 
-    @include vp-1199-full {
-      width: 48.5px;
-      height: 48.5px;
-    }
-
-    @include vp-767 {
-      width: 40px;
-      height: 40px;
-    }
-
-    @include vp-319 {
+    @include vp-1199 {
       width: 40px;
       height: 40px;
     }

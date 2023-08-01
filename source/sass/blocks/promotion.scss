@@ -4,38 +4,25 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding: 44px 50px 0;
 
-  @include vp-1365 {
-    padding: 44px 50px 0;
-  }
-
-  @include vp-767-full {
+  @include vp-1199 {
     padding: 89px 45px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 63px 15px 0;
   }
 }
 
 .promotion__title {
-  font-family: $ff-alumni-sans-font;
-  font-weight: 600;
-  font-style: normal;
-  font-size: 54px;
-  line-height: 65px;
-  letter-spacing: 1.5px;
   margin-bottom: 32px;
 
-  @include vp-767 {
-    font-size: 42px;
-    line-height: 51px;
+  @include vp-1199 {
     margin: 0 0 40px;
   }
 
-  @include vp-319 {
-    font-size: 32px;
-    line-height: 39px;
+  @include vp-767 {
     margin: 0 0 44px;
   }
 }
@@ -46,21 +33,14 @@
   justify-content: space-between;
   gap: 40px;
   margin-bottom: 120px;
-
-  @include vp-1365 {
-    height: 462px;
-  }
+  height: 462px;
 
   @include vp-1199 {
-    height: 462px;
-  }
-
-  @include vp-767 {
     flex-direction: column;
     margin-bottom: 14px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     flex-direction: column;
     gap: 31px;
     margin-bottom: 70px;
@@ -69,11 +49,11 @@
   div {
     max-width: 560px;
 
-    @include vp-767 {
+    @include vp-1199 {
       max-width: 678px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       max-width: 290px;
     }
   }
@@ -85,30 +65,22 @@
   background-color: $color-torch-red;
   color: $color-default-white;
 
-  @include vp-319 {
+  @include vp-767 {
     flex-direction: column;
   }
 
   img {
+    max-width: 280px;
+    height: 462px;
     object-fit: cover;
     background-color: $color-torch-red;
 
-    @include vp-1365 {
-      max-width: 280px;
-      height: 462px;
-    }
-
     @include vp-1199 {
-      max-width: 280px;
-      height: 462px;
-    }
-
-    @include vp-767 {
       width: 399px;
       height: 462px;
     }
 
-    @include vp-319 {
+    @include vp-767 {
       width: 100%;
       height: 100%;
     }
@@ -122,11 +94,11 @@
   text-align: start;
   padding: 34px 34px 45px 45px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 279px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     padding: 34px 49px 44px;
     text-align: center;
   }
@@ -151,7 +123,7 @@
     margin-top: -3px;
     margin-bottom: 187px;
 
-    @include vp-319 {
+    @include vp-767 {
       margin-top: -8px;
       margin-bottom: 29px;
     }
@@ -167,7 +139,7 @@
     border-bottom: 1px solid $color-default-white;
     width: 79px;
 
-    @include vp-319 {
+    @include vp-767 {
       align-self: center;
     }
   }
@@ -177,24 +149,17 @@
   display: flex;
   flex-direction: column;
   width: 560px;
+  height: 462px;
   gap: 40px;
 
-  @include vp-1365 {
-    height: 462px;
-  }
-
   @include vp-1199 {
-    height: 462px;
-  }
-
-  @include vp-767 {
     flex-direction: row;
     width: 678px;
     justify-content: space-between;
     gap: 32px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     min-width: 290px;
     gap: 30px;
   }
@@ -210,12 +175,12 @@
   text-align: start;
   padding-left: 28px;
 
-  @include vp-767 {
+  @include vp-1199 {
     width: 324px;
     margin-top: -10px;
   }
 
-  @include vp-319 {
+  @include vp-767 {
     text-align: center;
     padding: 10px 30px;
   }
@@ -234,7 +199,7 @@
     line-height: 23px;
     margin: 0 0 72px;
 
-    @include vp-319 {
+    @include vp-767 {
       margin: 0 0 27px;
       max-width: 159px;
       align-self: center;
@@ -251,14 +216,14 @@
     border-bottom: 1px solid $color-sapphire;
     width: 68px;
 
-    @include vp-319 {
+    @include vp-767 {
       align-self: center;
     }
   }
 }
 
 .promotion__second {
-  @include vp-767 {
+  @include vp-1199 {
     padding-right: 56px;
 
     p {
