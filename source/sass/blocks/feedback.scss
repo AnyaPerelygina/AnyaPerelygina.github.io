@@ -35,8 +35,11 @@
 }
 
 .feedback__free-lesson {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
   min-height: 336px;
-  padding: 56px 170px 0 103px;
+  padding: 65px 170px 66px 103px;
   font-style: normal;
   color: $color-default-white;
 
@@ -81,15 +84,14 @@
 
 .feedback__title {
   line-height: 156%;
-  letter-spacing: 1.9px;
+  letter-spacing: 2.3px;
   text-align: start;
-  margin: 0 0 27px;
 
-  @media (min-width: $vp-1024) {
-    max-width: 462px;
-    margin-right: auto;
-    margin-left: auto;
-  }
+  // @media (min-width: $vp-1024) {
+  //   max-width: 462px;
+  //   margin-right: auto;
+  //   margin-left: auto;
+  // }
 
   @include vp-1199 {
     margin-bottom: 37px;
@@ -175,7 +177,6 @@
 .feedback__form-button {
   width: 100%;
   padding: 17px;
-  margin-bottom: 27px;
   text-align: center;
   font-family: $ff-base-font;
   font-size: 14px;

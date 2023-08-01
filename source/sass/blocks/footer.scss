@@ -5,7 +5,7 @@
   line-height: 16px;
   font-weight: 400;
   background: $color-black-russian;
-  padding: 17px 103px 2px 102px;
+  padding: 17px 103px 5px 102px;
   min-height: 108px;
 
   @include vp-1199 {
@@ -54,8 +54,9 @@
   list-style: none;
   margin-top: 20px;
   margin-bottom: 28px;
-  margin-left: 12px;
+  margin-left: 9px;
   gap: 20px;
+  padding: 0;
 
   @include vp-1199 {
     margin-top: 20px;
@@ -111,7 +112,7 @@
 .footer__social {
   display: flex;
   flex-direction: row;
-  gap: 10px;
+  gap: 11px;
   padding: 0 1px 15px;
 
   @include vp-1199 {

@@ -1,5 +1,8 @@
 .contacts {
-  padding: 55px 100px 0 123px;
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding: 55px 100px 55px 120px;
   min-height: 336px;
   color: $color-sapphire;
   font-style: normal;
@@ -16,14 +19,14 @@
     border: none;
   }
 
-  .contacts_title {
-    margin: 0 0 39px;
+  .contacts__title {
+    letter-spacing: 1.5px;
 
-    @media (min-width: $vp-1024) {
-      max-width: 462px;
-      margin-right: auto;
-      margin-left: auto;
-    }
+    // @media (min-width: $vp-1024) {
+    //   max-width: 462px;
+    //   margin-right: auto;
+    //   margin-left: auto;
+    // }
 
     @include vp-1199 {
       max-width: 470px;
@@ -40,15 +43,15 @@
   position: relative;
   display: flex;
   flex-wrap: wrap;
-  column-gap: 26%;
+  column-gap: 19%;
   row-gap: 15px;
-  padding-bottom: 62px;
+  padding: 0;
   min-height: 100px;
 
-  @media (min-width: $vp-1024) {
-    max-width: 462px;
-    margin: 0 auto;
-  }
+  // @media (min-width: $vp-1024) {
+  //   max-width: 462px;
+  //   margin: 0 auto;
+  // }
 
   @include vp-1199 {
     column-gap: 118px;
@@ -71,7 +74,7 @@
   content: "";
   top: 5%;
   left: 50%;
-  height: 128px;
+  height: 104px;
   width: 1px;
   background-color: $color-light-slate-grey;
   z-index: 1;
@@ -88,6 +91,8 @@
 }
 
 .contacts__item {
+  padding: 0 0 0 5px;
+
   p {
     font-family: $ff-base-font;
     font-size: 16px;
@@ -130,9 +135,9 @@
   a {
     font-family: $ff-base-font;
     font-weight: 400;
-    font-size: 18px;
+    font-size: 14px;
     line-height: 31px;
-    letter-spacing: 1px;
+    letter-spacing: 0;
     color: $color-sapphire;
 
     @include vp-767 {
