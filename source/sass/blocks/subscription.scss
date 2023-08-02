@@ -44,7 +44,8 @@
 
 .subscription__title {
   text-align: center;
-  margin: 0 0 18px;
+  margin: 0 0 15px;
+  letter-spacing: 1.5px;
 
   @include vp-1199 {
     margin-bottom: 20px;
@@ -79,8 +80,7 @@
   font-weight: 400;
   border-bottom: 2px solid $color-transparent;
   color: $color-bahama-blue;
-  padding-bottom: 9px;
-  margin: 0 0 -2px;
+  padding: 0 0 12px;
   background-color: transparent;
   border: 0;
   cursor: pointer;
@@ -138,6 +138,7 @@
   align-items: center;
   gap: 39px;
   padding: 0;
+  margin: 0;
   background-color: $color-transparent;
 
   @include vp-1199 {
@@ -160,7 +161,7 @@
   border: 7px solid $color-default-white;
   width: 360px;
   height: 448px;
-  padding: 51px 69px 46px;
+  padding: 51px 69px 60px;
 
   @include vp-1199 {
     min-width: 442px;
@@ -192,7 +193,7 @@
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
-    margin: 0 0 4px;
+    margin: 0 0 -30px;
 
     @include vp-1199 {
       font-size: 26px;
@@ -228,12 +229,12 @@
     color: $color-egyptian-blue;
     display: grid;
     grid-template-columns: 0 auto auto;
-    gap: 12px;
+    gap: 15px;
     justify-content: center;
     align-items: center;
     text-align: center;
     z-index: 1;
-    margin: 0 0 35px -12px;
+    margin: 34px 15px 0 0;
 
     @include vp-1199 {
       font-size: 60px;

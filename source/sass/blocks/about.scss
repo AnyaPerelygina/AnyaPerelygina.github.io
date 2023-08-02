@@ -40,7 +40,7 @@
   flex-wrap: wrap;
   align-items: start;
   text-align: start;
-  max-width: 359px;
+  max-width: 357px;
   margin-bottom: 39px;
 
   @include vp-1199 {
@@ -101,6 +101,12 @@
 }
 
 .about__title {
+  font-family: $ff-alumni-sans-font;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 58px;
+  letter-spacing: 1.5px;
   margin: 38px 0 8px;
 
   @include vp-1199 {

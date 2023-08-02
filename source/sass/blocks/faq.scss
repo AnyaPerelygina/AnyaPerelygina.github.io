@@ -4,7 +4,7 @@
   font-weight: 500;
   background-color: $color-ghost-white;
   color: $color-sapphire;
-  padding: 119px 92px 60px 102px;
+  padding: 119px 101px 119px 102px;
 
   @include vp-1199 {
     padding: 73px 45px 91px;
@@ -16,6 +16,7 @@
 }
 
 .faq__title {
+  letter-spacing: 1.7px;
   color: $color-sapphire;
   text-align: left;
   width: 100%;
@@ -86,7 +87,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 16.5px 18px;
+  padding: 17px 103px;
   margin: 0;
   background-color: transparent;
   background-image: none;
@@ -130,7 +131,7 @@
   &.is-active {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: none;
-    padding: 19px 59px;
+    padding: 17px 103px;
     color: $color-default-white;
   }
 }
@@ -147,12 +148,12 @@
     align-items: start;
     justify-content: start;
     background: $color-ghost-white;
-    margin-top: -38px;
+    margin: 0;
+    padding: 0;
 
     @include vp-767 {
       min-height: 514px;
       justify-content: space-between;
-      margin-bottom: 0;
     }
   }
 }

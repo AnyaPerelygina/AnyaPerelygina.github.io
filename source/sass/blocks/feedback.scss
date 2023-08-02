@@ -37,9 +37,9 @@
 .feedback__free-lesson {
   display: flex;
   flex-direction: column;
-  gap: 28px;
+  gap: 30px;
   min-height: 336px;
-  padding: 65px 170px 66px 103px;
+  padding: 65px 170px 66px 102px;
   font-style: normal;
   color: $color-default-white;
 
@@ -60,7 +60,7 @@
     display: flex;
     flex-wrap: wrap;
     column-gap: 7%;
-    row-gap: 30px;
+    row-gap: 27px;
 
     @media (min-width: $vp-1024) {
       max-width: 462px;
@@ -86,6 +86,7 @@
   line-height: 156%;
   letter-spacing: 2.3px;
   text-align: start;
+  margin: 0;
 
   // @media (min-width: $vp-1024) {
   //   max-width: 462px;
