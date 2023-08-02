@@ -11,7 +11,7 @@
   }
 
   @include vp-767 {
-    padding: 70px 15px 38px;
+    padding: 70px 15px 69px;
   }
 }
 
@@ -30,14 +30,14 @@
   }
 
   @include vp-767 {
+    letter-spacing: 1px;
     text-align: center;
-    margin: 0 0 28px;
+    margin: 0 0 29px;
   }
 }
 
 .faq__container {
   display: flex;
-  flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
   background-color: $color-ghost-white;
@@ -45,11 +45,13 @@
   column-gap: 37px;
 
   @include vp-1199 {
+    flex-wrap: wrap;
     width: 678px;
   }
 
   @include vp-767 {
-    justify-content: center;
+    justify-content: start;
+    flex-wrap: wrap;
   }
 }
 
@@ -73,7 +75,7 @@
     flex-direction: row;
     min-width: 290px;
     justify-content: space-between;
-    margin-bottom: -5px;
+    margin-bottom: 28px;
   }
 }
 
@@ -131,7 +133,6 @@
   &.is-active {
     background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
     border: none;
-    padding: 17px 103px;
     color: $color-default-white;
   }
 }
@@ -150,10 +151,5 @@
     background: $color-ghost-white;
     margin: 0;
     padding: 0;
-
-    @include vp-767 {
-      min-height: 514px;
-      justify-content: space-between;
-    }
   }
 }

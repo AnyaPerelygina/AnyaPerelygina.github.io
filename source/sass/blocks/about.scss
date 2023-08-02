@@ -27,7 +27,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-bottom: 72px;
+    padding: 0;
     margin: 0;
     min-width: 320px;
     max-width: 767px;
@@ -50,7 +50,10 @@
   }
 
   @include vp-767 {
+    text-align: start;
+    align-items: start;
     padding: 63px 20px 33px 6px;
+    margin: 0;
   }
 
   span {
@@ -114,9 +117,12 @@
   }
 
   @include vp-767 {
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 1px;
     margin: 0;
     margin-bottom: 5px;
-    letter-spacing: 1px;
+    text-align: start;
   }
 }
 
@@ -126,14 +132,17 @@
   max-width: 100%;
   min-height: 511px;
   position: relative;
-  padding: 0 0 110px 0;
+  padding: 0 0 110px;
+
+  @include vp-767 {
+    padding: 0 0 70px;
+  }
 }
 
 .about__photo {
   width: 100%;
-  background-color: $color-dark-grey;
   margin: 0 auto;
-  min-width: 660px;
+  // min-width: 660px;
   height: 401px;
   aspect-ratio: auto;
 
@@ -144,6 +153,8 @@
   }
 
   @include vp-767 {
+    max-width: 320px;
+    max-height: 313px;
     margin-bottom: 40px;
   }
 
@@ -151,14 +162,15 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+    background-color: $color-dark-grey;
 
     @include vp-1199 {
       max-height: 460px;
     }
 
     @include vp-767 {
-      max-width: 678px;
-      max-height: 345px;
+      max-width: 320px;
+      max-height: 313px;
     }
   }
 }
@@ -233,6 +245,11 @@
     height: 52px;
   }
 
+  @include vp-767 {
+    width: 52px;
+    height: 52px;
+  }
+
   svg {
     width: 17px;
     height: 17px;
@@ -244,6 +261,11 @@
     z-index: 4;
 
     @include vp-1199 {
+      width: 12px;
+      height: 12px;
+    }
+
+    @include vp-767 {
       width: 12px;
       height: 12px;
     }
@@ -262,6 +284,11 @@
     border-radius: 50%;
 
     @include vp-1199 {
+      width: 52px;
+      height: 52px;
+    }
+
+    @include vp-767 {
       width: 52px;
       height: 52px;
     }
@@ -284,6 +311,11 @@
     border: 2px solid transparent;
 
     @include vp-1199 {
+      width: 73px;
+      height: 73px;
+    }
+
+    @include vp-767 {
       width: 73px;
       height: 73px;
     }
@@ -315,6 +347,11 @@
     @include hover;
 
     @include vp-1199 {
+      width: 40px;
+      height: 40px;
+    }
+
+    @include vp-767 {
       width: 40px;
       height: 40px;
     }

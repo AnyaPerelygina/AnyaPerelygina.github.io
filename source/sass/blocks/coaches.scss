@@ -6,7 +6,7 @@
   }
 
   @include vp-767 {
-    padding: 0 47px 67px;
+    padding: 0 47px 70px;
   }
 }
 
@@ -36,8 +36,9 @@
   }
 
   @include vp-767 {
+    letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 41px;
+    margin-bottom: 44px;
   }
 }
 
@@ -67,6 +68,7 @@
   @include vp-767 {
     width: 100%;
     height: 100%;
+    aspect-ratio: 226/274;
   }
 
   img {
@@ -128,7 +130,7 @@
   }
 
   @include vp-767 {
-    padding: 36px 0 20px;
+    padding: 45px 0 44px;
   }
 
   span {
@@ -171,6 +173,7 @@
 
     @include vp-767 {
       line-height: 21px;
+      margin: 0 auto 0 49px;
     }
   }
 
@@ -178,6 +181,10 @@
     margin: 0 0 20px;
     display: list-item;
     list-style: disc;
+
+    @include vp-767 {
+      margin: 0 0 13px;
+    }
   }
 }
 

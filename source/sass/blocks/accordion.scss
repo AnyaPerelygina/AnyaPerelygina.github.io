@@ -22,24 +22,9 @@
   display: flex;
   flex-wrap: wrap;
   margin: 0;
-  // padding-top: 26px;
-  // padding-bottom: 10px;
-  // margin: 0 0 33px 0;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
 
-  // @include vp-1199 {
-  //   padding-top: 22px;
-  //   margin-bottom: 31px;
-  // }
-
-  // @include vp-767 {
-  //   padding: 14px 0 9px;
-  //   margin: 0;
-  // }
-
   &:last-child {
-    // padding-bottom: 20px;
-    // margin: 0 0 30px;
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
     @include vp-1199 {
@@ -51,11 +36,6 @@
         margin: 0;
       }
     }
-
-    @include vp-767 {
-      padding-top: 14px;
-      padding-bottom: 4px;
-    }
   }
 
   &.is-active {
@@ -64,12 +44,10 @@
 
     @include vp-1199 {
       margin-bottom: 27px;
-      padding-top: 22px;
     }
 
     @include vp-767 {
-      margin-bottom: 7px;
-      padding-top: 14px;
+      margin-bottom: 16px;
     }
   }
 
@@ -90,6 +68,10 @@
       width: 93.8%;
       margin-top: 9px;
       margin-bottom: 16px;
+
+      br {
+        display: none;
+      }
     }
 
     @include vp-767 {
@@ -98,7 +80,8 @@
       letter-spacing: 0;
       width: 88.5%;
       min-height: 84px;
-      margin-bottom: -7px;
+      padding: 19px 0;
+      margin: 0;
     }
   }
 }
@@ -107,9 +90,7 @@
   width: 42px;
   height: 42px;
   margin: 0;
-  top: 24px;
-  right: 0.5px;
-  display: flex;
+  align-self: center;
   position: relative;
   background: transparent;
   border-radius: 50%;
@@ -118,7 +99,6 @@
   @include vp-767 {
     width: 32px;
     height: 32px;
-    margin-top: 3%;
   }
 
   &::before {
@@ -188,11 +168,17 @@
   align-items: center;
 }
 
+.accordion__element.is-active h3 {
+  @include vp-767 {
+    padding: 19px 0 12px;
+  }
+}
+
 .accordion__element.is-active .accordion__button {
   background: $color-sapphire;
 
   @include vp-767 {
-    margin-top: 7%;
+    margin-top: 4%;
   }
 
   &::before {
@@ -216,6 +202,10 @@
 }
 
 .accordion__content {
+  @include vp-767 {
+    margin: 0;
+  }
+
   p {
     font-size: 18px;
     font-weight: 300;
@@ -233,6 +223,15 @@
   }
 }
 
-[data-accordion="content"] {
+[data-accordion="content"].is-active {
   margin: -16px 0 0 2px;
+
+  @include vp-767 {
+    margin: 4px 0 11px;
+
+    h3 {
+      margin-top: 6px;
+      margin-bottom: -8px;
+    }
+  }
 }
