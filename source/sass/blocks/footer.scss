@@ -5,7 +5,7 @@
   line-height: 16px;
   font-weight: 400;
   background: $color-black-russian;
-  padding: 19px 103px 5px 102px;
+  padding: 40px 103px 5px 102px;
   min-height: 108px;
 
   @include vp-1199 {
@@ -17,37 +17,42 @@
     font-size: 16px;
     line-height: 19px;
     min-height: 260px;
-    padding: 18px 43px 2px 2px;
+    padding: 43px 43px 2px 2px;
   }
 }
 
 .footer__wrapper {
   display: flex;
   flex-direction: row;
-  flex-wrap: wrap;
   justify-content: space-between;
+  gap: 50px;
 
   @include vp-1199 {
     align-items: self-start;
+    gap: 10px;
   }
 
   @include vp-767 {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 0;
   }
 }
 
 .footer__logo {
-  padding: 33px 0;
+  padding: 9px 0;
+  min-width: 88px;
 
   @include vp-1199 {
     padding: 0;
     margin-top: 4px;
+    min-width: 82px;
   }
 
   @include vp-767 {
     margin-right: 187px;
+    min-width: 68px;
   }
 }
 
@@ -55,11 +60,12 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: start;
   list-style: none;
   gap: 21px;
   padding: 0;
-  margin: 20px 0 28px 12px;
+  margin: 0;
+  margin-left: 9px;
 
   @include vp-1199 {
     margin: 0 0 0 13px;
@@ -73,15 +79,15 @@
     grid-auto-flow: column;
     justify-items: start;
     column-gap: 39px;
-    row-gap: 1px;
-    margin-top: -60px;
+    row-gap: 7px;
+    margin-top: -33px;
     margin-bottom: 27px;
     margin-left: 3px;
   }
 }
 
 .footer__item {
-  padding: 10px;
+  padding: 5px 10px 10px;
 
   &:focus {
     border: 1px solid $color-default-white;
@@ -118,8 +124,10 @@
 .footer__social {
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 11px;
-  padding: 0 1px 15px;
+  padding: 0;
+  width: 97px;
 
   @include vp-1199 {
     padding: 0;

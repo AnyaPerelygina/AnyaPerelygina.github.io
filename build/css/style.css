@@ -1575,7 +1575,6 @@ button,
 
 .container {
   width: 100%;
-  max-width: 1920px;
   margin: 0 auto;
   -webkit-box-flex: 1;
   -ms-flex-positive: 1;
@@ -1634,7 +1633,7 @@ button,
 .about__wrapper {
   display: -ms-grid;
   display: grid;
-  padding: 120px 104px 125px 162px;
+  padding: 120px 50px 125px;
   -ms-grid-columns: auto 660px;
   grid-template-columns: auto 660px;
   -webkit-column-gap: 80px;
@@ -1966,8 +1965,13 @@ button,
   align-items: center;
 }
 
+.accordion__element.is-active h3 {
+  padding: 32px 0 15px;
+}
+
 .accordion__element.is-active .accordion__button {
   background: #102654;
+  margin-top: 2%;
 }
 
 .accordion__element.is-active .accordion__button::before {
@@ -2018,7 +2022,7 @@ button,
   align-items: center;
   width: 100%;
   background-color: #f8f9fc;
-  padding: 108px 90px 127px;
+  padding: 108px 163px 127px;
 }
 
 .advantages__title {
@@ -2036,6 +2040,7 @@ button,
   height: 307px;
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 .advantages__item {
@@ -2050,8 +2055,9 @@ button,
   -ms-flex-align: center;
   align-items: center;
   text-align: start;
-  max-width: 340px;
-  padding-bottom: 73px;
+  padding: 0;
+  margin: -39px 0;
+  width: 100%;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -2063,7 +2069,7 @@ button,
   -ms-grid-column-span: -1;
   grid-area: 1/2/1/1;
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
-  padding-left: 7px;
+  padding: 0;
 }
 
 .advantages__item--place .advantages__promo span {
@@ -2073,8 +2079,12 @@ button,
   -webkit-text-fill-color: transparent;
 }
 
+.advantages__item--place .advantages__description {
+  margin-top: 34px;
+}
+
 .advantages__item--parking {
-  padding-left: 12px;
+  padding: 0;
   margin-top: -5px;
   -ms-grid-row: 1;
   -ms-grid-column: 4;
@@ -2180,11 +2190,12 @@ button,
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: flex-start;
+  margin: 0;
 }
 
 .advantages__promo span {
   font-size: 71px;
-  line-height: 107px;
+  line-height: 103px;
   font-weight: 700;
   display: block;
   margin: 0;
@@ -2340,6 +2351,12 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 .coaches__information span {
@@ -2360,8 +2377,8 @@ button,
   font-size: 14px;
   line-height: 16px;
   text-align: start;
-  margin: 0 auto 0 39px;
-  padding: 0;
+  margin: 0 auto;
+  padding: 0 27px;
   max-width: 185px;
 }
 
@@ -3052,7 +3069,7 @@ button,
   -ms-flex-pack: justify;
   justify-content: space-between;
   background-color: #f8f9fc;
-  max-height: 770px;
+  height: 100%;
   -webkit-column-gap: 37px;
   -moz-column-gap: 37px;
   column-gap: 37px;
@@ -3074,7 +3091,7 @@ button,
   align-items: start;
   row-gap: 10px;
   max-width: 260px;
-  max-height: 246px;
+  height: 100%;
 }
 
 .faq__control {
@@ -3165,7 +3182,6 @@ button,
   -ms-grid-columns: 1fr 1fr;
   grid-template-columns: 1fr 1fr;
   grid-auto-rows: auto;
-  max-height: 337px;
   height: 100%;
   text-align: start;
 }
@@ -3179,7 +3195,6 @@ button,
   grid-row: 1/2;
   width: 100%;
   height: 100%;
-  max-height: 337px;
   background-color: #102654;
 }
 
@@ -3236,7 +3251,7 @@ button,
 
 .feedback__form input {
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 16px;
+  font-size: 14px;
   color: #ffffff;
   width: 100%;
   background-color: transparent;
@@ -3252,9 +3267,10 @@ button,
 
 .feedback__form input:active,
 .feedback__form input:focus {
-  padding: 10px 15px;
+  padding: 10px;
   outline: 1px solid #ffffff;
   border: none;
+  margin-bottom: -10px;
 }
 
 .feedback__form input:disabled {
@@ -3396,7 +3412,7 @@ button,
   line-height: 16px;
   font-weight: 400;
   background: #030a1a;
-  padding: 19px 103px 5px 102px;
+  padding: 40px 103px 5px 102px;
   min-height: 108px;
 }
 
@@ -3408,15 +3424,15 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
-  -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  gap: 50px;
 }
 
 .footer__logo {
-  padding: 33px 0;
+  padding: 9px 0;
+  min-width: 88px;
 }
 
 .footer__nav {
@@ -3429,17 +3445,18 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   list-style: none;
   gap: 21px;
   padding: 0;
-  margin: 20px 0 28px 12px;
+  margin: 0;
+  margin-left: 9px;
 }
 
 .footer__item {
-  padding: 10px;
+  padding: 5px 10px 10px;
 }
 
 .footer__item:focus {
@@ -3467,8 +3484,11 @@ button,
   -webkit-box-direction: normal;
   -ms-flex-direction: row;
   flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   gap: 11px;
-  padding: 0 1px 15px;
+  padding: 0;
+  width: 97px;
 }
 
 .header {
@@ -3528,16 +3548,19 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   position: relative;
   margin-top: -13px;
   margin-right: 168px;
 }
 
 .hero img {
-  max-height: 556px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
 }
 
 .hero__list {
@@ -3545,8 +3568,12 @@ button,
   margin: 0;
   padding: 0;
   position: relative;
-  top: 59px;
+  top: 84px;
   right: 12px;
+  padding-bottom: 52px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .hero__list li {
@@ -3558,7 +3585,7 @@ button,
 }
 
 .hero__wrapper {
-  padding: 69px 65px 0 3px;
+  padding: 111px 65px 0 3px;
 }
 
 .hero__wrapper span {
@@ -3936,7 +3963,7 @@ button,
   -ms-flex-item-align: start;
   -ms-grid-row-align: start;
   align-self: start;
-  padding-left: 13px;
+  padding: 0;
 }
 
 .social__link {
@@ -4057,6 +4084,14 @@ button,
 }
 
 .subscription__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   margin-top: 38px;
 }
 
@@ -4070,9 +4105,9 @@ button,
   flex-direction: row;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: start;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4080,6 +4115,7 @@ button,
   padding: 0;
   margin: 0;
   background-color: rgba(255, 255, 255, 0);
+  max-width: 1158px;
 }
 
 .subscription__item {
@@ -4228,12 +4264,11 @@ button,
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 122px 102px 106px;
+  padding: 122px 20px 106px;
 }
 
 .supergames img {
   width: 100%;
-  max-width: 660px;
   height: 100%;
   display: block;
   -o-object-fit: cover;
@@ -4266,6 +4301,7 @@ button,
   font-size: 18px;
   line-height: 27px;
   color: #ffffff;
+  text-align: start;
   -ms-grid-row: 2;
   grid-area: 2/4/2/-3;
   margin: 0;
@@ -4491,14 +4527,6 @@ button,
   }
 */
 
-@media (min-width: 1024px) {
-  .feedback__free-lesson form {
-    max-width: 462px;
-    margin-right: auto;
-    margin-left: auto;
-  }
-}
-
 @media (max-width: 1023px) {
   .about__wrapper {
     padding: 120px 0;
@@ -4680,12 +4708,12 @@ button,
   }
 
   .advantages {
-    padding: 61px 0 64px;
+    padding: 61px 0 53px;
   }
 
   .advantages__title {
     letter-spacing: 1px;
-    margin-bottom: 28px;
+    margin-bottom: 48px;
   }
 
   .advantages__list {
@@ -4696,8 +4724,8 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    gap: 15px;
     height: 100%;
+    gap: 26px;
   }
 
   .advantages__item {
@@ -4717,9 +4745,13 @@ button,
     padding: 0;
   }
 
+  .advantages__item--place .advantages__description {
+    margin-top: -2px;
+  }
+
   .advantages__item--parking {
     border-bottom: none;
-    padding: 1px 46px 26px;
+    padding: 10px 46px 17px;
   }
 
   .advantages__item--parking .advantages__description h3 {
@@ -4744,11 +4776,17 @@ button,
   }
 
   .advantages__item--comfort {
-    padding: 10px 50px;
+    padding: 20px 50px;
+    margin-bottom: -13px;
+  }
+
+  .advantages__item--comfort .advantages__description {
+    margin-bottom: -1px;
   }
 
   .advantages__item--comfort .advantages__description h3 {
-    margin-bottom: -1px;
+    margin-top: -1px;
+    margin-bottom: -2px;
   }
 
   .advantages__item--experience {
@@ -4756,23 +4794,33 @@ button,
   }
 
   .advantages__item--experience .advantages__promo span {
-    margin-top: -18px;
+    margin-top: -4px;
+  }
+
+  .advantages__item--experience .advantages__description {
+    margin-top: -3px;
+    margin-bottom: 1px;
   }
 
   .advantages__item--experience .advantages__description h3 {
-    margin-bottom: -1px;
+    margin-top: 2px;
+    margin-bottom: -2px;
+  }
+
+  .advantages__promo {
+    margin: 0;
   }
 
   .advantages__promo span {
     font-size: 58px;
-    line-height: 91px;
-    margin-bottom: -22px;
+    line-height: 51px;
+    margin-bottom: -1px;
   }
 
   .advantages__promo small {
     margin: 0;
     text-align: center;
-    margin: 0 0 8px;
+    margin: 0 0 7px;
   }
 
   .advantages__description {
@@ -4818,7 +4866,10 @@ button,
   }
 
   .coaches__information {
-    padding: 45px 0 44px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 91px 6px 55px 0;
   }
 
   .coaches__information p {
@@ -4827,7 +4878,11 @@ button,
 
   .coaches__information ul {
     line-height: 21px;
-    margin: 0 auto 0 49px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    max-width: 200px;
   }
 
   .coaches__information li {
@@ -4956,9 +5011,9 @@ button,
   }
 
   .faq__container {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
   }
@@ -4969,6 +5024,7 @@ button,
     -ms-flex-direction: row;
     flex-direction: row;
     min-width: 290px;
+    height: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -4984,6 +5040,12 @@ button,
     margin: 0;
   }
 
+  .faq__content {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+
   .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -4992,7 +5054,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-height: 1019px;
   }
 
   .feedback__container--form {
@@ -5003,7 +5064,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-height: 386px;
   }
 
   .feedback__free-lesson {
@@ -5028,6 +5088,11 @@ button,
     width: 100%;
   }
 
+  .feedback__form input:active,
+  .feedback__form input:focus {
+    margin-bottom: -3px;
+  }
+
   .feedback__form input {
     padding-bottom: 5px;
     margin-bottom: 10px;
@@ -5050,7 +5115,7 @@ button,
     font-size: 16px;
     line-height: 19px;
     min-height: 260px;
-    padding: 18px 43px 2px 2px;
+    padding: 43px 43px 2px 2px;
   }
 
   .footer__wrapper {
@@ -5064,10 +5129,12 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
+    gap: 0;
   }
 
   .footer__logo {
     margin-right: 187px;
+    min-width: 68px;
   }
 
   .footer__nav {
@@ -5082,8 +5149,8 @@ button,
     -webkit-column-gap: 39px;
     -moz-column-gap: 39px;
     column-gap: 39px;
-    row-gap: 1px;
-    margin-top: -60px;
+    row-gap: 7px;
+    margin-top: -33px;
     margin-bottom: 27px;
     margin-left: 3px;
   }
@@ -5151,6 +5218,7 @@ button,
 
   .hero__wrapper {
     padding: 6px 0 0;
+    margin-top: -52px;
   }
 
   .hero__wrapper span {
@@ -5176,7 +5244,7 @@ button,
   }
 
   .promotion {
-    padding: 51px 15px 59px;
+    padding: 63px 15px 59px;
   }
 
   .promotion__title {
@@ -5309,6 +5377,10 @@ button,
 
   .reviews__button--prev {
     left: -41px;
+  }
+
+  .social {
+    margin-left: 13px;
   }
 
   .subscription__container {
@@ -5669,7 +5741,7 @@ button,
   }
 
   .accordion__element:last-child {
-    padding: 31px 0;
+    padding: 30px 0;
   }
 
   .accordion__element:last-child h3 {
@@ -5720,7 +5792,7 @@ button,
   }
 
   .advantages {
-    padding: 91px 47px 95px;
+    padding: 91px 47px 133px;
   }
 
   .advantages__title {
@@ -5729,15 +5801,12 @@ button,
   }
 
   .advantages__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: (auto)[3];
+    grid-template-rows: repeat(3, auto);
+    -ms-grid-columns: (auto)[2];
+    grid-template-columns: repeat(2, auto);
     max-width: 674px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -5753,7 +5822,11 @@ button,
     grid-area: 1/2/1/1;
     border-bottom: none;
     padding: 0;
-    margin-bottom: 45px;
+    margin-bottom: 44px;
+  }
+
+  .advantages__item--place .advantages__promo span {
+    padding-top: 15px;
   }
 
   .advantages__item--parking {
@@ -5764,7 +5837,11 @@ button,
     border-bottom: none;
     padding: 0;
     margin-right: 7px;
-    margin-bottom: 40px;
+    margin-bottom: 44px;
+  }
+
+  .advantages__item--parking .advantages__promo span {
+    margin-top: -7px;
   }
 
   .advantages__item--current {
@@ -5800,7 +5877,11 @@ button,
     -ms-grid-column-span: -1;
     grid-area: 3/2/4/1;
     padding: 0;
-    margin-top: 44px;
+    margin-top: 21px;
+  }
+
+  .advantages__item--comfort .advantages__description {
+    margin-top: 24px;
   }
 
   .advantages__item--experience {
@@ -5810,14 +5891,23 @@ button,
     -ms-grid-column-span: 1;
     grid-area: 4/3/3/4;
     padding: 0;
-    margin-top: 46px;
+    margin-top: 21px;
     margin-right: 9px;
+  }
+
+  .advantages__item--experience .advantages__description {
+    margin-top: 24px;
+  }
+
+  .advantages__promo {
+    margin-top: 12px;
+    margin-right: 33px;
   }
 
   .advantages__promo span {
     font-size: 58px;
     line-height: 45px;
-    margin-right: 28px;
+    margin-top: 15px;
     margin-bottom: 22px;
   }
 
@@ -5867,7 +5957,10 @@ button,
   }
 
   .coaches__information {
-    padding: 55px 37px 55px 29px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 68px 37px 55px 29px;
   }
 
   .coaches__information span {
@@ -5880,6 +5973,12 @@ button,
 
   .coaches__information ul {
     line-height: 20px;
+    margin: 0 auto;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    padding: 0 39px;
+    max-width: 220px;
   }
 
   .coaches__information li {
@@ -5968,11 +6067,11 @@ button,
   }
 
   .faq {
-    padding: 101px 45px 97px;
+    padding: 101px 45px 98px;
   }
 
   .faq__title {
-    margin-bottom: 39px;
+    margin-bottom: 40px;
     text-align: center;
   }
 
@@ -5987,10 +6086,13 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     min-width: 678px;
+    height: 100%;
     margin-bottom: 38px;
   }
 
@@ -6007,7 +6109,6 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    max-height: 675px;
   }
 
   .feedback__free-lesson {
@@ -6062,11 +6163,13 @@ button,
     -webkit-box-align: self-start;
     -ms-flex-align: self-start;
     align-items: self-start;
+    gap: 10px;
   }
 
   .footer__logo {
     padding: 0;
     margin-top: 4px;
+    min-width: 82px;
   }
 
   .footer__nav {
@@ -6111,14 +6214,12 @@ button,
     padding-top: 18px;
   }
 
-  .hero img {
-    position: relative;
-    top: -41px;
-  }
-
   .hero__list {
-    top: -18px;
+    top: 7px;
     left: 3px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
   }
 
   .hero__wrapper {
@@ -6208,11 +6309,11 @@ button,
   }
 
   .reviews__wrapper {
-    padding: 90px 0 100px;
+    padding: 92px 0 100px;
   }
 
   .reviews__title {
-    margin: 0 0 41px;
+    margin: 0 0 39px;
   }
 
   .reviews__swiper {
@@ -6279,6 +6380,13 @@ button,
   }
 
   .subscription__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
     gap: 40px;
   }
 
@@ -6415,6 +6523,20 @@ button,
   .title {
     font-size: 42px;
     line-height: 51px;
+  }
+}
+
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .accordion__element h3 {
+    width: 94%;
+  }
+
+  .coaches__wrapper {
+    max-width: 1000px;
+  }
+
+  .hero img {
+    width: 89%;
   }
 }
 

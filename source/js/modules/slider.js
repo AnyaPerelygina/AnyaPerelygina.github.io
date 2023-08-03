@@ -1,3 +1,4 @@
+/* eslint-disable no-new */
 import Swiper from '../vendor/swiper'
 const buttonNext = document.querySelector('.coaches__button--next');
 const buttonPrev = document.querySelector('.coaches__button--prev');
@@ -15,8 +16,13 @@ const initCoachesSlider = () => {
 
       loop: true,
       breakpoints: {
-        1200: {
+        1366: {
           slidesPerView: 4,
+          spaceBetween: 40,
+        },
+
+        1200: {
+          slidesPerView: 3,
           spaceBetween: 40,
         },
 

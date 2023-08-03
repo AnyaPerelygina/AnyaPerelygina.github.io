@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
+  align-items: flex-start;
   position: relative;
   margin-top: -13px;
   margin-right: 168px;
@@ -21,11 +21,12 @@
 }
 
 .hero img {
-  max-height: 556px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 
-  @include vp-1199 {
-    position: relative;
-    top: -41px;
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    width: 89%;
   }
 
   @include vp-767 {
@@ -36,12 +37,15 @@
 .hero__list {
   @include list;
   position: relative;
-  top: 59px;
+  top: 84px;
   right: 12px;
+  padding-bottom: 52px;
+  align-self: center;
 
   @include vp-1199 {
-    top: -18px;
+    top: 7px;
     left: 3px;
+    align-self: center;
   }
 
   @include vp-767 {
@@ -59,7 +63,7 @@
 }
 
 .hero__wrapper {
-  padding: 69px 65px 0 3px;
+  padding: 111px 65px 0 3px;
 
   @include vp-1199 {
     padding: 51px 0 203px;
@@ -67,6 +71,7 @@
 
   @include vp-767 {
     padding: 6px 0 0;
+    margin-top: -52px;
   }
 
 
