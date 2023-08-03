@@ -28,8 +28,7 @@
     border-bottom: 1px solid rgba(28, 51, 116, 0.2);
 
     @include vp-1199 {
-      padding-top: 31px;
-      padding-bottom: 14px;
+      padding: 31px 0;
 
       h3 {
         padding: 0 161px 0 0;
@@ -65,9 +64,10 @@
     @include vp-1199 {
       font-weight: 500;
       line-height: 24px;
+      letter-spacing: 0.09px;
       width: 93.8%;
-      margin-top: 9px;
-      margin-bottom: 16px;
+      padding: 33px 0;
+      margin: 0;
 
       br {
         display: none;
@@ -169,6 +169,10 @@
 }
 
 .accordion__element.is-active h3 {
+  @include vp-1199 {
+    padding: 34px 0 15px;
+  }
+
   @include vp-767 {
     padding: 19px 0 12px;
   }
@@ -176,6 +180,10 @@
 
 .accordion__element.is-active .accordion__button {
   background: $color-sapphire;
+
+  @include vp-1199 {
+    margin-top: 3%;
+  }
 
   @include vp-767 {
     margin-top: 4%;
@@ -226,12 +234,19 @@
 [data-accordion="content"].is-active {
   margin: -16px 0 0 2px;
 
+  @include vp-1199 {
+    margin: -16px 0 -2px;
+
+    h3 {
+      margin: 10px 0 -10px;
+    }
+  }
+
   @include vp-767 {
     margin: 4px 0 11px;
 
     h3 {
-      margin-top: 6px;
-      margin-bottom: -8px;
+      margin: 6px 0 -8px;
     }
   }
 }

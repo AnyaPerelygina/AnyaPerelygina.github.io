@@ -3,6 +3,10 @@
   list-style: none;
   align-self: start;
   padding-left: 13px;
+
+  @include vp-1199 {
+    padding: 0;
+  }
 }
 
 .social__link {

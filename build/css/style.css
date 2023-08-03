@@ -2029,10 +2029,10 @@ button,
 .advantages__list {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (1fr)[3];
-  grid-template-columns: repeat(3, 1fr);
   -ms-grid-rows: (auto)[2];
   grid-template-rows: repeat(2, auto);
+  -ms-grid-columns: (auto)[3];
+  grid-template-columns: repeat(3, auto);
   height: 307px;
   margin: 0;
   padding: 0;
@@ -2052,6 +2052,9 @@ button,
   text-align: start;
   max-width: 340px;
   padding-bottom: 73px;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .advantages__item--place {
@@ -2063,25 +2066,11 @@ button,
   padding-left: 7px;
 }
 
-.advantages__item--place .advantages__promo {
-  margin: -30px 26px 0 1px;
-}
-
 .advantages__item--place .advantages__promo span {
   background: linear-gradient(127.61deg, #d10a42 0%, #0041ca 45.58%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.advantages__item--place .advantages__description {
-  margin-top: 6px;
-  margin-left: 5px;
-}
-
-.advantages__item--place .advantages__description h3 {
-  margin-top: -13px;
-  margin-bottom: 4px;
 }
 
 .advantages__item--parking {
@@ -2094,25 +2083,11 @@ button,
   border-bottom: 2px solid rgba(209, 10, 66, 0.2);
 }
 
-.advantages__item--parking .advantages__promo {
-  margin: -28px 27px 0 -1px;
-}
-
 .advantages__item--parking .advantages__promo span {
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.advantages__item--parking .advantages__description {
-  margin-top: 7px;
-  margin-left: 0;
-}
-
-.advantages__item--parking .advantages__description h3 {
-  margin-top: -13px;
-  margin-bottom: 3px;
 }
 
 .advantages__item--current {
@@ -2171,20 +2146,11 @@ button,
   padding: 80px 0 0 9px;
 }
 
-.advantages__item--comfort .advantages__promo {
-  margin: -28px 29px 0 -1px;
-}
-
 .advantages__item--comfort .advantages__promo span {
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.advantages__item--comfort .advantages__description h3 {
-  margin-top: -7px;
-  margin-bottom: 5px;
 }
 
 .advantages__item--experience {
@@ -2196,20 +2162,11 @@ button,
   padding: 80px 0 0 9px;
 }
 
-.advantages__item--experience .advantages__promo {
-  margin: -28px 32px 0 -1px;
-}
-
 .advantages__item--experience .advantages__promo span {
   background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
-}
-
-.advantages__item--experience .advantages__description h3 {
-  margin-top: -7px;
-  margin-bottom: 5px;
 }
 
 .advantages__promo {
@@ -4023,7 +3980,7 @@ button,
 .subscription__container {
   width: 100%;
   background-color: #f8f9fc;
-  padding: 120px 82px 118px;
+  padding: 120px 104px 118px;
 }
 
 .subscription__container::after {
@@ -4719,8 +4676,7 @@ button,
   }
 
   [data-accordion=content].is-active h3 {
-    margin-top: 6px;
-    margin-bottom: -8px;
+    margin: 6px 0 -8px;
   }
 
   .advantages {
@@ -4761,38 +4717,9 @@ button,
     padding: 0;
   }
 
-  .advantages__item--place .advantages__promo {
-    margin: 0;
-  }
-
-  .advantages__item--place .advantages__promo small {
-    margin: 0 0 22px;
-  }
-
-  .advantages__item--place .advantages__description {
-    margin: 0;
-  }
-
   .advantages__item--parking {
     border-bottom: none;
     padding: 1px 46px 26px;
-  }
-
-  .advantages__item--parking .advantages__promo {
-    margin: 0;
-    gap: 5px;
-  }
-
-  .advantages__item--parking .advantages__promo small {
-    margin: 0 0 4px;
-  }
-
-  .advantages__item--parking .advantages__description {
-    margin: 2px 0 0;
-  }
-
-  .advantages__item--parking .advantages__description h3 {
-    margin: 0;
   }
 
   .advantages__item--current {
@@ -4816,44 +4743,8 @@ button,
     padding: 13px 50px;
   }
 
-  .advantages__item--comfort .advantages__promo {
-    margin: 0;
-  }
-
-  .advantages__item--comfort .advantages__promo small {
-    margin: 0 0 14px;
-  }
-
-  .advantages__item--comfort .advantages__promo span {
-    font-size: 58px;
-    line-height: 80px;
-    margin-bottom: -14px;
-  }
-
-  .advantages__item--comfort .advantages__description h3 {
-    margin-bottom: 0;
-  }
-
   .advantages__item--experience {
     padding: 0;
-  }
-
-  .advantages__item--experience .advantages__promo {
-    margin: -5px -5px 0;
-  }
-
-  .advantages__item--experience .advantages__promo small {
-    margin: 0 0 12px;
-  }
-
-  .advantages__item--experience .advantages__promo span {
-    font-size: 58px;
-    line-height: 80px;
-    margin-bottom: -17px;
-  }
-
-  .advantages__item--experience .advantages__description h3 {
-    margin-bottom: 0;
   }
 
   .advantages__promo span {
@@ -5651,7 +5542,7 @@ button,
   }
 }
 
-@media (min-width: 768px) and (max-width: 1200px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .about__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -5666,7 +5557,7 @@ button,
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    padding: 65px 0 17px;
+    padding: 65px 0 0;
   }
 
   .about__gym {
@@ -5677,6 +5568,7 @@ button,
     -ms-flex-align: center;
     align-items: center;
     text-align: center;
+    min-width: 502px;
   }
 
   .about__gym span {
@@ -5684,8 +5576,8 @@ button,
   }
 
   .about__gym p {
-    max-width: 512px;
-    margin: 0 0 44px 5px;
+    width: 100%;
+    margin: 0 0 5px;
   }
 
   .about__gym p:last-child {
@@ -5693,7 +5585,14 @@ button,
   }
 
   .about__title {
-    margin-bottom: -1px;
+    font-size: 42px;
+    line-height: 51px;
+    letter-spacing: 1.3px;
+    margin: 35px 0 -1px;
+  }
+
+  .about__media {
+    padding: 0 0 16px;
   }
 
   .about__photo {
@@ -5754,8 +5653,7 @@ button,
   }
 
   .accordion__element:last-child {
-    padding-top: 31px;
-    padding-bottom: 14px;
+    padding: 31px 0;
   }
 
   .accordion__element:last-child h3 {
@@ -5770,9 +5668,10 @@ button,
   .accordion__element h3 {
     font-weight: 500;
     line-height: 24px;
+    letter-spacing: 0.09px;
     width: 93.8%;
-    margin-top: 9px;
-    margin-bottom: 16px;
+    padding: 33px 0;
+    margin: 0;
   }
 
   .accordion__element h3 br {
@@ -5788,42 +5687,81 @@ button,
     line-height: 21.5px;
   }
 
+  .accordion__element.is-active h3 {
+    padding: 34px 0 15px;
+  }
+
+  .accordion__element.is-active .accordion__button {
+    margin-top: 3%;
+  }
+
+  [data-accordion=content].is-active {
+    margin: -16px 0 -2px;
+  }
+
+  [data-accordion=content].is-active h3 {
+    margin: 10px 0 -10px;
+  }
+
   .advantages {
-    padding: 77px 40px 95px;
+    padding: 91px 47px 95px;
   }
 
   .advantages__title {
-    margin-bottom: 42px;
+    letter-spacing: 1.3px;
+    margin-bottom: 46px;
   }
 
   .advantages__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
-    -ms-grid-rows: (auto)[3];
-    grid-template-rows: repeat(3, auto);
-    -webkit-column-gap: 16px;
-    -moz-column-gap: 16px;
-    column-gap: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    max-width: 674px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 0 auto;
+    height: 100%;
   }
 
   .advantages__item--place {
-    padding: 16px 11px 43px 7px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: -1;
+    grid-area: 1/2/1/1;
+    border-bottom: none;
+    padding: 0;
+    margin-bottom: 45px;
   }
 
   .advantages__item--parking {
-    padding: 16px 11px 43px 7px;
+    -ms-grid-row: 1;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: -1;
+    grid-area: 1/4/1/3;
+    border-bottom: none;
+    padding: 0;
+    margin-right: 7px;
+    margin-bottom: 40px;
   }
 
   .advantages__item--current {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: -2;
-    grid-area: 2/3/4/1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+    grid-area: 2/1/2/4;
     max-width: 442px;
     -ms-grid-column-align: center;
     justify-self: center;
     padding: 15px 129px 40px;
+    height: 239px;
+    margin: 0 auto;
   }
 
   .advantages__item--current strong {
@@ -5840,66 +5778,80 @@ button,
   }
 
   .advantages__item--comfort {
-    padding: 55px 0 0 5px;
-  }
-
-  .advantages__item--comfort .advantages__description h3 {
-    margin-top: -11px;
-    margin-bottom: -1px;
+    -ms-grid-row: 3;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 2;
+    -ms-grid-column-span: -1;
+    grid-area: 3/2/4/1;
+    padding: 0;
+    margin-top: 44px;
   }
 
   .advantages__item--experience {
-    padding: 55px 0 0 7px;
-  }
-
-  .advantages__item--experience .advantages__description h3 {
-    margin-top: -11px;
-    margin-bottom: -1px;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: -1;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-area: 4/3/3/4;
+    padding: 0;
+    margin-top: 46px;
+    margin-right: 9px;
   }
 
   .advantages__promo span {
     font-size: 58px;
-    line-height: 87px;
+    line-height: 45px;
+    margin-right: 28px;
+    margin-bottom: 22px;
   }
 
   .advantages__promo small {
     margin-top: -19px;
   }
 
+  .advantages__description {
+    margin-left: 0;
+  }
+
   .advantages__description h3 {
     font-size: 20px;
-    line-height: 30px;
+    line-height: 25px;
   }
 
   .coaches {
-    padding: 34px 47px 115px;
+    padding: 34px 47px 100px;
   }
 
   .coaches__wrapper {
-    min-height: 363px;
+    max-height: 100%;
   }
 
   .coaches__title {
+    letter-spacing: 1.2px;
     text-align: center;
     margin: 0 0 31px;
+  }
+
+  .coaches__swiper {
+    margin: 0 54px;
   }
 
   .coaches__item {
     width: 100%;
     height: 100%;
-    aspect-ratio: 230/274;
+    aspect-ratio: 268/294;
   }
 
   .coaches__item img {
-    aspect-ratio: 230/274;
+    min-height: 294px;
   }
 
   .coaches__item h3 {
-    bottom: 48px;
+    bottom: 23px;
   }
 
   .coaches__information {
-    padding: 55px 9px;
+    padding: 55px 37px 55px 29px;
   }
 
   .coaches__information span {
@@ -5907,15 +5859,20 @@ button,
   }
 
   .coaches__information p {
-    margin: 0 3px 35px;
+    margin: 0 3px 33px;
   }
 
   .coaches__information ul {
     line-height: 20px;
   }
 
+  .coaches__information li {
+    letter-spacing: 0.1px;
+    margin: 0 0 14px;
+  }
+
   .coaches__button {
-    top: 54%;
+    top: 53%;
   }
 
   .coaches__button--next {
@@ -5928,18 +5885,19 @@ button,
 
   .contacts {
     min-height: 351px;
-    padding: 60px 160px 49px 134px;
+    padding: 60px 160px 49px 131px;
   }
 
   .contacts .contacts__title {
+    letter-spacing: 1.5px;
     max-width: 470px;
   }
 
   .contacts__list {
-    -webkit-column-gap: 118px;
-    -moz-column-gap: 118px;
-    column-gap: 118px;
-    row-gap: 24px;
+    -webkit-column-gap: 66px;
+    -moz-column-gap: 66px;
+    column-gap: 66px;
+    row-gap: 26px;
     padding-bottom: 0;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -5952,10 +5910,14 @@ button,
     height: 129px;
   }
 
+  .contacts__item {
+    padding: 0;
+  }
+
   .contacts__item p {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
     letter-spacing: 0;
   }
 
@@ -5964,26 +5926,37 @@ button,
     line-height: 20px;
   }
 
+  .contacts__item a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   .contacts__item--address {
     width: 46%;
   }
 
   .contacts__item--phone {
     width: 34%;
+    padding: 0;
     margin-left: -29px;
   }
 
+  .contacts__item--phone a {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
   .contacts__item--email {
+    padding: 0;
     width: 34%;
   }
 
   .faq {
-    padding: 73px 45px 91px;
+    padding: 101px 45px 97px;
   }
 
   .faq__title {
-    margin-top: 25px;
-    margin-bottom: 36px;
+    margin-bottom: 39px;
     text-align: center;
   }
 
@@ -6002,7 +5975,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     min-width: 678px;
-    margin-bottom: -3px;
+    margin-bottom: 38px;
   }
 
   .faq__control {
@@ -6023,7 +5996,7 @@ button,
 
   .feedback__free-lesson {
     min-height: 324px;
-    padding: 60px 160px 55px 134px;
+    padding: 60px 162px 55px 130px;
   }
 
   .feedback__free-lesson form {
@@ -6031,14 +6004,15 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-column-gap: 12.5%;
-    -moz-column-gap: 12.5%;
-    column-gap: 12.5%;
-    row-gap: 24px;
+    -webkit-column-gap: 12.6%;
+    -moz-column-gap: 12.6%;
+    column-gap: 12.6%;
+    row-gap: 25px;
   }
 
   .feedback__title {
-    margin-bottom: 37px;
+    letter-spacing: 1.6px;
+    margin-bottom: 6px;
   }
 
   .feedback__form {
@@ -6064,23 +6038,33 @@ button,
   }
 
   .footer {
-    padding: 20px 43px 16px 46px;
+    padding: 45px 45px 20px 45px;
     min-height: 114px;
   }
 
+  .footer__wrapper {
+    -webkit-box-align: self-start;
+    -ms-flex-align: self-start;
+    align-items: self-start;
+  }
+
   .footer__logo {
-    padding: 29px 0;
+    padding: 0;
+    margin-top: 4px;
   }
 
   .footer__nav {
-    margin-top: 20px;
-    margin-bottom: 19px;
-    margin-left: 14px;
+    margin: 0 0 0 13px;
     gap: 10px;
   }
 
+  .footer__item {
+    padding: 5px 10px 10px;
+    margin: 0;
+  }
+
   .footer__social {
-    gap: 11px;
+    padding: 0;
   }
 
   .header {
@@ -6091,6 +6075,7 @@ button,
   .header__container {
     position: relative;
     padding-top: 32px;
+    padding-bottom: 0;
   }
 
   .header__wrapper {
@@ -6148,14 +6133,16 @@ button,
   }
 
   .promotion {
-    padding: 89px 45px;
+    padding: 65px 45px 85px;
   }
 
   .promotion__title {
-    margin: 0 0 40px;
+    letter-spacing: 1.3px;
+    margin: 25px 0 40px;
   }
 
   .promotion__container {
+    height: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
@@ -6169,6 +6156,7 @@ button,
 
   .promotion__first img {
     width: 399px;
+    max-width: 100%;
     height: 462px;
   }
 
@@ -6182,6 +6170,7 @@ button,
     -ms-flex-direction: row;
     flex-direction: row;
     width: 678px;
+    height: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -6203,11 +6192,15 @@ button,
   }
 
   .reviews__wrapper {
-    padding: 86px 0 99px;
+    padding: 90px 0 100px;
   }
 
   .reviews__title {
     margin: 0 0 41px;
+  }
+
+  .reviews__swiper {
+    max-width: 566px;
   }
 
   .reviews__item {
@@ -6217,7 +6210,7 @@ button,
     grid-template-rows: 23px auto;
     gap: 14px 28px;
     max-width: 566px;
-    padding: 56px 61px 54px 49px;
+    padding: 56px 64px 34px 47px;
   }
 
   .reviews__avatar {
@@ -6241,6 +6234,10 @@ button,
 
   .reviews__button--prev {
     left: -20px;
+  }
+
+  .social {
+    padding: 0;
   }
 
   .subscription__container {
@@ -6278,7 +6275,7 @@ button,
   .subscription__item h3 {
     font-size: 26px;
     line-height: 29px;
-    margin-bottom: 10px;
+    margin-bottom: -55px;
   }
 
   .subscription__item p {
@@ -6288,8 +6285,8 @@ button,
   .subscription__item span {
     font-size: 60px;
     line-height: 90px;
-    margin: 0 0 29px -12px;
-    gap: 12px;
+    margin: 0 0 -45px -13px;
+    gap: 13px;
   }
 
   .subscription__item span svg {
@@ -6307,7 +6304,7 @@ button,
     width: 208px;
     height: 66px;
     padding: 27px 30px;
-    margin: 5px auto;
+    margin: 14px auto;
   }
 
   .supergames {
@@ -6354,13 +6351,14 @@ button,
 
   .supergames__date {
     width: 42px;
+    margin-bottom: -1px;
   }
 
   .supergames__date span {
     font-size: 12px;
     line-height: 18px;
     margin-top: -6px;
-    margin-bottom: -4px;
+    margin-bottom: 7px;
     padding-bottom: 2px;
   }
 
@@ -6372,7 +6370,7 @@ button,
   .supergames__date small {
     font-size: 10px;
     line-height: 13px;
-    margin-top: 5px;
+    margin-top: -5px;
   }
 
   .supergames__time {

@@ -45,7 +45,7 @@
 
   @include vp-1199 {
     min-height: 324px;
-    padding: 60px 160px 55px 134px;
+    padding: 60px 162px 55px 130px;
   }
 
   @include vp-767 {
@@ -70,8 +70,8 @@
 
     @include vp-1199 {
       flex-direction: row;
-      column-gap: 12.5%;
-      row-gap: 24px;
+      column-gap: 12.6%;
+      row-gap: 25px;
     }
 
     @include vp-767 {
@@ -95,7 +95,8 @@
   // }
 
   @include vp-1199 {
-    margin-bottom: 37px;
+    letter-spacing: 1.6px;
+    margin-bottom: 6px;
   }
 
   @include vp-767 {

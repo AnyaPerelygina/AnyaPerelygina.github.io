@@ -7,7 +7,7 @@
   padding: 93px 50px 0;
 
   @include vp-1199 {
-    padding: 89px 45px;
+    padding: 65px 45px 85px;
   }
 
   @include vp-767 {
@@ -20,7 +20,8 @@
   margin-bottom: 32px;
 
   @include vp-1199 {
-    margin: 0 0 40px;
+    letter-spacing: 1.3px;
+    margin: 25px 0 40px;
   }
 
   @include vp-767 {
@@ -38,6 +39,7 @@
   height: 462px;
 
   @include vp-1199 {
+    height: 100%;
     flex-direction: column;
     margin-bottom: 14px;
   }
@@ -80,6 +82,7 @@
 
     @include vp-1199 {
       width: 399px;
+      max-width: 100%;
       height: 462px;
     }
 
@@ -158,6 +161,7 @@
   @include vp-1199 {
     flex-direction: row;
     width: 678px;
+    height: 100%;
     justify-content: space-between;
     gap: 32px;
   }
