@@ -55,7 +55,7 @@
   @include vp-767 {
     display: flex;
     flex-direction: column;
-    gap: 17px;
+    gap: 15px;
     height: 100%;
   }
 }
@@ -127,6 +127,12 @@
       background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .advantages__description h3 {
+      @include vp-767 {
+        margin-bottom: -1px;
+      }
     }
   }
 
@@ -214,13 +220,19 @@
     }
 
     @include vp-767 {
-      padding: 13px 50px;
+      padding: 10px 50px;
     }
 
     .advantages__promo span {
       background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+    }
+
+    .advantages__description h3 {
+      @include vp-767 {
+        margin-bottom: -1px;
+      }
     }
   }
 
@@ -236,13 +248,23 @@
     }
 
     @include vp-767 {
-      padding: 0;
+      padding: 10px 20px;
     }
 
     .advantages__promo span {
       background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
+
+      @include vp-767 {
+        margin-top: -18px;
+      }
+    }
+
+    .advantages__description h3 {
+      @include vp-767 {
+        margin-bottom: -1px;
+      }
     }
   }
 }
@@ -268,7 +290,7 @@
 
     @include vp-767 {
       font-size: 58px;
-      line-height: 89px;
+      line-height: 91px;
       margin-bottom: -22px;
     }
   }
@@ -288,7 +310,7 @@
     @include vp-767 {
       margin: 0;
       text-align: center;
-      margin: 0 0 23px;
+      margin: 0 0 8px;
     }
   }
 }
@@ -330,7 +352,7 @@
   p {
     font-weight: 300;
     font-size: 16px;
-    line-height: 23px;
+    line-height: 24px;
     grid-column: span 2;
     max-width: 227px;
     margin: 0;
