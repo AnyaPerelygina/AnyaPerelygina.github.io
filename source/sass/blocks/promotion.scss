@@ -4,14 +4,14 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 93px 50px 0;
+  padding: 93px 103px 0;
 
   @include vp-1199 {
     padding: 65px 45px 85px;
   }
 
   @include vp-767 {
-    padding: 63px 15px 59px;
+    padding: 63px 15px 71px;
   }
 }
 
@@ -21,7 +21,7 @@
 
   @include vp-1199 {
     letter-spacing: 1.3px;
-    margin: 25px 0 40px;
+    margin: 25px 0 41px;
   }
 
   @include vp-767 {
@@ -31,165 +31,45 @@
 }
 
 .promotion__container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
   gap: 40px;
   margin-bottom: 120px;
-  height: 462px;
+  height: 100%;
 
   @include vp-1199 {
     height: 100%;
-    flex-direction: column;
+    width: 100%;
+    gap: 30px;
     margin-bottom: 14px;
   }
 
   @include vp-767 {
+    display: flex;
     flex-direction: column;
+    width: 100%;
     height: 100%;
     gap: 31px;
     margin-bottom: 0;
   }
-
-  div {
-    max-width: 560px;
-
-    @include vp-1199 {
-      max-width: 678px;
-    }
-
-    @include vp-767 {
-      max-width: 290px;
-    }
-  }
 }
 
-.promotion__first {
-  display: flex;
-  flex-direction: row;
-  background-color: $color-torch-red;
-  color: $color-default-white;
-
-  @include vp-767 {
-    flex-direction: column;
-  }
-
-  img {
-    max-width: 280px;
-    height: 462px;
-    object-fit: cover;
-    background-color: $color-torch-red;
-
-    @include vp-1199 {
-      width: 399px;
-      max-width: 100%;
-      height: 462px;
-    }
-
-    @include vp-767 {
-      max-width: 100%;
-      height: 100%;
-    }
-  }
-}
-
-.promotion__first__description {
+.promotion__card {
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  text-align: start;
-  padding: 34px 34px 45px 45px;
-
-  @include vp-1199 {
-    width: 279px;
-  }
-
-  @include vp-767 {
-    padding: 34px 49px 45px;
-    text-align: center;
-  }
-
-  span {
-    font-weight: 700;
-    font-size: 28px;
-    line-height: 44px;
-  }
-
-  strong {
-    font-weight: 700;
-    font-size: 70px;
-    line-height: 110px;
-    margin-top: -25px;
-  }
-
-  p {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 26px;
-    margin-top: -3px;
-    margin-bottom: 187px;
-
-    @include vp-767 {
-      margin-top: -8px;
-      margin-bottom: 29px;
-    }
-  }
-
-  a {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 17px;
-    letter-spacing: 0.7px;
-    text-transform: uppercase;
-    color: $color-default-white;
-    border-bottom: 1px solid $color-default-white;
-    width: 79px;
-
-    @include vp-767 {
-      align-self: center;
-    }
-  }
-}
-
-.promotion__promotions {
-  display: flex;
-  flex-direction: column;
-  width: 560px;
-  height: 462px;
-  gap: 40px;
-
-  @include vp-1199 {
-    flex-direction: row;
-    width: 678px;
-    height: 100%;
-    justify-content: space-between;
-    gap: 32px;
-  }
-
-  @include vp-767 {
-    min-width: 290px;
-    gap: 30px;
-  }
-}
-
-.promotion__second,
-.promotion__third {
-  display: flex;
-  flex-direction: column;
-  height: 211px;
   border: 7px solid;
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   text-align: start;
   padding-left: 28px;
 
   @include vp-1199 {
-    width: 324px;
-    margin-top: -10px;
+    min-width: 324px;
+    padding: 0 0 28px 28px;
   }
 
   @include vp-767 {
     text-align: center;
-    padding: 10px 30px;
+    padding: 10px 30px 39px;
   }
 
   span {
@@ -205,6 +85,10 @@
     font-size: 16px;
     line-height: 23px;
     margin: 0 0 72px;
+
+    @include vp-1199 {
+      margin: 0 0 48px;
+    }
 
     @include vp-767 {
       margin: 0 0 27px;
@@ -229,12 +113,113 @@
   }
 }
 
-.promotion__second {
+.promotion__card:last-child {
   @include vp-1199 {
-    padding-right: 56px;
+    padding-right: 42px;
 
     p {
-      margin: 0 0 49px;
+      margin: 0 0 72px;
+    }
+  }
+}
+
+.promotion__card--main {
+  display: flex;
+  flex-direction: row;
+  background-color: $color-torch-red;
+  color: $color-default-white;
+  border: none;
+  grid-row: span 2;
+  height: 100%;
+  padding: 0;
+
+  @include vp-1199 {
+    width: 100%;
+    justify-content: space-between;
+    grid-row: span 2;
+    grid-column: span 2;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+  }
+
+  img {
+    height: 100%;
+    width: 100%;
+    min-width: 281px;
+    max-width: 100%;
+    object-fit: cover;
+    background-color: $color-torch-red;
+
+    @include vp-1199 {
+      width: 100%;
+      min-width: 399px;
+      max-width: 100%;
+      height: 100%;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      min-width: 100%;
+      max-width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.promotion__card__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  text-align: start;
+  padding: 34px 34px 36px 45px;
+
+  @include vp-767 {
+    padding: 34px 49px 45px;
+    text-align: center;
+  }
+
+  span {
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 44px;
+    margin: 0;
+  }
+
+  strong {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 110px;
+    margin-top: -25px;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    margin-top: -3px;
+    margin-bottom: 187px;
+
+    @include vp-767 {
+      margin-top: -8px;
+      margin-bottom: 29px;
+      max-width: 100%;
+    }
+  }
+
+  a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: 0.7px;
+    text-transform: uppercase;
+    color: $color-default-white;
+    border-bottom: 1px solid $color-default-white;
+    width: 79px;
+
+    @include vp-767 {
+      align-self: center;
     }
   }
 }

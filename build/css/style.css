@@ -3669,7 +3669,7 @@ button,
   -ms-flex-align: center;
   align-items: center;
   width: 100%;
-  padding: 93px 50px 0;
+  padding: 93px 103px 0;
 }
 
 .promotion__title {
@@ -3678,26 +3678,57 @@ button,
 }
 
 .promotion__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  margin-bottom: 120px;
+  height: 100%;
+}
+
+.promotion__card {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  gap: 40px;
-  margin-bottom: 120px;
-  height: 462px;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  border: 7px solid;
+  -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
+  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
+  text-align: start;
+  padding-left: 28px;
 }
 
-.promotion__container div {
-  max-width: 560px;
+.promotion__card span {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 76px;
+  margin: 0;
+  margin-bottom: -17px;
 }
 
-.promotion__first {
+.promotion__card p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  margin: 0 0 72px;
+}
+
+.promotion__card a {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: #102654;
+  border-bottom: 1px solid #102654;
+  width: 68px;
+}
+
+.promotion__card--main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3707,17 +3738,24 @@ button,
   flex-direction: row;
   background-color: #ed0233;
   color: #ffffff;
+  border: none;
+  -ms-grid-row-span: 2;
+  grid-row: span 2;
+  height: 100%;
+  padding: 0;
 }
 
-.promotion__first img {
-  max-width: 280px;
-  height: 462px;
+.promotion__card--main img {
+  height: 100%;
+  width: 100%;
+  min-width: 281px;
+  max-width: 100%;
   -o-object-fit: cover;
   object-fit: cover;
   background-color: #ed0233;
 }
 
-.promotion__first__description {
+.promotion__card__description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3729,23 +3767,24 @@ button,
   -ms-flex-pack: start;
   justify-content: start;
   text-align: start;
-  padding: 34px 34px 45px 45px;
+  padding: 34px 34px 36px 45px;
 }
 
-.promotion__first__description span {
+.promotion__card__description span {
   font-weight: 700;
   font-size: 28px;
   line-height: 44px;
+  margin: 0;
 }
 
-.promotion__first__description strong {
+.promotion__card__description strong {
   font-weight: 700;
   font-size: 70px;
   line-height: 110px;
   margin-top: -25px;
 }
 
-.promotion__first__description p {
+.promotion__card__description p {
   font-weight: 400;
   font-size: 18px;
   line-height: 26px;
@@ -3753,7 +3792,7 @@ button,
   margin-bottom: 187px;
 }
 
-.promotion__first__description a {
+.promotion__card__description a {
   font-weight: 400;
   font-size: 14px;
   line-height: 17px;
@@ -3762,65 +3801,6 @@ button,
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   width: 79px;
-}
-
-.promotion__promotions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 560px;
-  height: 462px;
-  gap: 40px;
-}
-
-.promotion__second,
-.promotion__third {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  height: 211px;
-  border: 7px solid;
-  -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
-  border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
-  text-align: start;
-  padding-left: 28px;
-}
-
-.promotion__second span,
-.promotion__third span {
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 76px;
-  margin: 0;
-  margin-bottom: -17px;
-}
-
-.promotion__second p,
-.promotion__third p {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 23px;
-  margin: 0 0 72px;
-}
-
-.promotion__second a,
-.promotion__third a {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 14px;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #102654;
-  border-bottom: 1px solid #102654;
-  width: 68px;
 }
 
 .reviews__wrapper {
@@ -4818,7 +4798,6 @@ button,
   }
 
   .advantages__promo small {
-    margin: 0;
     text-align: center;
     margin: 0 0 7px;
   }
@@ -5244,7 +5223,7 @@ button,
   }
 
   .promotion {
-    padding: 63px 15px 59px;
+    padding: 63px 15px 71px;
   }
 
   .promotion__title {
@@ -5253,60 +5232,25 @@ button,
   }
 
   .promotion__container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    width: 100%;
     height: 100%;
     gap: 31px;
     margin-bottom: 0;
   }
 
-  .promotion__container div {
-    max-width: 290px;
-  }
-
-  .promotion__first {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-  }
-
-  .promotion__first img {
-    max-width: 100%;
-    height: 100%;
-  }
-
-  .promotion__first__description {
-    padding: 34px 49px 45px;
+  .promotion__card {
     text-align: center;
+    padding: 10px 30px 39px;
   }
 
-  .promotion__first__description p {
-    margin-top: -8px;
-    margin-bottom: 29px;
-  }
-
-  .promotion__first__description a {
-    -ms-flex-item-align: center;
-    -ms-grid-row-align: center;
-    align-self: center;
-  }
-
-  .promotion__promotions {
-    min-width: 290px;
-    gap: 30px;
-  }
-
-  .promotion__second,
-  .promotion__third {
-    text-align: center;
-    padding: 10px 30px;
-  }
-
-  .promotion__second p,
-  .promotion__third p {
+  .promotion__card p {
     margin: 0 0 27px;
     max-width: 159px;
     -ms-flex-item-align: center;
@@ -5314,8 +5258,38 @@ button,
     align-self: center;
   }
 
-  .promotion__second a,
-  .promotion__third a {
+  .promotion__card a {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .promotion__card--main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+
+  .promotion__card--main img {
+    width: 100%;
+    min-width: 100%;
+    max-width: 100%;
+    height: 100%;
+  }
+
+  .promotion__card__description {
+    padding: 34px 49px 45px;
+    text-align: center;
+  }
+
+  .promotion__card__description p {
+    margin-top: -8px;
+    margin-bottom: 29px;
+    max-width: 100%;
+  }
+
+  .promotion__card__description a {
     -ms-flex-item-align: center;
     -ms-grid-row-align: center;
     align-self: center;
@@ -6255,57 +6229,49 @@ button,
 
   .promotion__title {
     letter-spacing: 1.3px;
-    margin: 25px 0 40px;
+    margin: 25px 0 41px;
   }
 
   .promotion__container {
     height: 100%;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    width: 100%;
+    gap: 30px;
     margin-bottom: 14px;
   }
 
-  .promotion__container div {
-    max-width: 678px;
+  .promotion__card {
+    min-width: 324px;
+    padding: 0 0 28px 28px;
   }
 
-  .promotion__first img {
-    width: 399px;
-    max-width: 100%;
-    height: 462px;
+  .promotion__card p {
+    margin: 0 0 48px;
   }
 
-  .promotion__first__description {
-    width: 279px;
+  .promotion__card:last-child {
+    padding-right: 42px;
   }
 
-  .promotion__promotions {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    width: 678px;
-    height: 100%;
+  .promotion__card:last-child p {
+    margin: 0 0 72px;
+  }
+
+  .promotion__card--main {
+    width: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    gap: 32px;
+    -ms-grid-row-span: 2;
+    grid-row: span 2;
+    -ms-grid-column-span: 2;
+    grid-column: span 2;
   }
 
-  .promotion__second,
-  .promotion__third {
-    width: 324px;
-    margin-top: -10px;
-  }
-
-  .promotion__second {
-    padding-right: 56px;
-  }
-
-  .promotion__second p {
-    margin: 0 0 49px;
+  .promotion__card--main img {
+    width: 100%;
+    min-width: 399px;
+    max-width: 100%;
+    height: 100%;
   }
 
   .reviews__wrapper {

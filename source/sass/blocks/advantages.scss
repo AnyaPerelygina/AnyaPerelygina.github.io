@@ -134,7 +134,7 @@
       padding: 10px 46px 17px;
     }
 
-    .advantages__promo span  {
+    .advantages__promo span {
       background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
@@ -357,7 +357,6 @@
     }
 
     @include vp-767 {
-      margin: 0;
       text-align: center;
       margin: 0 0 7px;
     }
