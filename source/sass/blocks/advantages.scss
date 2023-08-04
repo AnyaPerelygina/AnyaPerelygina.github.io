@@ -60,7 +60,7 @@
     display: flex;
     flex-direction: column;
     height: 100%;
-    gap: 26px;
+    gap: 20px;
   }
 }
 
@@ -100,12 +100,17 @@
     }
 
     @include vp-767 {
+      align-items: center;
       border-bottom: none;
       padding: 0;
     }
 
     .advantages__promo {
       margin: -28px 31px 0 7px;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
 
     .advantages__promo span {
@@ -120,6 +125,10 @@
 
     .advantages__description {
       margin: -6px 0 0 0;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
   }
 
@@ -140,26 +149,37 @@
     }
 
     @include vp-767 {
+      align-items: center;
       border-bottom: none;
-      padding: 10px 46px 17px;
+      padding: 10px 46px 21px;
     }
 
     .advantages__promo {
       margin: -28px 0 0 9px;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
 
     .advantages__promo span {
       background: linear-gradient(142.51deg, #d10a42 0%, #0041ca 87.33%);
       background-clip: text;
       -webkit-text-fill-color: transparent;
-
-      // @include vp-1199 {
-      //   margin-top: -7px;
-      // }
     }
 
     .advantages__description {
       margin: -6px 0 0 0;
+
+      @include vp-767 {
+        margin: 0;
+      }
+
+      h3 {
+        @include vp-767 {
+          margin: 0;
+        }
+      }
     }
   }
 
@@ -188,7 +208,7 @@
     @include vp-767 {
       max-width: 100%;
       max-height: 100%;
-      padding: 20px 67px 43px;
+      padding: 47px 67px 43px;
       margin: 0;
     }
 
@@ -206,7 +226,7 @@
       }
 
       @include vp-767 {
-        margin-bottom: -25px;
+        margin-bottom: 2px;
       }
     }
 
@@ -237,7 +257,6 @@
 
   &--comfort {
     grid-area: D;
-    // padding: 80px 0 0 9px;
 
     @include vp-1199 {
       // grid-area: 3 / 2 / 4 / 1;
@@ -246,12 +265,17 @@
     }
 
     @include vp-767 {
+      align-items: center;
       padding: 20px 50px;
-      margin-bottom: -13px;
+      padding: 24px 50px 17px;
     }
 
     .advantages__promo {
       margin: 54px 30px -6px 8px;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
 
     .advantages__promo span {
@@ -268,7 +292,7 @@
       }
 
       @include vp-767 {
-        margin-bottom: -1px;
+        margin: 0;
       }
 
       h3 {
@@ -291,11 +315,16 @@
     }
 
     @include vp-767 {
-      padding: 10px 20px;
+      align-items: center;
+      padding: 7px 20px 9px;
     }
 
     .advantages__promo {
       margin: 54px 30px -6px 8px;
+
+      @include vp-767 {
+        margin: 0;
+      }
     }
 
     .advantages__promo span {

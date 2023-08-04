@@ -4736,7 +4736,7 @@ button,
     -ms-flex-direction: column;
     flex-direction: column;
     height: 100%;
-    gap: 26px;
+    gap: 20px;
   }
 
   .advantages__item {
@@ -4752,24 +4752,50 @@ button,
   }
 
   .advantages__item--place {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-bottom: none;
     padding: 0;
   }
 
+  .advantages__item--place .advantages__promo {
+    margin: 0;
+  }
+
+  .advantages__item--place .advantages__description {
+    margin: 0;
+  }
+
   .advantages__item--parking {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     border-bottom: none;
-    padding: 10px 46px 17px;
+    padding: 10px 46px 21px;
+  }
+
+  .advantages__item--parking .advantages__promo {
+    margin: 0;
+  }
+
+  .advantages__item--parking .advantages__description {
+    margin: 0;
+  }
+
+  .advantages__item--parking .advantages__description h3 {
+    margin: 0;
   }
 
   .advantages__item--current {
     max-width: 100%;
     max-height: 100%;
-    padding: 20px 67px 43px;
+    padding: 47px 67px 43px;
     margin: 0;
   }
 
   .advantages__item--current strong {
-    margin-bottom: -25px;
+    margin-bottom: 2px;
   }
 
   .advantages__item--current span {
@@ -4779,12 +4805,19 @@ button,
   }
 
   .advantages__item--comfort {
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
     padding: 20px 50px;
-    margin-bottom: -13px;
+    padding: 24px 50px 17px;
+  }
+
+  .advantages__item--comfort .advantages__promo {
+    margin: 0;
   }
 
   .advantages__item--comfort .advantages__description {
-    margin-bottom: -1px;
+    margin: 0;
   }
 
   .advantages__item--comfort .advantages__description h3 {
@@ -4793,7 +4826,14 @@ button,
   }
 
   .advantages__item--experience {
-    padding: 10px 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 7px 20px 9px;
+  }
+
+  .advantages__item--experience .advantages__promo {
+    margin: 0;
   }
 
   .advantages__item--experience .advantages__promo span {
