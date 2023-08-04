@@ -4012,6 +4012,9 @@ button,
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
   text-align: center;
   background-color: #ffffff;
   border: 7px solid #ffffff;
@@ -4456,8 +4459,9 @@ button,
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
-    padding: 63px 20px 33px 6px;
+    padding: 63px 15px 33px;
     margin: 0;
+    min-width: 100%;
   }
 
   .about__gym span {
@@ -4465,7 +4469,6 @@ button,
   }
 
   .about__gym p {
-    max-width: 261px;
     margin: 0;
   }
 
@@ -4487,14 +4490,14 @@ button,
   }
 
   .about__photo {
-    max-width: 320px;
-    max-height: 313px;
+    max-width: 100%;
+    height: auto;
     margin-bottom: 40px;
   }
 
   .about__photo img {
-    max-width: 320px;
-    max-height: 313px;
+    max-width: 100%;
+    max-height: 100%;
   }
 
   .about__video {
@@ -4503,8 +4506,8 @@ button,
     right: 0;
     bottom: 0;
     left: 0;
-    height: 167px;
-    width: 320px;
+    width: 100%;
+    height: auto;
     -webkit-transform: translateX(0);
     -ms-transform: translateX(0);
     transform: translateX(0);
@@ -4642,9 +4645,7 @@ button,
     min-height: 239px;
     max-width: 100%;
     margin: 6px 0 10px;
-    width: 100%;
     padding: 35px 34px 33px 34px;
-    min-height: 239px;
   }
 
   .advantages__item--decorated strong {
@@ -4875,7 +4876,10 @@ button,
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     min-width: 290px;
+    max-width: 543px;
     height: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -4896,6 +4900,7 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
+    width: 100%;
   }
 
   .feedback {
@@ -4958,16 +4963,16 @@ button,
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
   }
 
   .footer {
     font-size: 16px;
     line-height: 19px;
     min-height: 260px;
-    padding: 43px 43px 2px 2px;
+    padding: 43px 43px 2px 15px;
   }
 
   .footer__wrapper {
@@ -4978,14 +4983,14 @@ button,
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: start;
     gap: 0;
   }
 
   .footer__logo {
-    margin-right: 187px;
+    margin-right: 197px;
     min-width: 68px;
   }
 
@@ -5004,7 +5009,7 @@ button,
     row-gap: 7px;
     margin-top: -33px;
     margin-bottom: 27px;
-    margin-left: 3px;
+    margin-left: -10px;
   }
 
   .footer__item {
@@ -5169,8 +5174,7 @@ button,
   }
 
   .reviews__wrapper {
-    padding: 62px 0 70px;
-    max-width: 226px;
+    padding: 62px 47px 70px;
   }
 
   .reviews__title {
@@ -5181,7 +5185,6 @@ button,
   .reviews__swiper {
     min-width: 226px;
     max-height: 335px;
-    margin: 0;
   }
 
   .reviews__item {
@@ -5219,15 +5222,14 @@ button,
   }
 
   .reviews__button--next {
-    right: -39px;
+    right: 7px;
   }
 
   .reviews__button--prev {
-    left: -41px;
+    left: 8px;
   }
 
   .social {
-    margin-left: 13px;
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
@@ -5269,7 +5271,7 @@ button,
   }
 
   .subscription__item {
-    width: 290px;
+    width: 100%;
     height: 384px;
     padding: 44px 33px 46px;
   }
@@ -5473,10 +5475,27 @@ button,
 }
 
 @media (max-width: 320px) {
-  .feedback__container--contacts {
-    -webkit-box-pack: start;
-    -ms-flex-pack: start;
-    justify-content: start;
+  .about__gym {
+    min-width: 320px;
+  }
+
+  .about__gym p {
+    max-width: 261px;
+  }
+
+  .about__photo {
+    max-width: 320px;
+    max-height: 313px;
+  }
+
+  .about__photo img {
+    max-width: 320px;
+    max-height: 313px;
+  }
+
+  .about__video {
+    height: 167px;
+    width: 320px;
   }
 }
 
@@ -5894,6 +5913,10 @@ button,
     padding: 18px 58px;
   }
 
+  .faq__content {
+    width: 100%;
+  }
+
   .feedback {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -6132,10 +6155,6 @@ button,
 
   .reviews__button {
     top: 52%;
-  }
-
-  .reviews__button--prev {
-    left: -20px;
   }
 
   .social {

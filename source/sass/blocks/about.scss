@@ -57,8 +57,13 @@
   @include vp-767 {
     text-align: start;
     align-items: start;
-    padding: 63px 20px 33px 6px;
+    padding: 63px 15px 33px;
     margin: 0;
+    min-width: 100%;
+  }
+
+  @media (max-width: 320px) {
+    min-width: 320px;
   }
 
   span {
@@ -92,8 +97,11 @@
     }
 
     @include vp-767 {
-      max-width: 261px;
       margin: 0;
+    }
+
+    @media (max-width: 320px) {
+      max-width: 261px;
     }
 
     &:last-child {
@@ -154,7 +162,6 @@
 .about__photo {
   width: 100%;
   margin: 0 auto;
-  // min-width: 660px;
   height: 401px;
   aspect-ratio: auto;
 
@@ -165,9 +172,14 @@
   }
 
   @include vp-767 {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  @media (max-width: 320px) {
     max-width: 320px;
     max-height: 313px;
-    margin-bottom: 40px;
   }
 
   img {
@@ -181,6 +193,11 @@
     }
 
     @include vp-767 {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+    @media (max-width: 320px) {
       max-width: 320px;
       max-height: 313px;
     }
@@ -214,10 +231,15 @@
     right: 0;
     bottom: 0;
     left: 0;
-    height: 167px;
-    width: 320px;
+    width: 100%;
+    height: auto;
     transform: translateX(0);
     margin: 0 auto;
+  }
+
+  @media (max-width: 320px) {
+    height: 167px;
+    width: 320px;
   }
 
   img {
@@ -318,7 +340,6 @@
     mask:
       linear-gradient($color-default-white 0 0) padding-box,
       linear-gradient($color-default-white 0 0);
-    // -webkit-mask-composite: xor;
     mask-composite: exclude;
     border: 2px solid transparent;
 
