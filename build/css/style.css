@@ -5829,21 +5829,25 @@ button,
   }
 
   .advantages {
-    padding: 91px 47px 133px;
+    padding: 91px 47px 97px;
   }
 
   .advantages__title {
     letter-spacing: 1.3px;
-    margin-bottom: 46px;
+    margin-bottom: 61px;
   }
 
   .advantages__list {
     display: -ms-grid;
     display: grid;
+    grid-template-areas: "A B" "C C" "D E";
     -ms-grid-rows: (auto)[3];
     grid-template-rows: repeat(3, auto);
-    -ms-grid-columns: (auto)[2];
+    -ms-grid-columns: auto 0 auto;
     grid-template-columns: repeat(2, auto);
+    -webkit-column-gap: 0;
+    -moz-column-gap: 0;
+    column-gap: 0;
     max-width: 674px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -5858,11 +5862,30 @@ button,
     margin-bottom: 44px;
   }
 
+  .advantages__item--place .advantages__promo {
+    margin: -28px 28px 0 0;
+  }
+
+  .advantages__item--place .advantages__description {
+    margin: -16px 0 0;
+  }
+
   .advantages__item--parking {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
     border-bottom: none;
     padding: 0;
     margin-right: 7px;
     margin-bottom: 44px;
+  }
+
+  .advantages__item--parking .advantages__promo {
+    margin: -28px 29px 0 9px;
+  }
+
+  .advantages__item--parking .advantages__description {
+    margin: -16px 0 0;
   }
 
   .advantages__item--current {
@@ -5891,14 +5914,52 @@ button,
     padding: 0;
   }
 
+  .advantages__item--comfort .advantages__promo {
+    margin: 30px 29px -6px -1px;
+  }
+
   .advantages__item--comfort .advantages__description {
-    margin-top: 24px;
+    margin-top: 45px;
+  }
+
+  .advantages__item--place {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+  }
+
+  .advantages__item--parking {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+  }
+
+  .advantages__item--current {
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 3;
+  }
+
+  .advantages__item--comfort {
+    -ms-grid-row: 3;
+    -ms-grid-column: 1;
+  }
+
+  .advantages__item--experience {
+    -ms-grid-row: 3;
+    -ms-grid-column: 3;
   }
 
   .advantages__item--experience {
     padding: 0;
     margin-top: 21px;
     margin-right: 9px;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: start;
+  }
+
+  .advantages__item--experience .advantages__promo {
+    margin: 12px 30px -6px 8px;
   }
 
   .advantages__item--experience .advantages__description {
