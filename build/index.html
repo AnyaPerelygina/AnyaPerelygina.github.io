@@ -22,7 +22,7 @@
 
 <body>
   <header class="header">
-    <div class="header__container">
+    <div class="header__container container">
       <div class="header__wrapper">
         <a class="header__logo" href="index.html">
           <picture>
@@ -209,30 +209,32 @@
     </section>
     <section class="supergames">
       <div class="supergames__container">
-        <h2 class="supergames__title">Super<br>games</h2>
-        <div class="supergames__when">
-          <div class="supergames__date">
-            <span>Дата</span>
-            <strong>7</strong>
-            <small>Марта<br> 2019</small>
+        <div class="supergames__info">
+          <h2 class="supergames__title">Super<br>games</h2>
+          <div class="supergames__when">
+            <div class="supergames__date">
+              <span>Дата</span>
+              <strong>7</strong>
+              <small>Марта<br> 2019</small>
+            </div>
+            <div class="supergames__time">
+              <span>Время</span>
+              <strong>12:00</strong>
+            </div>
           </div>
-          <div class="supergames__time">
-            <span>Время</span>
-            <strong>12:00</strong>
-          </div>
+          <p>Ежегодные соревнования по CrossFit</p>
+          <a class="supergames__button" href="#">Заполнить заявку</a>
         </div>
-        <p>Ежегодные соревнования по CrossFit </p>
-        <a class="supergames__button" href="#">Заполнить заявку</a>
+        <picture>
+          <source type="img/webp" media="(min-width:1200px)" srcset="img/super-games.webp 1x, img/super-games@2x.webp 2x">
+          <source media="(min-width: 1200px)" srcset="img/super-games.jpg, img/super-games@2x.jpg 2x">
+          <source type="img/webp" media="(min-width:768px)" srcset="img/super-games-tablet.webp 1x, img/super-games-tablet@2x.webp 2x">
+          <source media="(min-width: 768px)" srcset="img/super-games-tablet.jpg, img/super-games-tablet@2x.jpg 2x">
+          <source type="img/webp" media="(min-width:320px)" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2x">
+          <img src="img/super-games.jpg" srcset="img/super-games@2x.jpg 2x" width="290" height="292" loading="lazy"
+            alt="">
+        </picture>
       </div>
-      <picture>
-        <source type="img/webp" media="(min-width:1200px)" srcset="img/super-games.webp 1x, img/super-games@2x.webp 2x">
-        <source media="(min-width: 1200px)" srcset="img/super-games.jpg, img/super-games@2x.jpg 2x">
-        <source type="img/webp" media="(min-width:768px)" srcset="img/super-games-tablet.webp 1x, img/super-games-tablet@2x.webp 2x">
-        <source media="(min-width: 768px)" srcset="img/super-games-tablet.jpg, img/super-games-tablet@2x.jpg 2x">
-        <source type="img/webp" media="(min-width:320px)" srcset="img/super-games-mobile.webp 1x, img/super-games-mobile@2x.webp 2x">
-        <img src="img/super-games.jpg" srcset="img/super-games@2x.jpg 2x" width="290" height="292" loading="lazy"
-          alt="">
-      </picture>
     </section>
     <section class="coaches">
       <div class="container">
