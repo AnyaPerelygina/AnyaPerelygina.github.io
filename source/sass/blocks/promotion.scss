@@ -61,10 +61,11 @@
   border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   text-align: start;
   padding-left: 28px;
+  min-height: 211px;
 
   @include vp-1199 {
     min-width: 324px;
-    padding: 0 0 28px 28px;
+    padding: 0 42px 28px 28px;
   }
 
   @include vp-767 {
@@ -88,6 +89,10 @@
 
     @include vp-1199 {
       margin: 0 0 48px;
+    }
+
+    @media (min-width: 885px) and (max-width: 1199px) {
+      margin: 0 0 72px;
     }
 
     @include vp-767 {
@@ -115,8 +120,6 @@
 
 .promotion__card:last-child {
   @include vp-1199 {
-    padding-right: 42px;
-
     p {
       margin: 0 0 72px;
     }

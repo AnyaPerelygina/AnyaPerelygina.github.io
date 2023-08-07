@@ -4979,11 +4979,12 @@ button,
      border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
   text-align: start;
   padding-left: 28px;
+  min-height: 211px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .promotion__card {
     min-width: 324px;
-    padding: 0 0 28px 28px;
+    padding: 0 42px 28px 28px;
   }
 }
 @media (max-width: 767px) {
@@ -5008,6 +5009,11 @@ button,
 @media (min-width: 768px) and (max-width: 1199px) {
   .promotion__card p {
     margin: 0 0 48px;
+  }
+}
+@media (min-width: 885px) and (max-width: 1199px) {
+  .promotion__card p {
+    margin: 0 0 72px;
   }
 }
 @media (max-width: 767px) {
@@ -5038,9 +5044,6 @@ button,
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
-  .promotion__card:last-child {
-    padding-right: 42px;
-  }
   .promotion__card:last-child p {
     margin: 0 0 72px;
   }
