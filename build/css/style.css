@@ -3019,13 +3019,14 @@ button,
   min-height: 336px;
   color: #102654;
   font-style: normal;
-  border-top: 1px solid #74819c;
   text-align: start;
+  max-width: 683px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .contacts {
     min-height: 351px;
     padding: 60px 160px 49px 131px;
+    max-width: unset;
   }
 }
 @media (max-width: 767px) {
@@ -4108,16 +4109,20 @@ button,
   padding: 65px 170px 66px 102px;
   font-style: normal;
   color: #ffffff;
+  max-width: 683px;
+  margin-left: auto;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .feedback__free-lesson {
     min-height: 324px;
     padding: 60px 162px 55px 132px;
+    max-width: unset;
   }
 }
 @media (max-width: 767px) {
   .feedback__free-lesson {
     padding: 63px 15px 69px;
+    margin-left: unset;
   }
 }
 .feedback__free-lesson form {
@@ -4356,6 +4361,7 @@ button,
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  border-top: 1px solid #74819c;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .feedback__container--contacts {
