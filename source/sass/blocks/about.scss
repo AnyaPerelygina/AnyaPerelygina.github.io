@@ -9,10 +9,10 @@
   column-gap: 80px;
   justify-content: center;
 
-  @include vp-1023 {
-    padding: 120px 0;
-    column-gap: 40px;
-  }
+  // @include vp-1023 {
+  //   padding: 120px 0;
+  //   column-gap: 40px;
+  // }
 
   @include vp-1199 {
     display: flex;

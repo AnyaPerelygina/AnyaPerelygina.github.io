@@ -68,6 +68,10 @@
   margin: 0 0 0 20px;
   max-width: 335px;
 
+  @media (min-width: 1200px) {
+    grid-column: 1 / 2;
+  }
+
   &::after {
     content: "";
     position: absolute;
@@ -102,6 +106,12 @@
     &::after {
       content: none;
     }
+  }
+}
+
+.advantages__item:nth-child(2n+3), .advantages__item:nth-child(2) {
+  @media (min-width: 1200px) {
+    grid-column: 3 / 3;
   }
 }
 
