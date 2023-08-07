@@ -96,6 +96,7 @@
   display: flex;
   flex-wrap: wrap;
   width: 46.3%;
+  position: relative;
 
   @include vp-1199 {
     width: 43.5%;
@@ -126,10 +127,10 @@
 
     &:active,
     &:focus {
-      padding: 10px;
+      padding: 0 10px;
       outline: 1px solid $color-default-white;
       border: none;
-      margin-bottom: -10px;
+      margin-bottom: 2px;
 
       @include vp-767 {
         margin-bottom: -3px;
@@ -169,6 +170,12 @@
   }
 }
 
+.feedback__form.is-invalid {
+  input {
+    border-bottom: 1px solid $color-torch-red;
+  }
+}
+
 .feedback__form-button {
   width: 100%;
   padding: 17px;
@@ -195,14 +202,20 @@
   }
 }
 
-[data-message-base="Поле обязательно к заполнению"],
-[data-message-extra="Проверьте корректность заполнения поля"] {
+[data-message-base="Обязательное поле"],
+[data-message-extra="Некорректные данные"] {
   color: $color-torch-red;
   font-family: $ff-base-font;
-  font-size: 14px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+.input-message.is-invalid {
+  position: absolute;
+  left: 0;
+  top: 22px;
 }
 
 .feedback__container--contacts {

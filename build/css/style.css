@@ -4196,6 +4196,7 @@ button,
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   width: 46.3%;
+  position: relative;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .feedback__form {
@@ -4225,10 +4226,10 @@ button,
   border-bottom: 1px solid #ffffff;
 }
 .feedback__form input:active, .feedback__form input:focus {
-  padding: 10px;
+  padding: 0 10px;
   outline: 1px solid #ffffff;
   border: none;
-  margin-bottom: -10px;
+  margin-bottom: 2px;
 }
 @media (max-width: 767px) {
   .feedback__form input:active, .feedback__form input:focus {
@@ -4321,6 +4322,10 @@ button,
   color: transparent;
 }
 
+.feedback__form.is-invalid input {
+  border-bottom: 1px solid #ed0233;
+}
+
 .feedback__form-button {
   width: 100%;
   padding: 17px;
@@ -4349,14 +4354,20 @@ button,
   }
 }
 
-[data-message-base="Поле обязательно к заполнению"],
-[data-message-extra="Проверьте корректность заполнения поля"] {
+[data-message-base="Обязательное поле"],
+[data-message-extra="Некорректные данные"] {
   color: #ed0233;
   font-family: "Roboto Condensed", "Arial", sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-style: normal;
   font-weight: 400;
   line-height: 22px;
+}
+
+.input-message.is-invalid {
+  position: absolute;
+  left: 0;
+  top: 22px;
 }
 
 .feedback__container--contacts {
