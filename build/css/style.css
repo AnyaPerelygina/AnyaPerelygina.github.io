@@ -1870,6 +1870,9 @@ button,
   flex-wrap: wrap;
   margin: 0;
   border-top: 1px solid rgba(28, 51, 116, 0.2);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 
 .accordion__element:last-child {
@@ -4864,6 +4867,10 @@ button,
   }
 
   .faq__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -4879,7 +4886,7 @@ button,
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     min-width: 290px;
-    max-width: 543px;
+    max-width: 100%;
     height: 100%;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
@@ -5888,9 +5895,16 @@ button,
   }
 
   .faq__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width: 678px;
+    width: 100%;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
+    justify-content: space-evenly;
   }
 
   .faq__controls {
@@ -5904,6 +5918,7 @@ button,
     -ms-flex-pack: justify;
     justify-content: space-between;
     min-width: 678px;
+    max-width: 100%;
     height: 100%;
     margin-bottom: 38px;
   }
