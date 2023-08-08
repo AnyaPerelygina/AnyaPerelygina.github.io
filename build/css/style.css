@@ -3699,7 +3699,7 @@ button,
   text-align: left;
   width: 100%;
   margin: 0;
-  margin-bottom: 36px;
+  margin-bottom: 39px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .faq__title {
@@ -3712,7 +3712,7 @@ button,
   .faq__title {
     letter-spacing: 1px;
     text-align: center;
-    margin: 0 0 32px;
+    margin: 0 0 29px;
   }
 }
 
@@ -3922,8 +3922,8 @@ button,
 .feedback {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr;
-  grid-template-columns: 1fr 1fr;
+  -ms-grid-columns: 50% 50%;
+  grid-template-columns: 50% 50%;
   grid-auto-rows: auto;
   height: 100%;
   text-align: start;
@@ -3994,7 +3994,8 @@ button,
   .feedback__free-lesson {
     min-height: 324px;
     padding: 60px 162px 55px 132px;
-    max-width: unset;
+    max-width: 768px;
+    margin: 0 auto;
   }
 }
 @media (max-width: 767px) {
@@ -4037,7 +4038,7 @@ button,
         -ms-flex-direction: column;
             flex-direction: column;
     min-width: 290px;
-    row-gap: 25px;
+    row-gap: 26px;
   }
 }
 
@@ -4097,14 +4098,14 @@ button,
   border-bottom: 1px solid #ffffff;
 }
 .feedback__form input:active, .feedback__form input:focus {
-  padding: 0 10px;
+  padding: 0 10px 5px;
   outline: 1px solid #ffffff;
   border: none;
   margin-bottom: 2px;
 }
 @media (max-width: 767px) {
   .feedback__form input:active, .feedback__form input:focus {
-    margin-bottom: -3px;
+    margin-bottom: 12px;
   }
 }
 .feedback__form input:disabled {
@@ -4194,6 +4195,7 @@ button,
 }
 
 .feedback__form.is-invalid input {
+  outline: none;
   border-bottom: 1px solid #ed0233;
 }
 
@@ -4294,7 +4296,7 @@ button,
     font-size: 16px;
     line-height: 19px;
     min-height: 260px;
-    padding: 40px 43px 50px 15px;
+    padding: 43px 43px 50px 15px;
   }
 }
 
@@ -4818,7 +4820,7 @@ button,
       -ms-flex-align: center;
           align-items: center;
   width: 100%;
-  padding: 93px 103px 0;
+  padding: 90px 103px 0;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .promotion {
