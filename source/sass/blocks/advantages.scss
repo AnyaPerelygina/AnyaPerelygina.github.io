@@ -109,7 +109,8 @@
   }
 }
 
-.advantages__item:nth-child(2n+3), .advantages__item:nth-child(2) {
+.advantages__item:nth-child(2n+3),
+.advantages__item:nth-child(2) {
   @media (min-width: 1200px) {
     grid-column: 3 / 3;
   }
