@@ -116,7 +116,7 @@
   }
 }
 
-.advantages__item:nth-last-child(-n+3) {
+.advantages__item:nth-last-child(-n+2) {
   &::after {
     content: none;
   }

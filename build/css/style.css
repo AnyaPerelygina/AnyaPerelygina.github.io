@@ -2068,7 +2068,7 @@ button,
   background-color: rgba(209, 10, 66, 0.2);
 }
 
-.advantages__item:nth-last-child(-n+3)::after {
+.advantages__item:nth-last-child(-n+2)::after {
   content: none;
 }
 
