@@ -61,6 +61,17 @@
       max-height: 24px;
     }
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .header__tel {
@@ -86,5 +97,16 @@
     font-weight: 600;
     letter-spacing: 0.4px;
     padding-top: 5px;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
   }
 }

@@ -56,6 +56,17 @@
     margin-right: 197px;
     width: 68px;
   }
+
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
 }
 
 .footer__menu {

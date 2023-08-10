@@ -3144,6 +3144,14 @@ button,
   }
 }
 
+.contacts__lists a:hover, .contacts__lists a:focus, .contacts__lists a:active {
+  opacity: 0.5;
+}
+.contacts__lists a:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
+
 .contacts__list {
   margin: 0;
   padding: 0;
@@ -4395,6 +4403,13 @@ button,
     width: 68px;
   }
 }
+.footer__logo:hover, .footer__logo:focus, .footer__logo:active {
+  opacity: 0.5;
+}
+.footer__logo:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 .footer__menu {
   display: -webkit-box;
@@ -4600,6 +4615,13 @@ button,
     max-height: 24px;
   }
 }
+.header__logo:hover, .header__logo:focus, .header__logo:active {
+  opacity: 0.5;
+}
+.header__logo:disabled {
+  opacity: 0.3;
+  pointer-events: none;
+}
 
 .header__tel {
   font-family: "Alumni Sans", "Arial", sans-serif;
@@ -4627,6 +4649,13 @@ button,
     letter-spacing: 0.4px;
     padding-top: 5px;
   }
+}
+.header__tel:hover, .header__tel:focus, .header__tel:active {
+  opacity: 0.5;
+}
+.header__tel:disabled {
+  opacity: 0.3;
+  pointer-events: none;
 }
 
 .hero {
@@ -5001,6 +5030,17 @@ button,
   border-bottom: 1px solid #102654;
   width: 68px;
 }
+.promotion__card a:hover {
+  opacity: 0.8;
+}
+.promotion__card a:focus {
+  border: 1px solid #102654;
+  outline: none;
+  text-decoration: none;
+}
+.promotion__card a:disabled {
+  opacity: 0.5;
+}
 @media (max-width: 767px) {
   .promotion__card a {
     -ms-flex-item-align: center;
@@ -5132,6 +5172,17 @@ button,
   color: #ffffff;
   border-bottom: 1px solid #ffffff;
   width: 79px;
+}
+.promotion__card__description a:hover {
+  opacity: 0.8;
+}
+.promotion__card__description a:focus {
+  border: 1px solid #ffffff;
+  outline: none;
+  text-decoration: none;
+}
+.promotion__card__description a:disabled {
+  opacity: 0.5;
 }
 @media (max-width: 767px) {
   .promotion__card__description a {

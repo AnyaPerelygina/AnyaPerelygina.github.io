@@ -97,6 +97,19 @@
   }
 }
 
+.contacts__lists a {
+  &:hover,
+  &:focus,
+  &:active {
+    opacity: 0.5;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+    pointer-events: none;
+  }
+}
+
 .contacts__list {
   margin: 0;
   padding: 0;

@@ -112,6 +112,20 @@
     border-bottom: 1px solid $color-sapphire;
     width: 68px;
 
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border: 1px solid $color-sapphire;
+      outline: none;
+      text-decoration: none;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
+
     @include vp-767 {
       align-self: center;
     }
@@ -220,6 +234,20 @@
     color: $color-default-white;
     border-bottom: 1px solid $color-default-white;
     width: 79px;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &:focus {
+      border: 1px solid $color-default-white;
+      outline: none;
+      text-decoration: none;
+    }
+
+    &:disabled {
+      opacity: 0.5;
+    }
 
     @include vp-767 {
       align-self: center;

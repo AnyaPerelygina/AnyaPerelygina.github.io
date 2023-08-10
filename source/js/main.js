@@ -2,6 +2,7 @@ import { iosVhFix } from './utils/ios-vh-fix';
 import { initModals } from './modules/modals/init-modals';
 import { Form } from './modules/form-validate/form';
 import { initCoachesSlider, initSliderReviews } from './modules/slider.js';
+import { getSlidesTabs } from './modules/sliders/init-sliders-tabs';
 import { initTabs } from './modules/tabs/init-tabs.js';
 import { initAccordions } from './modules/init-accordion';
 import { initVideoPlayer } from './modules/init-video-player.js';
@@ -15,6 +16,7 @@ window.addEventListener('DOMContentLoaded', () => {
 
   iosVhFix();
   initTabs();
+  getSlidesTabs();
   initCoachesSlider();
   initSliderReviews();
   initVideoPlayer();
