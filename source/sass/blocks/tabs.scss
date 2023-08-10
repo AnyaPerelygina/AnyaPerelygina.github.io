@@ -3,8 +3,6 @@
 }
 
 .tabs__controls {
-  display: flex;
-
   @media screen and (max-width: 767px) {
     flex-wrap: wrap;
   }

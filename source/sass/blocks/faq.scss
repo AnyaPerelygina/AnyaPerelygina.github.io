@@ -68,20 +68,26 @@
   height: 100%;
 
   @include vp-1199 {
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
     flex-wrap: wrap;
     justify-content: space-between;
     min-width: 678px;
-    max-width: 100%;
+    max-width: none;
     height: 100%;
     margin-bottom: 38px;
   }
 
   @include vp-767 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     flex-direction: row;
+    align-items: center;
     flex-wrap: wrap;
+    column-gap: 5px;
     min-width: 290px;
-    max-width: 100%;
+    max-width: none;
     height: 100%;
     justify-content: space-between;
     margin-bottom: 28px;
@@ -106,16 +112,21 @@
   cursor: pointer;
 
   @include vp-1199 {
-    width: 162px;
+    justify-content: center;
+    min-width: 162px;
+    width: 100%;
+    max-width: 270px;
     padding: 18px 58px;
   }
 
   @include vp-767 {
     font-size: 16px;
     line-height: 16px;
-    width: 141px;
+    min-width: 141px;
+    width: 100%;
+    max-width: 366px;
     height: 44px;
-    padding: 15px;
+    padding: 15px 0;
     margin: 0;
   }
 

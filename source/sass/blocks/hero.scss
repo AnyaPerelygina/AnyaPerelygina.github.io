@@ -13,10 +13,12 @@
   }
 
   @include vp-767 {
-    display: grid;
-    place-content: center;
-    padding: 0;
-    margin: 0;
+    flex-direction: column;
+    justify-content: center;
+    justify-self: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 
@@ -43,14 +45,14 @@
   align-self: center;
 
   @include vp-1199 {
-    top: 7px;
-    left: 3px;
+    top: 8px;
+    left: 2px;
     align-self: center;
   }
 
   @include vp-767 {
     top: 193px;
-    left: -180px;
+    left: -31%;
   }
 
   li {
@@ -66,12 +68,13 @@
   padding: 111px 65px 0 3px;
 
   @include vp-1199 {
-    padding: 51px 0 203px;
+    padding: 51px 0 103px;
   }
 
   @include vp-767 {
     padding: 6px 0 0;
     margin-top: -52px;
+    width: 100%;
   }
 
 
@@ -139,6 +142,7 @@
   letter-spacing: 0.6px;
   color: $color-default-white;
   text-transform: uppercase;
+  text-align: center;
   border: 4px solid $color-default-white;
   cursor: pointer;
   display: flex;
@@ -146,7 +150,7 @@
   justify-content: center;
   background: none;
   width: 234px;
-  height: 57px;
+  min-height: 57px;
   margin: 0 0 -2px 15px;
   padding: 27px 48px;
 
@@ -167,16 +171,17 @@
 
   @include vp-1199 {
     width: 187px;
-    height: 57px;
-    position: absolute;
-    padding: 27px 20px;
-    margin: 37px 0 0 29px;
+    min-height: 57px;
+    position: relative;
+    padding: 21px 20px;
+    margin: 35px 0 0 27px;
   }
 
   @include vp-767 {
-    width: 294px;
-    height: 59px;
-    padding: 27px 76px;
+    min-width: 294px;
+    width: 100%;
+    min-height: 59px;
+    padding: 20px 76px;
     margin: -1px 0 78px -1px;
   }
 }

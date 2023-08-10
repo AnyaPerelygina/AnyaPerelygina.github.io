@@ -1346,6 +1346,7 @@ html {
   line-height: 24px;
   font-family: "Placeholder", "Arial", sans-serif;
   color: #102654;
+  scroll-behavior: smooth;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
@@ -1812,7 +1813,7 @@ button,
 }
 @media (max-width: 767px) {
   .about__video {
-    padding-bottom: 56.25%;
+    padding-bottom: 52.25%;
     position: relative;
     top: 0;
     right: 0;
@@ -2733,7 +2734,7 @@ button,
   .coaches__title {
     letter-spacing: 1px;
     text-align: center;
-    margin-bottom: 44px;
+    margin-bottom: 41px;
   }
 }
 
@@ -3797,31 +3798,44 @@ button,
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .faq__controls {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    -webkit-column-gap: 10px;
+       -moz-column-gap: 10px;
+            column-gap: 10px;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
     min-width: 678px;
-    max-width: 100%;
+    max-width: none;
     height: 100%;
     margin-bottom: 38px;
   }
 }
 @media (max-width: 767px) {
   .faq__controls {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    -webkit-column-gap: 5px;
+       -moz-column-gap: 5px;
+            column-gap: 5px;
     min-width: 290px;
-    max-width: 100%;
+    max-width: none;
     height: 100%;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -3855,7 +3869,12 @@ button,
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .faq__control {
-    width: 162px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    min-width: 162px;
+    width: 100%;
+    max-width: 270px;
     padding: 18px 58px;
   }
 }
@@ -3863,9 +3882,11 @@ button,
   .faq__control {
     font-size: 16px;
     line-height: 16px;
-    width: 141px;
+    min-width: 141px;
+    width: 100%;
+    max-width: 366px;
     height: 44px;
-    padding: 15px;
+    padding: 15px 0;
     margin: 0;
   }
 }
@@ -4634,11 +4655,20 @@ button,
 }
 @media (max-width: 767px) {
   .hero {
-    display: -ms-grid;
-    display: grid;
-    place-content: center;
-    padding: 0;
-    margin: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+    padding: 0 15px;
   }
 }
 
@@ -4673,8 +4703,8 @@ button,
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero__list {
-    top: 7px;
-    left: 3px;
+    top: 8px;
+    left: 2px;
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
@@ -4683,7 +4713,7 @@ button,
 @media (max-width: 767px) {
   .hero__list {
     top: 193px;
-    left: -180px;
+    left: -31%;
   }
 }
 .hero__list li {
@@ -4699,13 +4729,14 @@ button,
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero__wrapper {
-    padding: 51px 0 203px;
+    padding: 51px 0 103px;
   }
 }
 @media (max-width: 767px) {
   .hero__wrapper {
     padding: 6px 0 0;
     margin-top: -52px;
+    width: 100%;
   }
 }
 .hero__wrapper span {
@@ -4774,6 +4805,7 @@ button,
   letter-spacing: 0.6px;
   color: #ffffff;
   text-transform: uppercase;
+  text-align: center;
   border: 4px solid #ffffff;
   cursor: pointer;
   display: -webkit-box;
@@ -4787,7 +4819,7 @@ button,
           justify-content: center;
   background: none;
   width: 234px;
-  height: 57px;
+  min-height: 57px;
   margin: 0 0 -2px 15px;
   padding: 27px 48px;
 }
@@ -4806,17 +4838,18 @@ button,
 @media (min-width: 768px) and (max-width: 1199px) {
   .hero__button {
     width: 187px;
-    height: 57px;
-    position: absolute;
-    padding: 27px 20px;
-    margin: 37px 0 0 29px;
+    min-height: 57px;
+    position: relative;
+    padding: 21px 20px;
+    margin: 35px 0 0 27px;
   }
 }
 @media (max-width: 767px) {
   .hero__button {
-    width: 294px;
-    height: 59px;
-    padding: 27px 76px;
+    min-width: 294px;
+    width: 100%;
+    min-height: 59px;
+    padding: 20px 76px;
     margin: -1px 0 78px -1px;
   }
 }
@@ -5412,6 +5445,11 @@ button,
   background-color: #f8f9fc;
   padding: 120px 104px 118px;
 }
+@media (min-width: 1200px) and (max-width: 1365px) {
+  .subscription__container {
+    padding: 120px 21px 130px;
+  }
+}
 @media (min-width: 768px) and (max-width: 1199px) {
   .subscription__container {
     padding: 100px 100px 100px;
@@ -5433,15 +5471,7 @@ button,
   width: 287px;
   height: 412px;
 }
-@media (min-width: 1124px) and (max-width: 1199px) {
-  .subscription__container::after {
-    background-image: url("../img/dumbbells.png");
-    width: 287px;
-    height: 412px;
-    top: 2337px;
-  }
-}
-@media (min-width: 768px) and (max-width: 1123px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .subscription__container::after {
     background-image: url("../img/dumbbells-tablet.png");
     width: 347px;
@@ -5818,6 +5848,12 @@ button,
     height: 66px;
     padding: 27px 30px;
     margin: 14px auto;
+  }
+}
+@media (max-width: 767px) {
+  .subscription__item a {
+    min-width: 208px;
+    width: 100%;
   }
 }
 
@@ -6235,11 +6271,6 @@ button,
   max-width: 100%;
 }
 
-.tabs__controls {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
 @media screen and (max-width: 767px) {
   .tabs__controls {
     -ms-flex-wrap: wrap;

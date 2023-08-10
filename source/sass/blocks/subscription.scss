@@ -3,6 +3,10 @@
   background-color: $color-ghost-white;
   padding: 120px 104px 118px;
 
+  @media (min-width: 1200px) and (max-width: 1365px) {
+    padding: 120px 21px 130px;
+  }
+
   @include vp-1199 {
     padding: 100px 100px 100px;
   }
@@ -22,14 +26,7 @@
     width: 287px;
     height: 412px;
 
-    @media (min-width: 1124px) and (max-width: 1199px) {
-      background-image: url("../img/dumbbells.png");
-      width: 287px;
-      height: 412px;
-      top: 2337px;
-    }
-
-    @media (min-width: 768px) and (max-width: 1123px) {
+    @include vp-1199 {
       background-image: url("../img/dumbbells-tablet.png");
       width: 347px;
       height: 372px;
@@ -341,6 +338,11 @@
       height: 66px;
       padding: 27px 30px;
       margin: 14px auto;
+    }
+
+    @include vp-767 {
+      min-width: 208px;
+      width: 100%;
     }
   }
 }
