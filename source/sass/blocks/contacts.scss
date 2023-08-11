@@ -149,3 +149,17 @@
     }
   }
 }
+
+.contacts__info--phone {
+  display: block;
+  width: 90px;
+
+  @include vp-1199 {
+    width: 116px;
+    line-height: 23px;
+  }
+
+  @include vp-767 {
+    width: 116px;
+  }
+}
