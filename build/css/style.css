@@ -5828,7 +5828,7 @@ button,
 }
 @media (max-width: 767px) {
   .subscription__item p {
-    margin: 0 0 54px;
+    margin: 0;
   }
 }
 .subscription__item span {
