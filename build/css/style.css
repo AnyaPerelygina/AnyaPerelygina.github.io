@@ -3808,10 +3808,6 @@ button,
 }
 @media (max-width: 767px) {
   .faq__container {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -3876,7 +3872,7 @@ button,
     -webkit-column-gap: 5px;
        -moz-column-gap: 5px;
             column-gap: 5px;
-    min-width: 290px;
+    min-width: 100%;
     max-width: none;
     height: 100%;
     -webkit-box-pack: justify;

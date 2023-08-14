@@ -52,7 +52,6 @@
   }
 
   @include vp-767 {
-    flex-direction: column;
     justify-content: center;
     flex-wrap: wrap;
   }
@@ -86,7 +85,7 @@
     align-items: center;
     flex-wrap: wrap;
     column-gap: 5px;
-    min-width: 290px;
+    min-width: 100%;
     max-width: none;
     height: 100%;
     justify-content: space-between;
