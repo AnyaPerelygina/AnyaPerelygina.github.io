@@ -13,18 +13,27 @@
   }
 
   @include vp-767 {
-    display: grid;
-    grid-template-columns: 113px 1fr;
-    grid-template-areas: "A B B";
     justify-content: center;
     justify-self: center;
     align-items: center;
-    margin: 0 auto;
-    padding: 64px 14px 78px;
+    margin: 0;
   }
 }
 
-.hero__list {
+.hero__wrapper {
+  padding: 111px 65px 0 3px;
+
+  @include vp-1199 {
+    padding: 51px 0 103px;
+  }
+
+  @include vp-767 {
+    padding: 0 13px 77px;
+    width: 100%;
+  }
+}
+
+.hero__text {
   @include list;
   position: relative;
   top: 84px;
@@ -39,45 +48,18 @@
   }
 
   @include vp-767 {
-    grid-area: A;
     display: grid;
-    grid-column: 2/3;
-    grid-row: 1/2;
-    grid-template-columns: 41.2% 58.8%;
-    grid-template-rows: min-content  min-content  min-content;
-    width: 100%;
+    grid-template-areas:
+      "A A"
+      "B C";
+    max-width: 290px;
     margin: 0 auto;
-    min-height: 300px;
-    position: relative;
-    top: 126px;
-    right: 113px;
+    min-height: 244px;
+    position: unset;
+    top: 0;
+    right: 0;
+    padding: 0;
   }
-
-  p {
-    font-size: 14px;
-    line-height: 21px;
-    font-weight: 400;
-    color: $color-default-white;
-    text-align: right;
-    width: 113px;
-    margin: 0;
-  }
-}
-
-.hero__wrapper {
-  padding: 111px 65px 0 3px;
-
-  @include vp-1199 {
-    padding: 51px 0 103px;
-  }
-
-  @include vp-767 {
-    grid-area: B;
-    padding: 6px 0 0;
-    margin-left: -112px;
-    width: unset;
-  }
-
 
   span {
     font-family: $ff-alumni-sans-font;
@@ -97,9 +79,26 @@
     }
 
     @include vp-767 {
+      grid-area: A;
       font-size: 23px;
-      line-height: 34px;
-      margin-right: 3px;
+      line-height: 18px;
+      margin-right: 10px;
+      margin-top: 10px;
+    }
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 400;
+    color: $color-default-white;
+    text-align: right;
+    width: 113px;
+    margin: 0;
+
+    @include vp-767 {
+      grid-area: B;
+      margin: 58px -1px 0;
     }
   }
 
@@ -126,12 +125,15 @@
     }
 
     @include vp-767 {
-      font-size: 72px;
-      line-height: 87px;
+      grid-area: C;
+      font-size: 80px;
+      line-height: 85px;
       text-transform: none;
-      letter-spacing: 2.5px;
-      margin: 0 0 23px 103px;
-      padding: 12px 0 0;
+      letter-spacing: -0.9px;
+      position: relative;
+      left: -11px;
+      top: -20px;
+      height: 137px;
     }
   }
 }
@@ -179,7 +181,6 @@
   }
 
   @include vp-767 {
-    min-width: 294px;
     width: 100%;
     min-height: 59px;
     padding: 20px 76px;
