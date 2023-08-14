@@ -90,11 +90,13 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     color: $color-sapphire;
     opacity: 1;
     border-bottom: 2px solid #d10a42;
     margin-bottom: -2px;
+    outline: none;
   }
 
   &:disabled {
@@ -182,7 +184,8 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     border: 7px solid;
     border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
 
@@ -190,6 +193,7 @@
       color: $color-default-white;
       background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
       border: none;
+      outline: none;
     }
   }
 
@@ -310,14 +314,16 @@
     justify-content: center;
     background: none;
     width: 208px;
-    height: 66px;
-    padding: 27px 41px;
+    min-height: 66px;
+    padding: 24px 41px;
 
     &:hover,
-    &:focus {
+    &:focus,
+    &:focus-visible {
       color: $color-default-white;
       background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
       border: none;
+      outline: none;
     }
 
     &:active {

@@ -357,15 +357,19 @@
 
   &:hover::before,
   &:focus::before,
+  &:focus-visible::before,
   &:active::before {
     background: $color-default-white;
+    outline: none
   }
 
   &:hover::after,
   &:focus::after,
+  &:focus-visible::after,
   &:active::after {
     opacity: 1;
     border: solid 2px $color-sapphire;
+    outline: none;
   }
 
   &:active::before {
@@ -391,9 +395,15 @@
 
   &:hover svg,
   &:focus svg,
+  &:focus-visible svg,
   &:active svg {
     @include hover;
     color: $color-sapphire;
+    outline: none;
+  }
+
+  &:focus-visible {
+    outline: none;
   }
 }
 

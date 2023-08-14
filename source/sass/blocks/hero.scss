@@ -168,13 +168,17 @@
   margin: 0 0 0 145px;
   padding: 20px 48px;
 
-  &:hover {
+  &:hover,
+  &:focus,
+  &:focus-visible {
     color: $color-egyptian-blue;
     background: $color-default-white;
+    outline: none;
   }
 
   &:active {
     color: $color-sapphire;
+    background: $color-default-white;
   }
 
   &:disabled {

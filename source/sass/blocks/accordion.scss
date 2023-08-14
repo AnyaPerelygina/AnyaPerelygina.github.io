@@ -149,8 +149,10 @@
   }
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     background-color: $color-sapphire;
+    outline: none;
 
     &::before,
     &::after {

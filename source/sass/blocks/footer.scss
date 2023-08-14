@@ -59,8 +59,10 @@
 
   &:hover,
   &:focus,
+  &:focus-visible,
   &:active {
     opacity: 0.5;
+    outline: none;
   }
 
   &:disabled {
@@ -115,15 +117,17 @@
       margin-top: 42px;
     }
   }
+
+  &:focus-visible {
+    outline: none;
+  }
 }
 
 .footer__link {
   padding: 10px;
-
   font-size: 14px;
   font-weight: 400;
   line-height: 24px;
-
   color: $color-default-white;
 
   @include vp-1199 {
@@ -132,12 +136,12 @@
 
   @include vp-767 {
     padding: 0;
-
     font-size: 16px;
     line-height: 19px;
 
     &:focus-visible {
       padding: 10px;
+      outline: none;
     }
   }
 
@@ -153,6 +157,7 @@
   &:focus-visible {
     border: 1px solid $color-default-white;
     outline: none;
+    padding: 7px 9px;
   }
 }
 

@@ -143,9 +143,11 @@
   cursor: pointer;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:focus-visible {
     border-radius: 50%;
     border: 1px solid $color-sapphire;
+    outline: none;
   }
 
   &:active {
