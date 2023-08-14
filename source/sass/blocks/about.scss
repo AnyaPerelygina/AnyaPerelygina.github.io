@@ -360,7 +360,7 @@
   &:focus-visible::before,
   &:active::before {
     background: $color-default-white;
-    outline: none
+    outline: none;
   }
 
   &:hover::after,

@@ -5834,12 +5834,12 @@ button,
     padding: 44px 33px 46px;
   }
 }
-.subscription__item:hover, .subscription__item:focus, .subscription__item:focus-visible {
+.subscription__item:hover, .subscription__item:focus, .subscription__item:focus-within, .subscription__item:focus-visible {
   border: 7px solid;
   -o-border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
      border-image: linear-gradient(148.82deg, #d10a42 0.85%, #00359f 100%) 1;
 }
-.subscription__item:hover a, .subscription__item:focus a, .subscription__item:focus-visible a {
+.subscription__item:hover a, .subscription__item:focus a, .subscription__item:focus-within a, .subscription__item:focus-visible a {
   color: #ffffff;
   background: linear-gradient(97.05deg, #ed0233 17.6%, #003eb7 95.31%);
   border: none;
