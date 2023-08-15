@@ -5,14 +5,16 @@
   color: $color-sapphire;
   font-family: $ff-base-font;
   font-style: normal;
+  min-height: 480px;
 
   @include vp-1199 {
     min-width: 678px;
+    min-height: 480px;
   }
 
   @include vp-767 {
     min-width: 290px;
-    min-height: 480px;
+    min-height: 482px;
     padding: 0;
   }
 }

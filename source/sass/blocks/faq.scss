@@ -4,14 +4,14 @@
   font-weight: 500;
   background-color: $color-ghost-white;
   color: $color-sapphire;
-  padding: 119px 101px 119px 102px;
+  padding: 119px 101px 94px 102px;
 
   @include vp-1199 {
-    padding: 101px 45px 142px;
+    padding: 101px 45px 86px;
   }
 
   @include vp-767 {
-    padding: 70px 15px 68px;
+    padding: 70px 15px 66px;
   }
 }
 

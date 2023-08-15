@@ -2029,16 +2029,18 @@ button,
   color: #102654;
   font-family: "Roboto Condensed", "Arial", sans-serif;
   font-style: normal;
+  min-height: 480px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .accordion {
     min-width: 678px;
+    min-height: 480px;
   }
 }
 @media (max-width: 767px) {
   .accordion {
     min-width: 290px;
-    min-height: 480px;
+    min-height: 482px;
     padding: 0;
   }
 }
@@ -3742,16 +3744,16 @@ button,
   font-weight: 500;
   background-color: #f8f9fc;
   color: #102654;
-  padding: 119px 101px 119px 102px;
+  padding: 119px 101px 94px 102px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .faq {
-    padding: 101px 45px 142px;
+    padding: 101px 45px 86px;
   }
 }
 @media (max-width: 767px) {
   .faq {
-    padding: 70px 15px 68px;
+    padding: 70px 15px 66px;
   }
 }
 
