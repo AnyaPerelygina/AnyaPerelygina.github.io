@@ -1,7 +1,7 @@
 .subscription__container {
   width: 100%;
   background-color: $color-ghost-white;
-  padding: 120px 104px 118px;
+  padding: 120px 90px 118px;
 
   @media (min-width: 1200px) and (max-width: 1365px) {
     padding: 120px 21px 130px;
@@ -139,11 +139,11 @@
   flex-wrap: wrap;
   justify-content: start;
   align-items: center;
-  gap: 39px;
+  gap: 40px;
   padding: 0;
   margin: 0;
   background-color: $color-transparent;
-  max-width: 1158px;
+  max-width: 1160px;
 
 
   @include vp-1199 {
