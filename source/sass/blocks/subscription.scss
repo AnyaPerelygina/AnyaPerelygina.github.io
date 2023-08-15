@@ -173,8 +173,9 @@
 
   @include vp-1199 {
     min-width: 442px;
-    height: 448px;
-    padding: 56px 33px 46px;
+    min-height: 448px;
+    height: 100%;
+    padding: 56px 33px 60px;
   }
 
   @include vp-767 {
@@ -209,7 +210,7 @@
     @include vp-1199 {
       font-size: 26px;
       line-height: 29px;
-      margin-bottom: -55px;
+      margin-bottom: 0;
     }
 
     @include vp-767 {
@@ -250,7 +251,7 @@
     @include vp-1199 {
       font-size: 60px;
       line-height: 90px;
-      margin: 0 0 -45px -13px;
+      margin: 52px 0 24px -13px;
       gap: 13px;
     }
 
@@ -342,9 +343,9 @@
 
     @include vp-1199 {
       width: 208px;
-      height: 66px;
-      padding: 27px 30px;
-      margin: 14px auto;
+      min-height: 66px;
+      padding: 24px 30px;
+      margin: 0 auto;
     }
 
     @include vp-767 {
