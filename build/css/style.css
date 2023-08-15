@@ -4636,18 +4636,23 @@ button,
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   padding: 0 105px 0 103px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .header__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 45px;
   }
 }
 @media (max-width: 767px) {
   .header__wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     padding: 0 16px;
     margin: 0 0 69px;
   }
@@ -4655,6 +4660,7 @@ button,
 
 .header__logo {
   padding-top: 10px;
+  margin-right: auto;
 }
 .header__logo img {
   max-width: 122px;
@@ -4690,6 +4696,7 @@ button,
   letter-spacing: 0.6px;
   color: #ffffff;
   max-width: 151px;
+  margin-left: 20px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .header__tel {
@@ -4699,6 +4706,7 @@ button,
     letter-spacing: 0.4px;
     padding-top: 3px;
     max-width: 137px;
+    margin-left: 0;
   }
 }
 @media (max-width: 767px) {
@@ -4709,6 +4717,7 @@ button,
     letter-spacing: 0.4px;
     padding-top: 5px;
     max-width: 115px;
+    margin-left: 0;
   }
 }
 .header__tel:hover, .header__tel:focus, .header__tel:focus-visible, .header__tel:active {
