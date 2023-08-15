@@ -5832,7 +5832,7 @@ button,
   background-color: #ffffff;
   border: 7px solid #ffffff;
   width: 360px;
-  height: 448px;
+  min-height: 448px;
   padding: 51px 69px 60px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
@@ -5846,7 +5846,7 @@ button,
 @media (max-width: 767px) {
   .subscription__item {
     width: 100%;
-    height: 384px;
+    min-height: 384px;
     padding: 44px 33px 46px;
   }
 }
@@ -5867,20 +5867,20 @@ button,
   font-size: 26px;
   line-height: 40px;
   font-weight: 700;
-  margin: 0 0 -30px;
+  margin: 0;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .subscription__item h3 {
     font-size: 26px;
     line-height: 29px;
-    margin-bottom: 0;
+    margin: 0;
   }
 }
 @media (max-width: 767px) {
   .subscription__item h3 {
     font-size: 22px;
     line-height: 24px;
-    margin-bottom: -44px;
+    margin: 0 0 2px;
   }
 }
 .subscription__item p {
@@ -5916,7 +5916,7 @@ button,
           align-items: center;
   text-align: center;
   z-index: 1;
-  margin: 34px 15px 0 0;
+  margin: 66px 0 32px -15px;
 }
 @media (min-width: 768px) and (max-width: 1199px) {
   .subscription__item span {
@@ -5930,7 +5930,7 @@ button,
   .subscription__item span {
     font-size: 48px;
     line-height: 72px;
-    margin: 0 0 -25px -12px;
+    margin: 52px 0 24px -13px;
     gap: 10px;
   }
 }

@@ -168,7 +168,7 @@
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
   width: 360px;
-  height: 448px;
+  min-height: 448px;
   padding: 51px 69px 60px;
 
   @include vp-1199 {
@@ -180,7 +180,7 @@
 
   @include vp-767 {
     width: 100%;
-    height: 384px;
+    min-height: 384px;
     padding: 44px 33px 46px;
   }
 
@@ -205,18 +205,18 @@
     font-size: 26px;
     line-height: 40px;
     font-weight: 700;
-    margin: 0 0 -30px;
+    margin: 0;
 
     @include vp-1199 {
       font-size: 26px;
       line-height: 29px;
-      margin-bottom: 0;
+      margin: 0;
     }
 
     @include vp-767 {
       font-size: 22px;
       line-height: 24px;
-      margin-bottom: -44px;
+      margin: 0 0 2px;
     }
   }
 
@@ -246,7 +246,7 @@
     align-items: center;
     text-align: center;
     z-index: 1;
-    margin: 34px 15px 0 0;
+    margin: 66px 0 32px -15px;
 
     @include vp-1199 {
       font-size: 60px;
@@ -258,7 +258,7 @@
     @include vp-767 {
       font-size: 48px;
       line-height: 72px;
-      margin: 0 0 -25px -12px;
+      margin: 52px 0 24px -13px;
       gap: 10px;
     }
 
